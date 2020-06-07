@@ -6,7 +6,8 @@ body
 }
 #header{
 	height: 1000px;
-	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/background.jpg');
+/* 	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/background.jpg'); */
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/Portfolio-Site/images/placementPic.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
