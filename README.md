@@ -1,5 +1,6 @@
 # Portfolio-Site
 [Personal Portfolio Site] - Portfolio-Site
+This contains github hosted site to this repository of my resume connected with linkedin, facebook and quora.
 
 ## Table of contents
 * [Technologies](#technologies)
