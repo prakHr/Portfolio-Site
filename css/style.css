@@ -6,7 +6,7 @@ body
 }
 #header{
 	height: 1000px;
-	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/background.jpg');
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://github.com/prakHr/Portfolio-Site/blob/master/images/background.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
