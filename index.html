@@ -10,8 +10,76 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 	<link link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		#sscrollpath
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 10px;
+			height: 100%;
+			background: rgba(255,255,255,0.05);
+		}
+
+		#preogressbar
+		{
+			position: fixed;
+			top:0;
+			right:0;
+			width: 10px;
+			height:50%;
+			background: linear-gradient(to top,#008aff,#00ffe7);
+			animation: animate 5s linear infinite;
+
+		}
+		#preogressbar: before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to top,#008aff,#00ffe7);
+			filter: blur(10px);
+		}
+		#preogressbar: after{
+			filter: blur(30px);
+
+		}
+		#percent
+		{
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 15px;
+			color: #00ff00;
+			font-size: 2em;
+			writing-mode: vertical-rl;
+			text-orientation: sideways;
+		}
+		@keyframes animate
+		{
+			0%,100%
+			{
+				filter:hue-rotate(0deg);
+			}
+			50%
+			{
+				filter: hue-rotate(360deg);
+			}
+
+		}
+		::-webkit-scrollbar{
+			width: 5px;
+		};
+		
+	</style>
 </head>
 <body>
+	<!---------------Progress Bar----------->
+	<div id="preogressbar"></div>
+	<div id="scrollpath"></div>
+	<div id="percent"></div>
 	<!---------------Header Section----------->
 	<section id="header" >
 		<div class="container text-center" >
@@ -238,6 +306,16 @@ Skills like time management, code documentation,web scraping , automation(for ex
 	<script src="smooth-scroll.js"></script>
 	<script>
 		var scroll=new SmoothScroll('a[href*="#"]');
+	</script>
+	<script type="text/javascript">
+		var preogressbar=document.getElementById("preogressbar");
+		var percent=document.getElementById("percent");
+		var totalHeight=document.body.scrollHeight-window.innerHeight;
+		window.onscroll=function(){
+			var progress=(window.pageYOffset/totalHeight)*100;
+			preogressbar.style.height=progress+"%";
+			percent.innerHTML="Page Scrolled "+Math.round(progress)+"%";
+		}
 	</script>
 </body>
 </html>
