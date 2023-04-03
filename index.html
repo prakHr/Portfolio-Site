@@ -13,7 +13,12 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 	<!-- Load library from the CDN -->
 	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
+	<script src="
+	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+	"></script>
+	<link href="
+	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+	" rel="stylesheet">
 	<link link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<style type="text/css">
@@ -130,6 +135,7 @@
 		      	 loop: true,
 			    });
 			  </script>
+
 				<p>A respective <b>Data Analyst</b>
 				<h5><span class="multicolortext">
 					Creative and Innovative mould of thinking, consistency, aspiration and motivation are the important skills for a being to strive towards an ideal to reach to the sun. Every idea was started in a basic container like garage. Any impossible can be reached is my motto and one's thirst for knowledge and passion will help her/him to leave a significant mark in any field. Thus, I am inclined to get to the next level in career, personality and competitive programming.
@@ -511,6 +517,77 @@ Skills like time management, code documentation,web scraping , automation(for ex
 			</div>
 		</div>
 	</div>
+	<!------------------Link to Resources I use for example "/Portfolio-Site/images/project9.png"----------------->
+	<div class="services" id="services">
+
+		<div class="container">
+			<h1 style = "color:lightseagreen;">Go to Clickable Resources</h1>
+			<div class="splide" aria-label="Slide Container Example"data-splide='{"type":"loop","fixedHeight":500}'>
+				  <div class="splide__track">
+				    <ul class="splide__list">
+				      <li class="splide__slide">
+				      	<h1>Books</h1>
+				        <div class="splide__slide__container" id ="resources">
+				          <img  data-href="https://libgen.is/" src="/Portfolio-Site/images/resources/resource1.png" style="height: 400px">
+
+				     
+				          </img>
+				          Libgen
+				        </div>
+				        
+				      </li>
+				      <li class="splide__slide">
+				      	<h1>To do List App</h1>
+				        <div class="splide__slide__container" id ="resources">
+				          <img  data-href="https://www.notion.so/" src="/Portfolio-Site/images/resources/resource2.png" style="height: 400px">
+
+				     
+				          </img>
+				          Notion
+				        </div>
+				        
+				      </li>
+				      <li class="splide__slide">
+				      	<h1>Udemy Courses</h1>
+				        <div class="splide__slide__container" id ="resources">
+				          <img  data-href="https://www.discudemy.com/category" src="/Portfolio-Site/images/resources/resource3.png" style="height: 400px">
+
+				     
+				          </img>
+				          Discudemy
+				        </div>
+				        
+				      </li>
+				      <!-- <li class="splide__slide">
+				      	<h1>To do List App</h1>
+				        <div class="splide__slide__container" id ="resources">
+				          <img  data-href="https://www.notion.so/" src="C:/Users/gprak/Downloads/Github Repos/new/Portfolio-Site/images/resources/resource2.png" style="height: 400px">
+
+				     
+				          </img>
+				          Notion
+				        </div>
+				        
+				      </li>
+				       -->
+				    </ul>
+				  </div>
+				</section>
+				<script>
+					document.addEventListener( 'DOMContentLoaded', function() {
+				    var splide = new Splide( '.splide' );
+				    splide.mount();
+				  } );
+				  $('#resources img').click(function(){
+					 window.location =$(this).attr('data-href');
+					});
+				  
+				</script>
+	
+		</div>
+		
+	</div>
+	
 	<!------------------Contact----------------->
 	<div class="contact" id="contact">
 		<div class="container text-center">
