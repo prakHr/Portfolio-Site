@@ -158,12 +158,12 @@ body
 	font-weight:bold;
 	color: #ccc;
 }
-.timeline__Logo {
+#timeline__Logo {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
 
-.timeline__Logo:hover {
+#timeline__Logo:hover {
     filter: none;
     -webkit-filter: grayscale(0);
 }
