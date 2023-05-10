@@ -130,6 +130,7 @@ body
 	list-style-type: none;
 	position: relative;
 }
+
 .timeline:before
 {
 	content: '';
@@ -157,6 +158,15 @@ body
 	font-weight:bold;
 	color: #ccc;
 }
+.timeline__Logo {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.timeline__Logo:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
 .timeline li:before
 {
 	content: '';
@@ -170,6 +180,7 @@ body
 	height: 20px;
 	z-index:1;
 }
+
 /*---------------Services-------------*/
 .services
 {
