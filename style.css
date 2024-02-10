@@ -1,4 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+.BodyEnd .banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.BodyEnd .banner video{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.BodyEnd .banner h2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-size: 20vw;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	line-height: 100vh;
+	mix-blend-mode: screen;
+
+}
 .Body3{
 	display: flex;
 	justify-content: center;
