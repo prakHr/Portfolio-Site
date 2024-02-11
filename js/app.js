@@ -34,6 +34,8 @@ recognition.onresult = function(event){
         "resource",
         "contact",
         "google",
+        "slack",
+        "youtube",
 
     ];
     let urls = [
@@ -46,7 +48,10 @@ recognition.onresult = function(event){
         "https://prakhr.github.io/Portfolio-Site/#works",
         "https://prakhr.github.io/Portfolio-Site/#resources",
         "https://prakhr.github.io/Portfolio-Site/#contact",
-        "https://www.google.com/"
+        "https://www.google.com/",
+        "https://slack.com/intl/en-in/",
+        "https://www.youtube.com"
+
     ]
     for(var i=0;i<urls.length;i++){
         if(transcript.includes(commands[i])){
