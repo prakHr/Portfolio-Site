@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+.BodyStart a{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2s;
+
+
+}
+.BodyStart a:hover{
+	color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3;
+	transition-delay: 0.1s;
+}
+
 .BodyEnd .banner{
 	position: relative;
 	width: 100%;

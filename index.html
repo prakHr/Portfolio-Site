@@ -92,32 +92,63 @@
 	<div id="scrollpath"></div>
 	<div id="percent"></div>
 
-	<div class="BodyStart" style="background-color: lightyellow;">
+	<div class="BodyStarter" style="background-color: greenyellow;">
 		<h1>Our product which includes commands
 			<br>
-		[
-			"hi" , 
-			"hello", 
-			"portfolio",
-			"metaverse",
-			"certificate",
-			"project",
-			"technology",
-			"company",
-			"work",
-			"resource",
-			"contact",
-			"search for apple",("search for + 'your query'"),
-			"play incredible love",("play + 'your query'")
-		]
-		<br>
-
+			<div style="color:lightseagreen; position: relative;text-align: center;" id ="elementStart"></div>
+			<script>
+		    	var typed = new Typed('#elementStart', {
+		      	strings: [
+			      	"hi" , 
+							"hello", 
+							"portfolio",
+							"metaverse",
+							"certificate",
+							"project",
+							"technology",
+							"company",
+							"work",
+							"resource",
+							"contact",
+							"search for apple",
+							"play incredible love"
+						],
+		      	typeSpeed: 50,
+		      	 loop: true,
+			    });
+			  </script>
+		 
 		
+		
+		<br>
+	</div>
+		<div class="BodyStart" style="background-color: greenyellow;">
 		</h1>
+		<a href="#" id="start">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			Listen 
+		</a>
+		<a href="#" id="stop">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			Stop Listening
+		</a>
 
-		<button id = "start" style="color:red; background-color: white;">vr start</button>
-		<button id = "stop" style="color:red; background-color: white;">vr stop</button>
-		<button id="speak" style="color:white; background-color: blueviolet;">speak out</button>
+		<a href="#" id="speak">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			Speak
+		</a>
+		<!-- <button id = "starts" style="color:red; background-color: white;">vr start</button>
+		<button id = "stops" style="color:red; background-color: white;">vr stop</button>
+		<button id="speaks" style="color:white; background-color: blueviolet;">speak out</button> -->
 
 		<script src="./js/app.js"></script>
 		<noscript>you need JS for this webapp</noscript>
