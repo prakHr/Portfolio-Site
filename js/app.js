@@ -34,6 +34,7 @@ recognition.onresult = function(event){
         "resource",
         "contact",
         "google",
+
     ];
     let urls = [
         "https://prakhr.github.io/Portfolio-Site/",
@@ -54,6 +55,20 @@ recognition.onresult = function(event){
         }
     
     }
+    if(transcript.includes("play")){
+        readOut("playing youtube video for you sir")
+        let input = transcript
+        input = input.split(" ")
+        inputs = ""
+        for(let i=1;i<input.length;i++){
+            if(i!=input.length-1)
+                inputs+=input[i]+" "
+            else inputs+=input[i]
+        }
+        input = inputs
+        window.open(`https://www.youtube.com/search?q=${input}`)
+        
+    }
     if(transcript.includes("search for")){
         readOut("here's the searches for you")
         let input = transcript
@@ -70,6 +85,7 @@ recognition.onresult = function(event){
         // window.open(`https://www.google.com/search?q=${input}`)
         window.open(`${urls[urls.length-1]}/search?q=${input}`)
     }
+
     
     // console.log(transcript)
     // readOut(transcript)
