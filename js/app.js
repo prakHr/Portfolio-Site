@@ -79,7 +79,7 @@ recognition.onresult = function(event){
         input = input.split(" ")
         inputs = ""
         for(let i=2;i<input.length;i++)
-            inputs+=input[i]
+            inputs+=input[i]+" "
         input = inputs
         // console.log(input)
         // window.open(`https://www.google.com/search?q=${input}`)
