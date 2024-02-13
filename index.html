@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>V.E.R.O.N.I.C.A</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="https://github.com/prakHr/Portfolio-Site/blob/master/css/style.css"> -->
 <!-- 	<link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css"> -->
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 	<!-- Load library from the CDN -->
@@ -16,10 +21,16 @@
 	<script src="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 	"></script>
+	<script src="
+	https://cdnjs.cloudflare.com/ajax/libs/brain.js/2.0.0-beta.1/brain-browser.min.js
+	"></script>
+	
 	<link href="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 	" rel="stylesheet">
 	<link link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers/dist/transformers.min.js"></script> -->
 	
 	<style type="text/css">
 		#sscrollpath
@@ -86,7 +97,24 @@
 		
 	</style>
 </head>
+<!---------------Hand Gesture--------->
+<div class="mb10">
+		<button id = "toggleButton" class="toggleButton">Toggle Video</button>
+		<div id="updatenote" class="updatenote mt10">Loading Model...</div>
+	</div>
+	<div>
+		<video class=" videobox canvasbox" id="video"></video>
+		<canvas id="canvas" class="border canvasbox"></canvas>
+		<div class="alphabets">
+			<h1 id="A"></h1>
+			<h1 id="B"></h1>
+			<h1 id="C"></h1>
+		</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+<script src="./js/happ.js"></script>
 <body>
+
 	<!---------------Progress Bar----------->
 	<div id="preogressbar"></div>
 	<div id="scrollpath"></div>
@@ -155,7 +183,15 @@
 		<script src="./js/app.js"></script>
 		<noscript>you need JS for this webapp</noscript>
 	</div>
+	<!---------------Review Section----------->
+	<div id = "customerReview"></div>
+	<script src="./js/reviewProduct.js">
+		
 
+
+	</script>
+	<!-- <script src="./js/reviewProduct.js"></script> -->
+	
 
 	<!---------------Header Section----------->
 	<section id="header">

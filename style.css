@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+.Bigletter{
+	color: red;
+	font-size: 10vh;
+}
 .BodyStart a{
 	position: relative;
 	display: inline-block;
