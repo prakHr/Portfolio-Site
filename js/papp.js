@@ -12139,14 +12139,14 @@ var jsonModel = {
         "epsilon": 1e-8
     }
 };
-    console.log(jsonModel);
-    console.log("net")
-    console.log(net);
+    // console.log(jsonModel);
+    // console.log("net")
+    // console.log(net);
     net.fromJSON(jsonModel);
-    console.log(net)
+    // console.log(net)
   let predictSentence = document.getElementById("productR").value;
-  console.log("predictSentence");
-  console.log(predictSentence);
+  // console.log("predictSentence");
+  // console.log(predictSentence);
   var xs = normalize(predictSentence,getMax);
   let result = net.run(xs);
   let maxKey, maxValue = 0;
