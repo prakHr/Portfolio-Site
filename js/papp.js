@@ -12144,13 +12144,40 @@ var jsonModel = {
     net.fromJSON(jsonModel);
     
     let predictSentence = document.getElementById("productR").value;
-    if(window.PRChart instanceof Chart){
-        window.PRChart.destroy();
+    // console.log(predictSentence)
+    var url ='https://boom-changeable-octagon.glitch.me//txtfeatures'
+    var data2 = {
+        txt : predictSentence
+    };
+    // console.log(data2)
+    // Example POST method implementation:
+    async function postData(url = "", data = {}) {
+      // Default options are marked with *
+      const response = await fetch(url, {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        // mode: "cors", // no-cors, *cors, same-origin
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        // credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        // redirect: "follow", // manual, *follow, error
+        // referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: JSON.stringify(data), // body data type must match "Content-Type" header
+      });
+      return response.json(); // parses JSON response into native JavaScript objects
     }
+
+    postData(url, data2).then((data) => {
+      // console.log(data); // JSON data parsed by `data.json()` call
+      document.getElementById("messagePR").value = data
+    });
+    
     if(predictSentence.length>=359){
         document.getElementById("productR").value = "Enter product name less than <359";
 
-  }
+    }
     else{
         var xs = normalize(predictSentence,getMax);
         let result = net.run(xs);
@@ -12197,10 +12224,10 @@ var jsonModel = {
                     y: {
                       beginAtZero: true
                     },
-                    xAxes: [{
-                        barThickness: 6,  // number (pixels) or 'flex'
-                        maxBarThickness: 8 // number (pixels)
-                    }]
+                    // xAxes: [{
+                        // barThickness: 6,  // number (pixels) or 'flex'
+                        // maxBarThickness: 8 // number (pixels)
+                    // }]
                   }
                 }
             }
