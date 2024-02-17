@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	    
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
@@ -21,16 +22,12 @@
 	<script src="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 	"></script>
-	<script src="
-	https://cdnjs.cloudflare.com/ajax/libs/brain.js/2.0.0-beta.1/brain-browser.min.js
-	"></script>
 	
 	<link href="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 	" rel="stylesheet">
 	<link link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers/dist/transformers.min.js"></script> -->
 	
 	<style type="text/css">
 		#sscrollpath
@@ -97,8 +94,23 @@
 		
 	</style>
 </head>
+<!---------------Product Review------->
+<div class="mb8" style = "background-color: goldenrod; ">
+	<script src="https://unpkg.com/brain.js@2.0.0-beta.23/dist/browser.js"></script>
+	<label for="productRL">Enter less than 360 characters to choose b/w 
+				Home & Kitchen,
+        Tools & Home Improvement,
+        Office Products,
+      	Grocery & Gourmet Food,
+      	Electronics,
+      	Industrial & Scientific:</label>
+	<input type="text" name="productR" id="productR"></input>
+	<button id="productRBtn" style="background-color:purple;color: white;height: 25px;">Get Product Reviews</button>
+	<script src="./js/papp.js"></script>
+	<br><br><br>
+</div>
 <!---------------Hand Gesture--------->
-<div class="mb10">
+<div class="mb10" style = "background-color: lightgoldenrodyellow; ">
 		<button id = "toggleButton" class="toggleButton">Toggle Video</button>
 		<div id="updatenote" class="updatenote mt10">Loading Model...</div>
 	</div>
@@ -183,14 +195,6 @@
 		<script src="./js/app.js"></script>
 		<noscript>you need JS for this webapp</noscript>
 	</div>
-	<!---------------Review Section----------->
-	<div id = "customerReview"></div>
-	<script src="./js/reviewProduct.js">
-		
-
-
-	</script>
-	<!-- <script src="./js/reviewProduct.js"></script> -->
 	
 
 	<!---------------Header Section----------->
