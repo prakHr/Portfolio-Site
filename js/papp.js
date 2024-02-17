@@ -1,5 +1,6 @@
 // let predictSentence = "Ale 8 One Soda, 12 Ounce (12 Cans)";
 let btn = document.getElementById('productRBtn');
+let chart1, chart2, chart3, chart4;
 btn.addEventListener('click', function(){ 
 
 // Create a Neural Network
@@ -12142,18 +12143,86 @@ var jsonModel = {
     
     net.fromJSON(jsonModel);
     
-  let predictSentence = document.getElementById("productR").value;
-  var xs = normalize(predictSentence,getMax);
-  let result = net.run(xs);
-  let maxKey, maxValue = 0;
-
-  for(const [key, value] of Object.entries(result)) {
-    if(value > maxValue) {
-      maxValue = value;
-      maxKey = key;
+    let predictSentence = document.getElementById("productR").value;
+    if(window.PRChart instanceof Chart){
+        window.PRChart.destroy();
     }
-  }
+    if(predictSentence.length>=359){
+        document.getElementById("productR").value = "Enter product name less than <359";
 
-  document.getElementById("productR").value = maxKey;
+  }
+    else{
+        var xs = normalize(predictSentence,getMax);
+        let result = net.run(xs);
+        let maxKey, maxValue = 0;
+        var xx = []
+        var yy = []
+        for(const [key, value] of Object.entries(result)) {
+            xx.push(key)
+            yy.push(value)
+            if(value > maxValue) {
+              maxValue = value;
+              maxKey = key;
+            }
+        }
+
+        document.getElementById("productR").value = maxKey;  
+        
+        var names = ['PRChart1','PRChart2','PRChart3','PRChart4']
+
+        // var ctx = document.getElementById('PRChart1').getContext('2d')
+        
+
+        var types = ['doughnut','line','bar','pie']
+        var charts = [chart1,chart2,chart3,chart4]
+        var newCharts = []
+        for(var i=0;i<names.length;i++){
+
+            var ctx = document.getElementById(names[i]).getContext('2d')
+        
+            var configuration = {
+                type: types[i],
+
+                data: {
+                  labels: xx,
+                  datasets: [{
+                    label: 'Prediction probabilities vs labels',
+                    data: yy,
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    },
+                    xAxes: [{
+                        barThickness: 6,  // number (pixels) or 'flex'
+                        maxBarThickness: 8 // number (pixels)
+                    }]
+                  }
+                }
+            }
+            var chart = charts[i];
+            if (chart) {
+                chart.destroy();
+                chart = new Chart(ctx, configuration);
+            } else {
+                chart = new Chart(ctx, configuration);
+            }
+
+            chart.canvas.parentNode.style.height = '100%'; 
+            chart.canvas.parentNode.style.width = '25%';
+            chart.canvas.parentNode.style.position = 'relative';
+            chart.canvas.parentNode.style.display = 'flex';
+            newCharts.push(chart)
+        }
+        chart1 = newCharts[0]
+        chart2 = newCharts[1]
+        chart3 = newCharts[2]
+        chart4 = newCharts[3]
+    };
+  
 }
 , false);
