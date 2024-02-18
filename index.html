@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>V.E.R.O.N.I.C.A</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="https://github.com/prakHr/Portfolio-Site/blob/master/css/style.css"> -->
-<!-- 	<link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css"> -->
-
-	<link rel="stylesheet" type="text/css" href="/Portfolio-Site/style.css">
+	<link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="/Portfolio-Site/style.css"> -->
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -96,16 +96,23 @@
 </head>
 <!----------------Product buttons------------------>
 <div style="text-align: center;" class="BTN1">
-<button id="BTN1">Product 1</button>	
+	<h1>TEXT PRODUCTS</h1>
+<button id="BTN1">Product 1</button>
+</div>
+<div style="text-align: center;" class="BTN4">
+<button id="BTN4">Product 4</button>
 </div>
 
 <div style="text-align: center;" class="BTN2">
+	<h1>VISION PRODUCTS</h1>
 <button id="BTN2">Product 2</button>	
 </div>
 
 <div style="text-align: center;" class="BTN3">
+	<h1>AUDIO PRODUCTS</h1>
 	<button id="BTN3">Product 3</button>	
 </div>
+<!---------------TEXT PRODUCTS------->
 
 <!---------------Product Review------->
 
@@ -123,7 +130,7 @@
       	Industrial & Scientific:</label>
 	<input type="text" name="productR" id="productR" style="height: 200px; width: 1000px;" placeholder="Master Lock 1KALJ 2734 No. 1 Long Shackle Laminated Padlock"></input>
 	<br>
-	<input type="text" name="messagePR" id="messagePR" style="height: 100px; width: 500px;" placeholder="txtfeatures"></input>
+	<input type="text" name="messagePR" id="messagePR" style="height: 50px; width: 500px;" placeholder="txtfeatures"></input>
 	<button id="productRBtn" style="background-color:purple;color: white;height: 25px;border: 1px solid blueviolet;border-radius: 10px;">Get Product Name via Reviews</button>
 	<div>
   	<canvas id="PRChart1"></canvas>
@@ -138,6 +145,18 @@
 
 	<br><br><br>
 </div>
+<!---------------Autocorrect paragraph--------->
+
+<div class="mb8" id="BTNCLASS4">
+	<input type="text" name="autoC" id="autoC" style="height: 200px; width: 1000px;" placeholder="Enter your sentence to be autocorrected For example I am siting in airoplane."></input>
+	<br>
+	<button id="autocorrectBtn" style="background-color:purple;color: white;height: 25px;border: 1px solid blueviolet;border-radius: 10px;">Auto Correct Sentence</button>
+	
+	<script src="./js/autocorrectApp.js"></script>
+	<br><br><br>
+</div>
+
+<!---------------IMAGE PRODUCTS--------->
 
 <!---------------Hand Gesture--------->
 
@@ -234,11 +253,9 @@
 	const btn1 = document.getElementById("BTN1");
 	const btn2 = document.getElementById("BTN2");
 	const btn3 = document.getElementById("BTN3");
+	const btn4 = document.getElementById("BTN4");
 	
-	// console.log(btn1)
-	// console.log(btn2)
-	// console.log(btn3)
-	
+
 	btn1.addEventListener("click",function(){
 		var div = document.getElementById("BTNCLASS1");
 		div.style.display= div.style.display == "none" ? "block" : "none";
@@ -254,6 +271,12 @@
 	btn3.addEventListener("click",function(){
 		var div = document.getElementById("BTNCLASS3");
 		div.style.display = div.style.display== "none" ? "block" : "none";
+		// console.log(div);
+		
+	});
+	btn4.addEventListener("click",function(){
+		var div = document.getElementById("BTNCLASS4");
+		div.style.display= div.style.display == "none" ? "block" : "none";
 		// console.log(div);
 		
 	});

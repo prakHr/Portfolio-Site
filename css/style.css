@@ -4,28 +4,36 @@
 	background-color: goldenrod;
 	width: 100%;
 	height: 100%; 
-	display: None;
+	display: none;
 }
 
-.BTN1 #BTN1{
-	background-color: lightyellow;
-	color: orange;
-	border: 1px solid lightblue;
-	border-radius: 10px;
-}
+
 #BTNCLASS2{
 	text-align: center;
 	background-color: goldenrod;
 	width: 100%;
 	height: 100%; 
-	display: None;
+	display: none;
 }
 #BTNCLASS3{
 	text-align: center;
 	background-color: goldenrod;
 	width: 100%;
 	height: 100%; 
-	display: None;
+	display: none;
+}
+#BTNCLASS4{
+	text-align: center;
+	background-color: goldenrod;
+	width: 100%;
+	height: 100%; 
+	display: none;
+}
+.BTN1 #BTN1{
+	background-color: lightyellow;
+	color: orange;
+	border: 1px solid lightblue;
+	border-radius: 10px;
 }
 .BTN2 #BTN2{
 	background-color: lightyellow;
@@ -34,6 +42,12 @@
 	border-radius: 10px;
 }
 .BTN3 #BTN3{
+	background-color: lightyellow;
+	color: orangered;
+	border: 1px solid darkslateblue;
+	border-radius: 10px;
+}
+.BTN4 #BTN4{
 	background-color: lightyellow;
 	color: orangered;
 	border: 1px solid darkslateblue;
