@@ -94,8 +94,22 @@
 		
 	</style>
 </head>
+<!----------------Product buttons------------------>
+<div style="text-align: center;" class="BTN1">
+<button id="BTN1">Product 1</button>	
+</div>
+
+<div style="text-align: center;" class="BTN2">
+<button id="BTN2">Product 2</button>	
+</div>
+
+<div style="text-align: center;" class="BTN3">
+	<button id="BTN3">Product 3</button>	
+</div>
+
 <!---------------Product Review------->
-<div class="mb8" style = "text-align: center;background-color: goldenrod;width: 100%;height: 100%;">
+
+<div class="mb8" id="BTNCLASS1">
 	<script src="https://unpkg.com/brain.js@2.0.0-beta.23/dist/browser.js"></script>
 	
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -124,8 +138,10 @@
 
 	<br><br><br>
 </div>
+
 <!---------------Hand Gesture--------->
-<div class="mb10" style = "background-color: lightgoldenrodyellow; ">
+
+<div class="mb10" id="BTNCLASS2">
 		<button id = "toggleButton" class="toggleButton">Toggle Video</button>
 		<div id="updatenote" class="updatenote mt10">Loading Model...</div>
 	</div>
@@ -140,12 +156,15 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
 <script src="./js/happ.js"></script>
+
+
 <body>
 
 	<!---------------Progress Bar----------->
 	<div id="preogressbar"></div>
 	<div id="scrollpath"></div>
 	<div id="percent"></div>
+	
 
 	<div class="BodyStarter" style="background-color: greenyellow;">
 		<h1>Our product which includes commands
@@ -178,8 +197,9 @@
 		
 		
 		<br>
+
 	</div>
-		<div class="BodyStart" style="background-color: greenyellow;">
+		<div class="BodyStart" id="BTNCLASS3">
 		</h1>
 		<a href="#" id="start">
 			<span></span>
@@ -210,7 +230,35 @@
 		<script src="./js/app.js"></script>
 		<noscript>you need JS for this webapp</noscript>
 	</div>
+	<script>
+	const btn1 = document.getElementById("BTN1");
+	const btn2 = document.getElementById("BTN2");
+	const btn3 = document.getElementById("BTN3");
 	
+	// console.log(btn1)
+	// console.log(btn2)
+	// console.log(btn3)
+	
+	btn1.addEventListener("click",function(){
+		var div = document.getElementById("BTNCLASS1");
+		div.style.display= div.style.display == "none" ? "block" : "none";
+		console.log(div);
+		
+	});
+	btn2.addEventListener("click",function(){
+		var div = document.getElementById("BTNCLASS2");
+		div.style.display = div.style.display== "none" ? "block" : "none";
+		console.log(div);
+		
+	});
+	btn3.addEventListener("click",function(){
+		var div = document.getElementById("BTNCLASS3");
+		div.style.display = div.style.display== "none" ? "block" : "none";
+		console.log(div);
+		
+	});
+	
+</script>	
 
 	<!---------------Header Section----------->
 	<section id="header">

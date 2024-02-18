@@ -1,4 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+#BTNCLASS1{
+	text-align: center;
+	background-color: goldenrod;
+	width: 100%;
+	height: 100%; 
+	display: None;
+}
+
+.BTN1 #BTN1{
+	background-color: lightyellow;
+	color: orange;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+}
+#BTNCLASS2{
+	text-align: center;
+	background-color: goldenrod;
+	width: 100%;
+	height: 100%; 
+	display: None;
+}
+#BTNCLASS3{
+	text-align: center;
+	background-color: goldenrod;
+	width: 100%;
+	height: 100%; 
+	display: None;
+}
+.BTN2 #BTN2{
+	background-color: lightyellow;
+	color: darkorange;
+	border: 1px solid mediumaquamarine;
+	border-radius: 10px;
+}
+.BTN3 #BTN3{
+	background-color: lightyellow;
+	color: orangered;
+	border: 1px solid darkslateblue;
+	border-radius: 10px;
+}
 .Bigletter{
 	color: red;
 	font-size: 10vh;
