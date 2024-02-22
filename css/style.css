@@ -53,6 +53,12 @@
 	border: 1px solid darkslateblue;
 	border-radius: 10px;
 }
+.BTN5 #BTN5{
+	background-color: lightyellow;
+	color: orangered;
+	border: 1px solid darkslateblue;
+	border-radius: 10px;
+}
 .Bigletter{
 	color: red;
 	font-size: 10vh;
