@@ -208,6 +208,20 @@ h2:hover span:nth-child(even){
 	border: 1px solid darkmagenta;
 	border-radius: 10px;
 }
+.BTN6 #BTN6{
+	background-color: lightyellow;
+	color: orange;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+}
+.BTN7 #BTN7{
+	background-color: lightyellow;
+	color: orange;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+}
+
+
 .Bigletter{
 	color: red;
 	font-size: 10vh;
