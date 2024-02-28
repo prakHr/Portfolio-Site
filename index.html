@@ -1956,6 +1956,35 @@ Skills like time management, code documentation,web scraping , automation(for ex
 		</div>
 	</div>
 
+	<div>
+		
+		<input type="gmap" name="gmap" id="igmap" placeholder="  Enter any indian address" style="height:100%;width:50%;border: 1px solid lavenderblush;border-radius: 10px;">
+			
+		</input>
+		<button id="gmap" style="color:purple;background-color: antiquewhite;width: 50%;height: 50%;border: 1px solid lavenderblush;border-radius: 10px;">Get address</button>
+		<br><br><br>
+	</div>
+	<script>
+		var gbtn = document.getElementById("gmap");
+		
+		gbtn.addEventListener('click',function(){
+			var countryCode = "in";
+			var address = document.getElementById("igmap").value;
+			console.log(address);
+		
+			if(document.getElementById("1")){
+				document.getElementById("1").remove();
+			}
+			var ifrm = document.createElement("iframe");
+			var src = `http://maps.google.co.${countryCode}/maps?q=${address}&output=embed`;
+			ifrm.setAttribute("id","1");
+			ifrm.setAttribute("src", src);
+			ifrm.style.width = "450px";
+	    ifrm.style.height = "350px";
+	    ifrm.style.align_items = "center";
+	    document.body.appendChild(ifrm);
+		});
+	</script>
 	<script>
 		
 		var countryCode = "in";
@@ -1969,9 +1998,9 @@ Skills like time management, code documentation,web scraping , automation(for ex
 			var src = `http://maps.google.co.${countryCode}/maps?q=${addresses[i]}&output=embed`;
 			ifrm.setAttribute("src", src);
 			ifrm.style.width = "450px";
-	        ifrm.style.height = "350px";
-	        ifrm.style.align_items = "center";
-	        document.body.appendChild(ifrm);	
+	    ifrm.style.height = "350px";
+	    ifrm.style.align_items = "center";
+	    document.body.appendChild(ifrm);	
 		} 
 		 
 		
