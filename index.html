@@ -1954,5 +1954,26 @@ Skills like time management, code documentation,web scraping , automation(for ex
 			<h2>Coding</h2>
 		</div>
 	</div>
+
+	<script>
+		
+		var countryCode = "in";
+		var addresses = [
+			"Hiran Magri,udaipur",
+			"Sector 11,udaipur",
+			"udaipur"
+		]
+		for(var i=0;i<addresses.length;i++){
+			var ifrm = document.createElement("iframe");
+			var src = `http://maps.google.co.${countryCode}/maps?q=${addresses[i]}&output=embed`;
+			ifrm.setAttribute("src", src);
+			ifrm.style.width = "450px";
+	        ifrm.style.height = "350px";
+	        ifrm.style.align_items = "center";
+	        document.body.appendChild(ifrm);	
+		} 
+		 
+		
+	</script>
 </body>
 </html>
