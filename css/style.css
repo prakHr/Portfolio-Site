@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-
+.scrollerTop{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+}
+.scrollerTop section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #111;
+}
+.scrollerTop h2{
+	color: #fff;
+	font-size: 4em;
+	display: flex;
+	font-weight: 400;
+	--webkit-box-reflect: below -48px;
+}
 .octagonMenu{
 	display: flex;
 	justify-content: center;

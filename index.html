@@ -152,7 +152,21 @@
 		};
 	</script>	
 </div>
-
+<!----------------Scroll to see magic------------------>
+<div class="scrollerTop">
+	<section>
+		<h2>I_am_Harry_Potter-u_can_become_one_too</h2>
+	</section>
+	<script>
+		let text = document.querySelector('h2');
+		let textString = text.textContent;
+		let split = textString.split("");
+		text.textContent = "";
+		for(let i=0;i<split.length;i++){
+			text.innerHTML += "<span>"+split[i]+"</span>";
+		}
+	</script>
+</div>
 <!----------------Code,sleep,eat,repeat------------------>
 <div class="textHover">
 	<h2><span>r</span><span>epeat</span></h2>
