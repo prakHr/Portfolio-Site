@@ -1,4 +1,165 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+main{
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+main::before{
+	content: '';
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top:  0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+h1{
+	margin: 0.3em;
+	font-size: 3em;
+}
+h2{
+	margin-bottom: 0.5em;
+}
+.Title{
+	text-align: center;
+	background-color: rgba(0, 0, 0, .8);
+	padding: 2em;
+	position: relative;
+}
+.Title h3{
+	margin: 1em 0;
+}
+.Title p{
+	color: #fc0d0d;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+}
+.Timeline{
+	margin: 5em auto;
+	max-width: 34.15em;
+
+}
+.Line{
+	position: absolute;
+	top: 50%;
+	width: 4px;
+	height: 100%;
+	background-color: #fff;
+
+}
+.Checkpoint{
+	height: 30em;
+	max-width: 34em;
+	padding: 6em 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.Images img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -1;
+}
+.Checkpoint .Text{
+	border: 1px solid #6b6b6b;
+	border-radius: 1em;
+	padding: 2em;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.Checkpoint p{
+	line-height: 27px;
+	color: #fff;
+
+}
+.Checkpoint:nth-child(odd){
+	padding-left: 3em;
+	transform: translateX(17em);
+}
+.Checkpoint:nth-child(even){
+	padding-right: 3em;
+	transform: translateX(-17em);	
+}
+.Checkpoint:nth-child(odd) .Text::before,
+.Checkpoint:nth-child(even) .Text::before{
+	content: '';
+	background: #fff;
+	width: 3em;
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%);
+}
+.Checkpoint:nth-child(odd) .Text::before{
+	left: -3em;
+}
+.Checkpoint:nth-child(even) .Text::before{
+	right: -3em;
+}
+.Checkpoint:nth-child(odd) .Line{
+	left: -2px;
+}
+.Checkpoint:nth-child(even) .Line{
+	right: -2px;
+}
+.Checkpoint:nth-child(odd) .Text::after,
+.Checkpoint:nth-child(even) .Text::after,
+{
+	content: '';
+	background-color: #fff;
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.Checkpoint:nth-child(odd) .Text::after{
+	left: -57px;
+}
+.Checkpoint:nth-child(even) .Text::after{
+	right: -57px;
+}
+@media screen and (max-width: 1150px){
+	.Timeline{
+		width: 80vw;
+	}
+	.Timeline .Checkpoint{
+		width: 100%;
+		transform: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.Timeline .Checkpoint .Line{
+		right: initial;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.Timeline .Checkpoint .Text::before{
+		width: 3px;
+		height: 4em;
+		top: -4em;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.Timeline .Checkpoint .Text::after{
+		top: -4.5em;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+}
+
 .mainSlider{
 	
 	box-sizing: border-box;
