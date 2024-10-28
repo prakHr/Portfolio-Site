@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-main{
+.newSlider{
 	color: #fff;
 	position: relative;
 	overflow: hidden;
 }
-main::before{
+.newSlider::before{
 	content: '';
 	background: rgba(0, 0, 0, .5);
 	position: absolute;
@@ -14,39 +14,39 @@ main::before{
 	height: 100%;
 	z-index: 0;
 }
-*{
+.newSlider *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 
 }
-h1{
+.newSlider h1{
 	margin: 0.3em;
 	font-size: 3em;
 }
-h2{
+.newSlider h2{
 	margin-bottom: 0.5em;
 }
-.Title{
+.newSlider .Title{
 	text-align: center;
 	background-color: rgba(0, 0, 0, .8);
 	padding: 2em;
 	position: relative;
 }
-.Title h3{
+.newSlider .Title h3{
 	margin: 1em 0;
 }
-.Title p{
+.newSlider .Title p{
 	color: #fc0d0d;
 	font-size: 1.3em;
 	letter-spacing: 2px;
 }
-.Timeline{
+.newSlider .Timeline{
 	margin: 5em auto;
 	max-width: 34.15em;
 
 }
-.Line{
+.newSlider .Line{
 	position: absolute;
 	top: 50%;
 	width: 4px;
@@ -54,7 +54,7 @@ h2{
 	background-color: #fff;
 
 }
-.Checkpoint{
+.newSlider .Checkpoint{
 	height: 30em;
 	max-width: 34em;
 	padding: 6em 0;
@@ -62,7 +62,7 @@ h2{
 	align-items: center;
 	position: relative;
 }
-.Images img{
+.newSlider .Images img{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -71,27 +71,27 @@ h2{
 	object-fit: cover;
 	z-index: -1;
 }
-.Checkpoint .Text{
+.newSlider .Checkpoint .Text{
 	border: 1px solid #6b6b6b;
 	border-radius: 1em;
 	padding: 2em;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-.Checkpoint p{
+.newSlider .Checkpoint p{
 	line-height: 27px;
 	color: #fff;
 
 }
-.Checkpoint:nth-child(odd){
+.newSlider .Checkpoint:nth-child(odd){
 	padding-left: 3em;
 	transform: translateX(17em);
 }
-.Checkpoint:nth-child(even){
+.newSlider .Checkpoint:nth-child(even){
 	padding-right: 3em;
 	transform: translateX(-17em);	
 }
-.Checkpoint:nth-child(odd) .Text::before,
-.Checkpoint:nth-child(even) .Text::before{
+.newSlider .Checkpoint:nth-child(odd) .Text::before,
+.newSlider .Checkpoint:nth-child(even) .Text::before{
 	content: '';
 	background: #fff;
 	width: 3em;
@@ -100,20 +100,20 @@ h2{
 	top: 50%;
 	transform: translateX(-50%);
 }
-.Checkpoint:nth-child(odd) .Text::before{
+.newSlider .Checkpoint:nth-child(odd) .Text::before{
 	left: -3em;
 }
-.Checkpoint:nth-child(even) .Text::before{
+.newSlider .Checkpoint:nth-child(even) .Text::before{
 	right: -3em;
 }
-.Checkpoint:nth-child(odd) .Line{
+.newSlider .Checkpoint:nth-child(odd) .Line{
 	left: -2px;
 }
-.Checkpoint:nth-child(even) .Line{
+.newSlider .Checkpoint:nth-child(even) .Line{
 	right: -2px;
 }
-.Checkpoint:nth-child(odd) .Text::after,
-.Checkpoint:nth-child(even) .Text::after,
+.newSlider .Checkpoint:nth-child(odd) .Text::after,
+.newSlider .Checkpoint:nth-child(even) .Text::after,
 {
 	content: '';
 	background-color: #fff;
@@ -124,35 +124,35 @@ h2{
 	top: 50%;
 	transform: translateY(-50%);
 }
-.Checkpoint:nth-child(odd) .Text::after{
+.newSlider .Checkpoint:nth-child(odd) .Text::after{
 	left: -57px;
 }
-.Checkpoint:nth-child(even) .Text::after{
+.newSlider .Checkpoint:nth-child(even) .Text::after{
 	right: -57px;
 }
 @media screen and (max-width: 1150px){
-	.Timeline{
+	.newSlider .Timeline{
 		width: 80vw;
 	}
-	.Timeline .Checkpoint{
+	.newSlider .Timeline .Checkpoint{
 		width: 100%;
 		transform: none;
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.Timeline .Checkpoint .Line{
+	.newSlider .Timeline .Checkpoint .Line{
 		right: initial;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.Timeline .Checkpoint .Text::before{
+	.newSlider .Timeline .Checkpoint .Text::before{
 		width: 3px;
 		height: 4em;
 		top: -4em;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.Timeline .Checkpoint .Text::after{
+	.newSlider .Timeline .Checkpoint .Text::after{
 		top: -4.5em;
 		left: 50%;
 		transform: translateX(-50%);

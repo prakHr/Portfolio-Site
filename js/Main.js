@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const checkpoints = gsap.utils.toArray(".Checkpoint");
-    console.log("checkpoints");
-    console.log(checkpoints);
     checkpoints.forEach(checkpoint=>{
         gsap.from(checkpoint.firstElementChild,{
             height:0,
