@@ -4,6 +4,10 @@
 	position: relative;
 	overflow: hidden;
 }
+h1{
+	color: #3a03ff;
+	
+}
 .newSlider::before{
 	content: '';
 	background: rgba(0, 0, 0, .5);
@@ -778,6 +782,7 @@ h2:hover span:nth-child(even){
    	border: 1px solid black;
 
 }
+
 body
 {
 	margin: 0;
@@ -787,7 +792,7 @@ body
 #header{
 	height: 1000px;
 /* 	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/background.jpg'); */
-/* 	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/Portfolio-Site/images/background.jpg'); */
+	/* background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/Portfolio-Site/images/background.jpg'); */
 	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./background.jpg');
 	background-position: center;
 	background-size: cover;
