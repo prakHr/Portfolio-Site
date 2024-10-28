@@ -848,6 +848,7 @@ body
 {
 	padding-top: 100px;
 	padding-bottom: 50px;
+	color:white;
 }
 .profile-img
 {
@@ -879,7 +880,9 @@ body
 }
 .nav-link{
 	color: yellow !important;
+
 }
+
 .skills-bar p{
 	margin-bottom: 6px;
 	font-weight: 600;
