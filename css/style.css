@@ -9,14 +9,14 @@ h1{
 	
 }
 
-/* .cursor{
+.cursor{
 	position: absolute;
 	top:0;
 	left:20px;
 	pointer-events: none;
 
-} */
-.text{
+}
+.cursor .text{
 	position: absolute;
 	font-size: 2em;
 	color: #00ff92;
@@ -137,7 +137,7 @@ h1{
 	right: -2px;
 }
 .newSlider .Checkpoint:nth-child(odd) .Text::after,
-.newSlider .Checkpoint:nth-child(even) .Text::after,
+.newSlider .Checkpoint:nth-child(even) .Text::after
 {
 	content: '';
 	background-color: #fff;
