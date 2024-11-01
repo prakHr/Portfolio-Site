@@ -11,8 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
 	<script src="./js/Main.js"></script>
 
 	<!-- <link rel="stylesheet" type="text/css" href="/Portfolio-Site/style.css"> -->
@@ -35,7 +36,6 @@
 	" rel="stylesheet">
 	<link link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	<script src="https://d3js.org/d3.v7.min.js"></script>
 	
 	<style type="text/css">
 		#sscrollpath
@@ -59,7 +59,7 @@
 			animation: animate 5s linear infinite;
 
 		}
-		#preogressbar: before{
+		#preogressbar before{
 			content: '';
 			position: absolute;
 			top: 0;
@@ -69,7 +69,7 @@
 			background: linear-gradient(to top,#008aff,#00ffe7);
 			filter: blur(10px);
 		}
-		#preogressbar: after{
+		#preogressbar after{
 			filter: blur(30px);
 
 		}
@@ -102,12 +102,61 @@
 		
 	</style>
 </head>
-<!-- <script>
-    d3.csv("./datasets/Task Catagories.csv.csv").then(data => {
-      console.log(data); // Array of objects
-    });
-  </script> -->
+<!-- <h1>Text Classification Example</h1> -->
 
+<h1>Text Classification Model</h1>
+<input type="text" id="sampleText" placeholder="Enter text for prediction" />
+<button id="predictBtn">Predict</button>
+<div id="predictionOutput"></div>
+
+<script>
+	let model;
+	let labelToIndex = {'database': 0, 'documentation': 1, 'project management': 2, 'ui/ux design': 3, 'database administration': 4, 'frontend': 5, 'ai/ml': 6, 'deployment': 7, 'testing': 8, 'cloud': 9, 'devops': 10, 'data science': 11, 'backend': 12};
+
+	async function loadModel() {
+		model = await tf.loadLayersModel('./model_tfjs/model.json');
+		console.log('Model loaded!');
+	}
+
+	async function predict(text) {
+		if (!model) {
+			console.error('Model not loaded yet.');
+			return;
+		}
+
+		// Preprocess the text (tokenization, padding)
+		const sequence = tokenizeAndPad(text);
+		const inputTensor = tf.tensor2d([sequence], [1, sequence.length], 'float32');
+
+		const predictions = model.predict(inputTensor);
+		const predictedClassIndex = predictions.argMax(1).dataSync()[0];
+
+		// Get the predicted label
+		const predictedLabel = Object.keys(labelToIndex).find(key => labelToIndex[key] === predictedClassIndex);
+		document.getElementById('predictionOutput').innerText = `Predicted class: ${predictedLabel}`;
+		console.log(`Predicted class: ${predictedLabel}`);
+	}
+
+	function tokenizeAndPad(text) {
+		// Implement your tokenization and padding logic here
+		// This should match how you tokenized and padded your data in Python
+		const words = text.split(/\s+/);
+		// Map words to their respective indices (you might want to load this mapping from a file)
+		const indices = words.map(word => /* map to index or use 0 if unknown */ 0);
+		// Pad to fixed length
+		while (indices.length < 100) {
+			indices.push(0); // Padding with zeros
+		}
+		return indices.slice(0, 100); // Truncate if longer than max length
+	}
+
+	document.getElementById('predictBtn').addEventListener('click', () => {
+		const sampleText = document.getElementById('sampleText').value;
+		predict(sampleText);
+	});
+
+	loadModel(); // Load the model when the page loads
+</script>
 <div class="cursor">
 	<script>
 		document.addEventListener("DOMContentLoaded",() => {
