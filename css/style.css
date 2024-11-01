@@ -8,6 +8,26 @@ h1{
 	color: #3a03ff;
 	
 }
+
+/* .cursor{
+	position: absolute;
+	top:0;
+	left:20px;
+	pointer-events: none;
+
+} */
+.text{
+	position: absolute;
+	font-size: 2em;
+	color: #00ff92;
+	text-shadow: 0 0 15px #00ff9a,
+	0 0 50px #00ff9a;
+	text-transform: uppercase;
+	transform: translate(-50% -50%);
+
+
+}
+
 .newSlider::before{
 	content: '';
 	background: rgba(0, 0, 0, .5);
