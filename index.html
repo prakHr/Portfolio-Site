@@ -113,46 +113,85 @@
 		let url = "https://raw.githubusercontent.com/prakHr/Portfolio-Site/refs/heads/master/datasets/Task%20Catagories.csv.csv";
 		d3.csv(url).then(data => {
 			
-			const classifier = new ss.BayesianClassifier();
+			function cosineSimilarity(text1, text2) {
+				const words1 = text1.toLowerCase().split(/\s+/);
+				const words2 = text2.toLowerCase().split(/\s+/);
+				const allWords = [...new Set([...words1, ...words2])];
+
+				const vector1 = allWords.map(word => words1.filter(w => w === word).length);
+				const vector2 = allWords.map(word => words2.filter(w => w === word).length);
+
+				const dotProduct = vector1.reduce((sum, val, idx) => sum + val * vector2[idx], 0);
+				const magnitude1 = Math.sqrt(vector1.reduce((sum, val) => sum + val * val, 0));
+				const magnitude2 = Math.sqrt(vector2.reduce((sum, val) => sum + val * val, 0));
+
+				return dotProduct / (magnitude1 * magnitude2);
+			}
+
+
+			// const classifier = new ss.BayesianClassifier();
 			
 			// Train classifier
-			data.forEach(row => {
-				// Preprocess text by converting to lowercase and trimming whitespace
-				const taskDesc = row['Task Description'].toLowerCase().trim();
-				const category = row['Category'].trim();
+			// data.forEach(row => {
+			// 	// Preprocess text by converting to lowercase and trimming whitespace
+			// 	const taskDesc = row['Task Description'].toLowerCase().trim();
+			// 	const category = row['Category'].trim();
 
-				if (taskDesc  && category) { // Ensure no empty values
-					classifier.train({ TaskDescription: taskDesc }, category);
-				}
-			});
+			// 	if (taskDesc  && category) { // Ensure no empty values
+			// 		classifier.train({ TaskDescription: taskDesc }, category);
+			// 	}
+			// });
 
-			function getKeyWithMaxValue(obj) {
-				return Object.entries(obj).reduce((maxKey, [key, value]) => {
-					return value > obj[maxKey] ? key : maxKey;
-				}, Object.keys(obj)[0]);
-			}
-			// Function to get all keys with non-zero values
-			function getKeysWithNonZeroValues(obj) {
-				return Object.keys(obj).filter(key => obj[key] !== 0);
-			}
-			// Function to get all keys as a string
-			function getKeysAsString(obj) {
-				return Object.keys(obj).join(', '); // Join keys with a comma and space
-			}
+			// function getKeyWithMaxValue(obj) {
+			// 	return Object.entries(obj).reduce((maxKey, [key, value]) => {
+			// 		return value > obj[maxKey] ? key : maxKey;
+			// 	}, Object.keys(obj)[0]);
+			// }
+			// // Function to get all keys with non-zero values
+			// function getKeysWithNonZeroValues(obj) {
+			// 	return Object.keys(obj).filter(key => obj[key] !== 0);
+			// }
+			// // Function to get all keys as a string
+			// function getKeysAsString(obj) {
+			// 	return Object.keys(obj).join(', '); // Join keys with a comma and space
+			// }
 			// Get the key with the maximum value
 			document.getElementById('predictTasksBtn').addEventListener('click', () => {
-				const sampleText = document.getElementById('sampleTasksText').value;
-				const result = classifier.score({
-					TaskDescription: sampleText.toLowerCase()
+				let sampleText = document.getElementById('sampleTasksText').value;
+				let maxCosineScore = -1;
+				let textDisplay = "";
+				data.forEach(row => {
+					// Preprocess text by converting to lowercase and trimming whitespace
+					let taskDesc = row['Task Description'].toLowerCase().trim();
+					let category = row['Category'].trim();
+
+					if (taskDesc  && category) { // Ensure no empty values
+						let cosSim = cosineSimilarity(sampleText, taskDesc);
+						// console.log(cosSim);
+					
+						if(maxCosineScore < cosSim){
+							maxCosineScore = cosSim;
+							textDisplay =  category;
+						}
+						
+					}
+					document.getElementById('predictTasksOutput').innerText = textDisplay;
 				});
+				// console.log(maxCosineScore);
+				// console.log(textDisplay);
+				// const result = classifier.score({
+				// 	TaskDescription: sampleText.toLowerCase()
+				// });
 				
-				// console.log(`result: ${result}`);
-				// console.log(result);
-				let keyWithMaxValue = getKeysWithNonZeroValues(result);
-				if(keyWithMaxValue.length==0)keyWithMaxValue = getKeysAsString(result);
+				// // console.log(`result: ${result}`);
+				// // console.log(result);
+				// let keyWithMaxValue = getKeysWithNonZeroValues(result);
+				// if(keyWithMaxValue.length==0)keyWithMaxValue = getKeysAsString(result);
 				// console.log(`Key with maximum value: ${keyWithMaxValue}`); 
-				document.getElementById('predictTasksOutput').innerText = keyWithMaxValue;
+				
 			});
+
+
 			// const keyWithMaxValue = getKeyWithMaxValue(result);
 			// console.log(`Key with maximum value: ${keyWithMaxValue}`); 
 		});
