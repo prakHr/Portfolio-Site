@@ -14,6 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
 	<script src="./js/Main.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
 
 	<!-- <link rel="stylesheet" type="text/css" href="/Portfolio-Site/style.css"> -->
 
@@ -37,7 +38,8 @@
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<script src="https://d3js.org/d3.v7.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-statistics@7.8.1/dist/simple-statistics.min.js"></script>
-	
+	<link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+  <link rel="stylesheet" href="./css/track.css">
 	<style type="text/css">
 		#sscrollpath
 		{
@@ -60,7 +62,7 @@
 			animation: animate 5s linear infinite;
 
 		}
-		#preogressbar: before{
+		#preogressbar before{
 			content: '';
 			position: absolute;
 			top: 0;
@@ -70,7 +72,7 @@
 			background: linear-gradient(to top,#008aff,#00ffe7);
 			filter: blur(10px);
 		}
-		#preogressbar: after{
+		#preogressbar after{
 			filter: blur(30px);
 
 		}
@@ -102,6 +104,7 @@
 		};
 		
 	</style>
+
 </head>
 
 	<input type="text" id="sampleTasksText" placeholder="Enter text for prediction, For example(Build automated scoring system for quizzes)" style="border: 10px solid slateblue; border-radius: 10px; width: 50%;height: 200px; text-align: center; justify-content: center;margin: auto;display: block;"/>
@@ -129,32 +132,6 @@
 			}
 
 
-			// const classifier = new ss.BayesianClassifier();
-			
-			// Train classifier
-			// data.forEach(row => {
-			// 	// Preprocess text by converting to lowercase and trimming whitespace
-			// 	const taskDesc = row['Task Description'].toLowerCase().trim();
-			// 	const category = row['Category'].trim();
-
-			// 	if (taskDesc  && category) { // Ensure no empty values
-			// 		classifier.train({ TaskDescription: taskDesc }, category);
-			// 	}
-			// });
-
-			// function getKeyWithMaxValue(obj) {
-			// 	return Object.entries(obj).reduce((maxKey, [key, value]) => {
-			// 		return value > obj[maxKey] ? key : maxKey;
-			// 	}, Object.keys(obj)[0]);
-			// }
-			// // Function to get all keys with non-zero values
-			// function getKeysWithNonZeroValues(obj) {
-			// 	return Object.keys(obj).filter(key => obj[key] !== 0);
-			// }
-			// // Function to get all keys as a string
-			// function getKeysAsString(obj) {
-			// 	return Object.keys(obj).join(', '); // Join keys with a comma and space
-			// }
 			// Get the key with the maximum value
 			document.getElementById('predictTasksBtn').addEventListener('click', () => {
 				let sampleText = document.getElementById('sampleTasksText').value;
@@ -177,23 +154,10 @@
 					}
 					document.getElementById('predictTasksOutput').innerText = textDisplay;
 				});
-				// console.log(maxCosineScore);
-				// console.log(textDisplay);
-				// const result = classifier.score({
-				// 	TaskDescription: sampleText.toLowerCase()
-				// });
-				
-				// // console.log(`result: ${result}`);
-				// // console.log(result);
-				// let keyWithMaxValue = getKeysWithNonZeroValues(result);
-				// if(keyWithMaxValue.length==0)keyWithMaxValue = getKeysAsString(result);
-				// console.log(`Key with maximum value: ${keyWithMaxValue}`); 
 				
 			});
 
-
-			// const keyWithMaxValue = getKeyWithMaxValue(result);
-			// console.log(`Key with maximum value: ${keyWithMaxValue}`); 
+ 
 		});
 	</script>
 
@@ -223,7 +187,24 @@
 	</script>
 
 </div>
+<div class="bx--body p20">
+	<div class="mb10">
+		<button onclick="MtoggleVideo()" id="Mtrackbutton" class="bx--btn bx--btn--secondary" type="button">
+		  Keep ur hands closed or open and enjoy
+		</button>
+		<div id="Mupdatenote" class="Mupdatenote mt10"> loading model ..</div>
+	</div>
+	<video class="Mvideobox Mcanvasbox" autoplay="autoplay" id="Mmyvideo" ></video>
+	
+	<canvas id="Mcanvas" class="border Mcanvasbox"></canvas>
+	<script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+	<script src="./js/track.js"></script>
+	
+</div>
 
+
+  
 <div class="newSlider">
 	<div class="Title">
 		<h1>My Journey</h1>
@@ -280,7 +261,7 @@
 </div>
 </div>
 <!----------------Animated octagon menu------------------>
-<div class="tesseract" id="tesseract"/>
+<div class="tesseract" id="tesseract"></div>
 
 <div class="octagonMenu">
 	<h1> Click on tesseract-box
@@ -360,7 +341,7 @@
 </div>
 
 <!----------------Product buttons------------------>
-<div class="products" id="products"/>
+<div class="products" id="products"></div>
 
 <div style="text-align: center;" class="BTN1">
 	<h1>TEXT PRODUCTS</h1>
