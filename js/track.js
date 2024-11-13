@@ -51,7 +51,9 @@ function MrunDetection() {
             // console.log("MPredictions: ", Mpredictions);
             if (Mpredictions.length > 0) {
                 let label = Mpredictions[0].label;
+                
                 // console.log(label);
+
                 if (label == 'closed') {
                     // Scroll a little bit up (e.g., 100 pixels)
                     window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
