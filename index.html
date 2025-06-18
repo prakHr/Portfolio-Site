@@ -188,10 +188,13 @@
 				  offset++;
 				}
 	
+				const baseLat = latNum;
+				const baseLon = lonNum;
+
 				this.generatedButtons = result.sort((a, b) => {
-					const sumAbs = ([lat, lon]) => Math.abs(lat) + Math.abs(lon);
-					return sumAbs(a.value) - sumAbs(b.value);
-					});
+				const dist = ([lat, lon]) => Math.abs(lat - baseLat) + Math.abs(lon - baseLon);
+				return dist(a.value) - dist(b.value);
+				});
 
 			  } else {
 				this.error = 'No results found.';
