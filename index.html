@@ -136,7 +136,10 @@
 			lon: { type: String },
 			error: { type: String },
 			generatedButtons: { type: Array },
-			selectedAddress: { type: String }
+			selectedAddress: { type: String },
+			var_lat: { type: String },
+			var_lon: { type: String },
+			selectedDirection: { type: String }
 		  };
 	
 		  static styles = css`
@@ -250,6 +253,10 @@
 			this.error = '';
 			this.generatedButtons = [];
 			this.selectedAddress = '';
+			this.var_lat = '';
+			this.var_lon = '';
+			this.selectedDirection = '';
+
 		  }
 	
 		  handleInput1Change(e) {
@@ -310,7 +317,7 @@
 				const baseLon = lonNum;
 
 				this.generatedButtons = result.sort((a, b) => {
-				const dist = ([lat, lon]) => Math.abs(lat - baseLat) + Math.abs(lon - baseLon);
+				const dist = ([lat, lon]) => Math.sqrt(((lat - baseLat)*(lat - baseLat))+((lon - baseLon)*(lon - baseLon))) ;
 				return dist(a.value) - dist(b.value);
 				});
 
@@ -325,6 +332,24 @@
 		  }
 	
 		  async handleGeneratedButtonClick([lat, lon]) {
+			this.var_lat = lat;
+			this.var_lon = lon;
+
+			const baseLat = parseFloat(this.lat);
+			const baseLon = parseFloat(this.lon);
+			const varLatNum = parseFloat(lat);
+			const varLonNum = parseFloat(lon);
+
+			const dLat = varLatNum - baseLat;
+			const dLon = varLonNum - baseLon;
+
+			if (Math.abs(dLat) > Math.abs(dLon)) {
+				this.selectedDirection = dLat > 0 ? 'North' : 'South';
+			} else {
+				this.selectedDirection = dLon > 0 ? 'East' : 'West';
+			}
+
+
 			const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`;
 	
 			try {
@@ -359,6 +384,14 @@
 				  `)}
 				  <br />
 				</div>
+			${this.selectedDirection
+				? html`
+					<div class="address-output">
+						<strong>Selected Direction from Base:</strong> ${this.selectedDirection}
+					</div>
+					`
+				: ''}
+
 			  `)}
 			`;
 		  }
