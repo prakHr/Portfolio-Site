@@ -943,8 +943,29 @@
     
      
   </script>
+      
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./js/chart-display.js"></script>
+    <script type="module" src="./js/my-3d-cube.js"></script>
+	<h3 style="color: #a529ff;">Click on the different sides of cube and have fun with it</h3>
+	<my-3d-cube></my-3d-cube>
+	<div id="chart-area" style="width:30%;height:30%"></div>
 
+    <script>
+      // Listen to custom event from cube
+      document.querySelector('my-3d-cube').addEventListener('face-clicked', (event) => {
+        const chartType = event.detail.chartType;
+
+        // Clear chart area and add chart-display
+        const container = document.getElementById('chart-area');
+        container.innerHTML = ''; // remove old chart if any
+
+        const chart = document.createElement('chart-display');
+        chart.setAttribute('chartType', chartType);
+        container.appendChild(chart);
+      });
+    </script>
 	<!---------------Progress Bar----------->
 	<div id="preogressbar"></div>
 	<div id="scrollpath"></div>
