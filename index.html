@@ -139,7 +139,8 @@
 			selectedAddress: { type: String },
 			var_lat: { type: String },
 			var_lon: { type: String },
-			selectedDirection: { type: String }
+			selectedDirection: { type: String },
+			distance: { type: Number }
 		  };
 	
 		  static styles = css`
@@ -256,9 +257,24 @@
 			this.var_lat = '';
 			this.var_lon = '';
 			this.selectedDirection = '';
+			this.distance = null;
 
 		  }
-	
+		  haversineDistance(lat1, lon1, lat2, lon2) {
+			const toRad = deg => deg * Math.PI / 180;
+			const R = 6371; // Radius of Earth in km
+
+			const dLat = toRad(lat2 - lat1);
+			const dLon = toRad(lon2 - lon1);
+
+			const a = Math.sin(dLat / 2) ** 2 +
+						Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+						Math.sin(dLon / 2) ** 2;
+
+			const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+			return R * c;
+			}
 		  handleInput1Change(e) {
 			this.input1 = e.target.value;
 		  }
@@ -324,10 +340,12 @@
 			  } else {
 				this.error = 'No results found.';
 				this.generatedButtons = [];
+				this.distance = null;
 			  }
 			} catch (err) {
 			  this.error = 'Failed to fetch coordinates.';
 			  this.generatedButtons = [];
+			  this.distance = null;
 			}
 		  }
 	
@@ -342,6 +360,7 @@
 
 			const dLat = varLatNum - baseLat;
 			const dLon = varLonNum - baseLon;
+			this.distance = this.haversineDistance(baseLat, baseLon, varLatNum, varLonNum).toFixed(2);
 
 			if (Math.abs(dLat) > Math.abs(dLon)) {
 				this.selectedDirection = dLat > 0 ? 'North' : 'South';
@@ -387,7 +406,10 @@
 			${this.selectedDirection
 				? html`
 					<div class="address-output">
-						<strong>Selected Direction from Base:</strong> ${this.selectedDirection}
+						<strong>Selected Direction from Base:</strong> ${this.selectedDirection}<br />
+						${this.distance
+						? html`<strong>Distance:</strong> ${this.distance} km<br />`
+						: ''}
 					</div>
 					`
 				: ''}
