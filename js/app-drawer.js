@@ -93,7 +93,7 @@ class AppDrawer extends LitElement {
 	}
 
 	renderView() {
-		console.log('Active view is:', this.activeView);
+		// console.log('Active view is:', this.activeView);
 		switch (this.activeView) {
 		case 'locationUtube':
 			return html`<input-dropdown-form></input-dropdown-form>`;

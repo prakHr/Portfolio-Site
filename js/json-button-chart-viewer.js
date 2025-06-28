@@ -45,7 +45,7 @@ class JsonButtonChartViewer extends LitElement {
       const json = await response.json();
       this.data = json;
     } catch (err) {
-      console.warn('Using fallback data:', err);
+      // console.warn('Using fallback data:', err);
       this.data = [
         { "Mahesh Kirana": ["Apple", "Banana", "Apple"] },
         { "Fresh Mart": ["Banana", "Carrot", "Apple"] }

@@ -24,7 +24,7 @@ class JsonButtonListViewer extends LitElement {
       if (!Array.isArray(json)) throw new Error("Data must be an array");
       this.data = json;
     } catch (err) {
-      console.warn("Fallback due to error:", err);
+      // console.warn("Fallback due to error:", err);
       this.data = [
         { "Demo Store": Array(1000).fill("Sample item") }
       ];
