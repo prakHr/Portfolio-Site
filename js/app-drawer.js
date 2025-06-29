@@ -84,6 +84,7 @@ class AppDrawer extends LitElement {
 			<button @click=${() => this.activeView = 'cubePlotter'}>3d Cube Clicked Chart-Plotter</button>
 			<button @click=${() => this.activeView = 'jsonComponent'}>Json button list viewer</button>
 			<button @click=${() => this.activeView = 'jsonChartComponent'}>Json button chart viewer</button>
+			<button @click=${() => this.activeView = 'jsonSplineChartComponent'}>Json button spline-chart viewer</button>
 			
 		</div>
 		<div class="content">
@@ -110,7 +111,12 @@ class AppDrawer extends LitElement {
 			`;
 		case 'jsonChartComponent':
 			return html`<json-button-chart-viewer></json-button-chart-viewer>`
-			// return html`<json-button-list-viewer></json-button-list-viewer>`;
+		case 'jsonSplineChartComponent':
+			return html`
+				<div>
+				<spline-curve-viewer></spline-curve-viewer>
+				</div>
+			`;
 		
 		}
 	}

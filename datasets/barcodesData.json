@@ -1,0 +1,3358 @@
+  [       {
+            "barcodeName" : "Rise stainless", 
+            "barcodeNumber" : "18904055105514", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Nivea musk talc skin powder ", 
+            "barcodeNumber" : "4005808169351", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Nivea musk talc", 
+            "barcodeNumber" : "4005808169382", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Nivea pure talc", 
+            "barcodeNumber" : "4005808172832", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Nivea men dark spot face wash", 
+            "barcodeNumber" : "4005808231423", 
+            "barcodePrice" : 95
+        }, 
+        {
+            "barcodeName" : "nivea creame", 
+            "barcodeNumber" : "4005808327676", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "nivea men oil clear", 
+            "barcodeNumber" : "4005808532988", 
+            "barcodePrice" : 185
+        }, 
+        {
+            "barcodeName" : "Nivea soft light moisturiser", 
+            "barcodeNumber" : "4005808679829", 
+            "barcodePrice" : 299, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nivea men after shave balm", 
+            "barcodeNumber" : "4005808919451", 
+            "barcodePrice" : 235, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "NiveanMen Oil control", 
+            "barcodeNumber" : "4005808919604", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Nivea men dark spot face wash", 
+            "barcodeNumber" : "4005808933099", 
+            "barcodePrice" : 185, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "nivea men sensitive cooling after shave balm", 
+            "barcodeNumber" : "4005900140104", 
+            "barcodePrice" : 245, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Nivea men oil control", 
+            "barcodeNumber" : "4005900181305", 
+            "barcodePrice" : 245
+        }, 
+        {
+            "barcodeName" : "nivea men Deep impact", 
+            "barcodeNumber" : "4005900518217", 
+            "barcodePrice" : 199
+        }, 
+        {
+            "barcodeName" : "Bounty 2x chocolate", 
+            "barcodeNumber" : "40111216", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "nivea soft light moisturiser ", 
+            "barcodeNumber" : "42204091", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nivia Light Moisturizer", 
+            "barcodeNumber" : "42204169", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nivea cream", 
+            "barcodeNumber" : "42204244", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nivea cream", 
+            "barcodeNumber" : "42204251", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nivea creme", 
+            "barcodeNumber" : "42204268", 
+            "barcodePrice" : 240, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "nivea light moisturizer", 
+            "barcodeNumber" : "42241782", 
+            "barcodePrice" : 36, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "nivea men oil control", 
+            "barcodeNumber" : "42283492", 
+            "barcodePrice" : 129
+        }, 
+        {
+            "barcodeName" : "Snow spray", 
+            "barcodeNumber" : "4712288000806", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "old spice shaving cream", 
+            "barcodeNumber" : "4902430649650", 
+            "barcodePrice" : 64
+        }, 
+        {
+            "barcodeName" : "Oil spice lather shaving cream", 
+            "barcodeNumber" : "4902430649674", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette vector 3", 
+            "barcodeNumber" : "4902430655255", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette vector 3 ", 
+            "barcodeNumber" : "4902430655293", 
+            "barcodePrice" : 230, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette mach3 ", 
+            "barcodeNumber" : "4902430657150", 
+            "barcodePrice" : 180, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette Match 3 turbo", 
+            "barcodeNumber" : "4902430658294", 
+            "barcodePrice" : 220, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "gillette guard", 
+            "barcodeNumber" : "4902430666497", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette guard", 
+            "barcodeNumber" : "4902430666589", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "old spice after shave lotion fresh lime", 
+            "barcodeNumber" : "4902430667456", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Olay total effects 7 anti ageing cream", 
+            "barcodeNumber" : "4902430667890", 
+            "barcodePrice" : 375, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Olay total effects 7 anti ageing cream", 
+            "barcodeNumber" : "4902430667920", 
+            "barcodePrice" : 799, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Olay anti ageing cream", 
+            "barcodeNumber" : "4902430667944", 
+            "barcodePrice" : 160
+        }, 
+        {
+            "barcodeName" : "olay anti ageing night firming cream", 
+            "barcodeNumber" : "4902430668187", 
+            "barcodePrice" : 799, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "OLAY natural White Night", 
+            "barcodeNumber" : "4902430682350", 
+            "barcodePrice" : 350, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette 7 o'clock sterling pll", 
+            "barcodeNumber" : "4902430684224", 
+            "barcodePrice" : 22, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette 7 o'clock super platinum", 
+            "barcodeNumber" : "4902430684361", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pantene oil replacement", 
+            "barcodeNumber" : "4902430685542", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Whisper maxi fit", 
+            "barcodeNumber" : "4902430709866", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "gillete fusion", 
+            "barcodeNumber" : "4902430721578", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette mach3 ", 
+            "barcodeNumber" : "4902430722407", 
+            "barcodePrice" : 260, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette mach 3", 
+            "barcodeNumber" : "4902430722445", 
+            "barcodePrice" : 840, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette guard", 
+            "barcodeNumber" : "4902430722971", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Whisper choice", 
+            "barcodeNumber" : "4902430769648", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Whisper choice", 
+            "barcodeNumber" : "4902430770415", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Gillette presto ready shaver", 
+            "barcodeNumber" : "4902430774055", 
+            "barcodePrice" : 19, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gillette prestro readyshaver", 
+            "barcodeNumber" : "4902430774062", 
+            "barcodePrice" : 88, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Olay natural white glowing fairness cream ", 
+            "barcodeNumber" : "4902430781121", 
+            "barcodePrice" : 199, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Olay natural white instant glowing fairness ", 
+            "barcodeNumber" : "4902430781138", 
+            "barcodePrice" : 109, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette vector", 
+            "barcodeNumber" : "4902430787116", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette vector", 
+            "barcodeNumber" : "4902430787154", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "gillette match 3 Turbo", 
+            "barcodeNumber" : "4902430798457", 
+            "barcodePrice" : 575, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette guard", 
+            "barcodeNumber" : "4902430818858", 
+            "barcodePrice" : 22, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Whisper choice Ultra", 
+            "barcodeNumber" : "4902430828413", 
+            "barcodePrice" : 123, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "classico ice3 triplex", 
+            "barcodeNumber" : "6222001559699", 
+            "barcodePrice" : 20
+        }, 
+        {
+            "barcodeName" : "India gaye basmati rice dubar", 
+            "barcodeNumber" : "690225101134", 
+            "barcodePrice" : 92, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "stick note", 
+            "barcodeNumber" : "6925365903022", 
+            "barcodePrice" : 40
+        }, 
+        {
+            "barcodeName" : "Beauty tools ", 
+            "barcodeNumber" : "6926641000305", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Beauty gooda", 
+            "barcodeNumber" : "6943396211275", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "puff powder", 
+            "barcodeNumber" : "6943396240398", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Stainless steel", 
+            "barcodeNumber" : "6982335135999", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Stainless steel beauty tools", 
+            "barcodeNumber" : "6985412565412", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Drntovshine shine chhota bheem toothpaste", 
+            "barcodeNumber" : "700736260227", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dento shine chhota bheem toothpaste", 
+            "barcodeNumber" : "700736260241", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dento shine chhota bheem toothpaste", 
+            "barcodeNumber" : "700736260357", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "sattvika podhina makhane", 
+            "barcodeNumber" : "766008252321", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Lotus Herbal apriscrub", 
+            "barcodeNumber" : "806360250600", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "lotus herbal APRISCRUB", 
+            "barcodeNumber" : "806360251003", 
+            "barcodePrice" : 165, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lotus Herbal White Glow", 
+            "barcodeNumber" : "806360300503", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lotus herbals safe sun matte look daily sunblock", 
+            "barcodeNumber" : "806360680506", 
+            "barcodePrice" : 275, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Ayur sun screen protection fairness", 
+            "barcodeNumber" : "808042000374", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Ayur sun screen", 
+            "barcodeNumber" : "808042000398", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ayur herbals cold cream", 
+            "barcodeNumber" : "808042001050", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "ayur herbals cold cream", 
+            "barcodeNumber" : "808042001067", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Ayur Cold Cream", 
+            "barcodeNumber" : "808042001074", 
+            "barcodePrice" : 200, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Ayur herbals all purpose cream", 
+            "barcodeNumber" : "808042001111", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "ayur herbals all purpose cream", 
+            "barcodeNumber" : "808042001128", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Ben 10 alien force", 
+            "barcodeNumber" : "8516480262224", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dubar gulabari premium rose water ", 
+            "barcodeNumber" : "89005583", 
+            "barcodePrice" : 28, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dubar gulabari premium rose water ", 
+            "barcodeNumber" : "89005590", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dubar gulabari premium rose water ", 
+            "barcodeNumber" : "89005606", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Orbit", 
+            "barcodeNumber" : "89007570", 
+            "barcodePrice" : 5, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "listerine cavity fighter", 
+            "barcodeNumber" : "8901012136010", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Stayfree secure sanitary pads", 
+            "barcodeNumber" : "8901012165249", 
+            "barcodePrice" : 33, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Stay free secure Regular with wings", 
+            "barcodeNumber" : "8901012166376", 
+            "barcodePrice" : 33, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Stayfree Dry Max", 
+            "barcodeNumber" : "8901012166550", 
+            "barcodePrice" : 165, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "stayfree secure", 
+            "barcodeNumber" : "8901012166635", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Clean clear blackead clearing daily scrub", 
+            "barcodeNumber" : "8901012186015", 
+            "barcodePrice" : 51, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Clean clear blackead clearing daily scrub", 
+            "barcodeNumber" : "8901012186077", 
+            "barcodePrice" : 103
+        }, 
+        {
+            "barcodeName" : "Clean&Clear clear fairness cream", 
+            "barcodeNumber" : "8901012189023", 
+            "barcodePrice" : 61, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Clean clear fairness cream", 
+            "barcodeNumber" : "8901012189030", 
+            "barcodePrice" : 112, 
+            "barcodeStock" : 20
+        }, 
+        {
+            "barcodeName" : "Godrej shaving round", 
+            "barcodeNumber" : "8901023001727", 
+            "barcodePrice" : 22, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Godrej cinthol talc", 
+            "barcodeNumber" : "8901023003790", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "godrej cinthol talc", 
+            "barcodeNumber" : "8901023006654", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Godrej cinthol talc", 
+            "barcodeNumber" : "8901023006739", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Good knight patches", 
+            "barcodeNumber" : "8901023015014", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "fabric roll on", 
+            "barcodeNumber" : "8901023015021", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fair lovely anti marks", 
+            "barcodeNumber" : "8901030353451", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 13
+        }, 
+        {
+            "barcodeName" : "Fair lovely aayurvedic care", 
+            "barcodeNumber" : "8901030408359", 
+            "barcodePrice" : 122, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's silk cream", 
+            "barcodeNumber" : "8901030489242", 
+            "barcodePrice" : 105, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Lakme maximum moisturiser winter intense", 
+            "barcodeNumber" : "8901030518881", 
+            "barcodePrice" : 330, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely bb foundation fairness cream", 
+            "barcodeNumber" : "8901030537912", 
+            "barcodePrice" : 92, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Ponds White Beauty Non oily Light feel fairness cream", 
+            "barcodeNumber" : "8901030556319", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lakme absolute perfect radiance", 
+            "barcodeNumber" : "8901030585555", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely powder cream", 
+            "barcodeNumber" : "8901030587733", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely powder cream", 
+            "barcodeNumber" : "8901030587740", 
+            "barcodePrice" : 115, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's light moisturiser all season cream", 
+            "barcodeNumber" : "8901030589775", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Fair lovely anti marks treatment", 
+            "barcodeNumber" : "8901030606380", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely anti marks treatment", 
+            "barcodeNumber" : "8901030606397", 
+            "barcodePrice" : 115, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's cold cream", 
+            "barcodeNumber" : "8901030608612", 
+            "barcodePrice" : 145, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's cold cream", 
+            "barcodeNumber" : "8901030608629", 
+            "barcodePrice" : 270, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Knorr classic tomato soup ", 
+            "barcodeNumber" : "8901030609275", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Axe signature pulse cologne talc", 
+            "barcodeNumber" : "8901030611292", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Citra pearl fair face cream", 
+            "barcodeNumber" : "8901030621390", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lever ayush therapy anti marks turmeric face wash", 
+            "barcodeNumber" : "8901030621482", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Citra spot less fair face cream", 
+            "barcodeNumber" : "8901030622502", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely advanced multi vitamin", 
+            "barcodeNumber" : "8901030637353", 
+            "barcodePrice" : 145, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Fair lovely advanced multi vitamin", 
+            "barcodeNumber" : "8901030637360", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "fair lovely advanced multi vitamin", 
+            "barcodeNumber" : "8901030637377", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ponds dream flower ", 
+            "barcodeNumber" : "8901030637537", 
+            "barcodePrice" : 220, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's white beauty fairness cream", 
+            "barcodeNumber" : "8901030638121", 
+            "barcodePrice" : 210, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "ponds magic", 
+            "barcodeNumber" : "8901030638213", 
+            "barcodePrice" : 210, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's magic freshness talc", 
+            "barcodeNumber" : "8901030638220", 
+            "barcodePrice" : 92, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pond's magic powder ", 
+            "barcodeNumber" : "8901030638237", 
+            "barcodePrice" : 52, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pond's  fragrant talc", 
+            "barcodeNumber" : "8901030638589", 
+            "barcodePrice" : 78, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pond's fragrant talc", 
+            "barcodeNumber" : "8901030638596", 
+            "barcodePrice" : 39, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Ponds white beauty day cream", 
+            "barcodeNumber" : "8901030642838", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Citra pearl fair face cream", 
+            "barcodeNumber" : "8901030644757", 
+            "barcodePrice" : 59, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Citra spot less fair face cream", 
+            "barcodeNumber" : "8901030644764", 
+            "barcodePrice" : 59, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lakme absolute perfect radiance skin lightening day creme", 
+            "barcodeNumber" : "8901030644832", 
+            "barcodePrice" : 290, 
+            "barcodeStock" : 20
+        }, 
+        {
+            "barcodeName" : "Fair lovely winter fairness 24 hour moisturisation", 
+            "barcodeNumber" : "8901030659744", 
+            "barcodePrice" : 105, 
+            "barcodeStock" : 14
+        }, 
+        {
+            "barcodeName" : "ponds white beauty fairness", 
+            "barcodeNumber" : "8901030665011", 
+            "barcodePrice" : 64, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Pond's white beauty fairness cream", 
+            "barcodeNumber" : "8901030670671", 
+            "barcodePrice" : 49, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ponds starlight", 
+            "barcodeNumber" : "8901030684128", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ponds starligjt", 
+            "barcodeNumber" : "8901030684135", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ponds starlight", 
+            "barcodeNumber" : "8901030684142", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "MTR RAVA IDLI", 
+            "barcodeNumber" : "8901042954523", 
+            "barcodePrice" : 55
+        }, 
+        {
+            "barcodeName" : "Mtr vada breakfast mix", 
+            "barcodeNumber" : "8901042957975", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "MTR gulab jamun", 
+            "barcodeNumber" : "8901042969725", 
+            "barcodePrice" : 99
+        }, 
+        {
+            "barcodeName" : "kangaro punch", 
+            "barcodeNumber" : "8901057200523", 
+            "barcodePrice" : 68, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Kangaro punch", 
+            "barcodeNumber" : "8901057202411", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Munix stepler", 
+            "barcodeNumber" : "8901057310062", 
+            "barcodePrice" : 48, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Maggi 2 minute noodles", 
+            "barcodeNumber" : "8901058851489", 
+            "barcodePrice" : 128, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Hair care silk n shine leave in conditioner", 
+            "barcodeNumber" : "8901088017466", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Livon serum control frizz", 
+            "barcodeNumber" : "8901088062381", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Livon serum hair essentials damage protection control frizz", 
+            "barcodeNumber" : "8901088062398", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gallant 2 twin blade shaving system", 
+            "barcodeNumber" : "8901106102051", 
+            "barcodePrice" : 42, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Gallant 2 shaving cartridges", 
+            "barcodeNumber" : "8901106102105", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Nirma shudh salt", 
+            "barcodeNumber" : "8901108166037", 
+            "barcodePrice" : 28, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "everyuth naturals exfoliating walnut scrub", 
+            "barcodeNumber" : "8901120141029", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everyuth naturals exfoliating walnut scrub", 
+            "barcodeNumber" : "8901120141036", 
+            "barcodePrice" : 199, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya anti wrinkle cream", 
+            "barcodeNumber" : "8901138500153", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Himalaya herbals revitalizing night cream ", 
+            "barcodeNumber" : "8901138500184", 
+            "barcodePrice" : 200, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya natural glow fairness cream", 
+            "barcodeNumber" : "8901138500467", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya natural glow fairness cream", 
+            "barcodeNumber" : "8901138504519", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Himalaya Gentle Exfoliating Walnut Scrub", 
+            "barcodeNumber" : "8901138510268", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya protective sunscreen lotion", 
+            "barcodeNumber" : "8901138511104", 
+            "barcodePrice" : 200, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya gentle exfoliating apricot scrub", 
+            "barcodeNumber" : "8901138511630", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya Clear Complexion Whitening Day Cream", 
+            "barcodeNumber" : "8901138816575", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya Purifying Neem Scrub", 
+            "barcodeNumber" : "8901138821715", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya purifying neem scrub face wash ", 
+            "barcodeNumber" : "8901138821913", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya purifying neem scrub", 
+            "barcodeNumber" : "8901138821920", 
+            "barcodePrice" : 130
+        }, 
+        {
+            "barcodeName" : "Himalaya gentle exfoliating apricot scrub", 
+            "barcodeNumber" : "8901138821937", 
+            "barcodePrice" : 130
+        }, 
+        {
+            "barcodeName" : "Himalaya gentle exfoliating walnut scrub", 
+            "barcodeNumber" : "8901138821944", 
+            "barcodePrice" : 130
+        }, 
+        {
+            "barcodeName" : "himalaya men intense oil clear lemon face wash", 
+            "barcodeNumber" : "8901138831042", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya men intense oil clear lemon face wash", 
+            "barcodeNumber" : "890113883105", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "himalaya men power glow licorice face wash", 
+            "barcodeNumber" : "8901138831066", 
+            "barcodePrice" : 78, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "himalaya men power glow licorice face wash", 
+            "barcodeNumber" : "8901138831073", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya oil free radiance gel cream", 
+            "barcodeNumber" : "8901138834814", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya men pimple clear neem face wash", 
+            "barcodeNumber" : "8901138835323", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "himalaya men pimple clear neem face wash", 
+            "barcodeNumber" : "8901138835330", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya purifying neem peel off mask", 
+            "barcodeNumber" : "8901138835569", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya moisturizing cucumber peel off mask", 
+            "barcodeNumber" : "8901138835583", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya tan  removal peel off mask", 
+            "barcodeNumber" : "8901138835651", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya tan removal orange peel off mask", 
+            "barcodeNumber" : "8901138835668", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya Natural glow Fairness Cream Buy 2 Save Rs 50", 
+            "barcodeNumber" : "8901138836146", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya protein hait cream", 
+            "barcodeNumber" : "8901138836153", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya anti hair fall cream", 
+            "barcodeNumber" : "8901138836160", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya anti dandruff hair cream", 
+            "barcodeNumber" : "8901138836177", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya Tan removal Orange Face scrub", 
+            "barcodeNumber" : "8901138837068", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Himalaya tan removal orange face scrub", 
+            "barcodeNumber" : "8901138837075", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Himalaya men active sport face wash", 
+            "barcodeNumber" : "8901138837495", 
+            "barcodePrice" : 83, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Himalaya men active sport face wash", 
+            "barcodeNumber" : "8901138837501", 
+            "barcodePrice" : 160
+        }, 
+        {
+            "barcodeName" : "himalaya men face&beard wash", 
+            "barcodeNumber" : "8901138837631", 
+            "barcodePrice" : 150
+        }, 
+        {
+            "barcodeName" : "Himalaya men face &beard fash", 
+            "barcodeNumber" : "8901138837648", 
+            "barcodePrice" : 80
+        }, 
+        {
+            "barcodeName" : "tasty treat", 
+            "barcodeNumber" : "8901153005312", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "faber castell acrylic paint", 
+            "barcodeNumber" : "8901180105078", 
+            "barcodePrice" : 160
+        }, 
+        {
+            "barcodeName" : "faber castell gr8 drawing instrument box", 
+            "barcodeNumber" : "8901180163023", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Faber castell geometry compass", 
+            "barcodeNumber" : "8901180183007", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "faber castell itec pro instrument box", 
+            "barcodeNumber" : "8901180637210", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Faber castell 10 pencils", 
+            "barcodeNumber" : "8901180706411", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Luxor color pens", 
+            "barcodeNumber" : "8901198014317", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dabur gulabari rose glow face cleaner", 
+            "barcodeNumber" : "8901207004094", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dubar honey ", 
+            "barcodeNumber" : "8901207005374", 
+            "barcodePrice" : 49, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dabur gulabari moisturising gold cream", 
+            "barcodeNumber" : "8901207014994", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "New Dabur Gulabari Moisturising Cold Cream", 
+            "barcodeNumber" : "8901207015007", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dubar Vatika healthy shampoo", 
+            "barcodeNumber" : "8901207023156", 
+            "barcodePrice" : 1, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dubar lal ", 
+            "barcodeNumber" : "8901207091025", 
+            "barcodePrice" : 40
+        }, 
+        {
+            "barcodeName" : "Dabur honey", 
+            "barcodeNumber" : "8901207872624", 
+            "barcodePrice" : 199, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "kama sutra dotted condoms", 
+            "barcodeNumber" : "8901216406346", 
+            "barcodePrice" : 100
+        }, 
+        {
+            "barcodeName" : "oreo ", 
+            "barcodeNumber" : "8901233031088", 
+            "barcodePrice" : 29
+        }, 
+        {
+            "barcodeName" : "kangaroo staples", 
+            "barcodeNumber" : "8901238910036", 
+            "barcodePrice" : 15
+        }, 
+        {
+            "barcodeName" : "streax hair serum", 
+            "barcodeNumber" : "8901247573994", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Boro plus healthy skin cream ", 
+            "barcodeNumber" : "8901248101103", 
+            "barcodePrice" : 33, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Boro plus healthy skin cream ", 
+            "barcodeNumber" : "8901248101110", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Boro plus antiseptic cream", 
+            "barcodeNumber" : "8901248101301", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "boro plus ice prickly heat powder icy cool", 
+            "barcodeNumber" : "8901248103176", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "navaratna cool talc", 
+            "barcodeNumber" : "8901248121071", 
+            "barcodePrice" : 68
+        }, 
+        {
+            "barcodeName" : "navaratna i cool talc dynamite", 
+            "barcodeNumber" : "8901248121347", 
+            "barcodePrice" : 78, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Boro plus healthy skin", 
+            "barcodeNumber" : "8901248150019", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Emami malai kesar cold cream", 
+            "barcodeNumber" : "8901248259033", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 11
+        }, 
+        {
+            "barcodeName" : "Amul chocominis", 
+            "barcodeNumber" : "8901262070546", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Good morning after shave lotion", 
+            "barcodeNumber" : "8901277005113", 
+            "barcodePrice" : 115, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "park avenue new improved ace after shave lotion", 
+            "barcodeNumber" : "8901277010728", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Good morning after shave lotion", 
+            "barcodeNumber" : "8901277012074", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "park avenue good morning fragrance deo talc", 
+            "barcodeNumber" : "8901277012197", 
+            "barcodePrice" : 49, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "park avenue good morning freshness deo talc", 
+            "barcodeNumber" : "8901277012203", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "premium lavender ", 
+            "barcodeNumber" : "8901277012319", 
+            "barcodePrice" : 150, 
+            "barcodePricePkt" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "park avenue goodmorning fragrance deo talc", 
+            "barcodeNumber" : "8901277015952", 
+            "barcodePrice" : 99
+        }, 
+        {
+            "barcodeName" : "Mysore sandal talc", 
+            "barcodeNumber" : "8901287308211", 
+            "barcodePrice" : 36, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Mysore sandal talc", 
+            "barcodeNumber" : "8901287308419", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vicco turmeric cream", 
+            "barcodeNumber" : "8901288040158", 
+            "barcodePrice" : 27, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vicco turmeric cream", 
+            "barcodeNumber" : "8901288040707", 
+            "barcodePrice" : 97, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Colgate plax mouthwash", 
+            "barcodeNumber" : "8901314077509", 
+            "barcodePrice" : 49, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Colgate plax fresh mint splash", 
+            "barcodeNumber" : "8901314077981", 
+            "barcodePrice" : 115, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Apsara glass marking pencil", 
+            "barcodeNumber" : "8901324001013", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "protease day night combo", 
+            "barcodeNumber" : "8901331040104", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Gillette shave brush ", 
+            "barcodeNumber" : "8901358702184", 
+            "barcodePrice" : 54, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dettol medicated plaster washproof", 
+            "barcodeNumber" : "8901396322009", 
+            "barcodePrice" : 3, 
+            "barcodePricePkt" : 250, 
+            "barcodeStock" : 1, 
+            "barcodeStockPkt" : 1
+        }, 
+        {
+            "barcodeName" : "Dettol antiseptic liquid", 
+            "barcodeNumber" : "8901396350200", 
+            "barcodePrice" : 37.5, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Camel artica plastic crayons", 
+            "barcodeNumber" : "8901425000311", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel poster colours box", 
+            "barcodeNumber" : "8901425000427", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel poster colours", 
+            "barcodeNumber" : "8901425000434", 
+            "barcodePrice" : 170, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel wax crayon", 
+            "barcodeNumber" : "8901425006283", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camlin fountain pen ink", 
+            "barcodeNumber" : "8901425011836", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "camlin high quality drawing pencil", 
+            "barcodeNumber" : "8901425014998", 
+            "barcodePrice" : 45
+        }, 
+        {
+            "barcodeName" : "camlin drawing book", 
+            "barcodeNumber" : "8901425022948", 
+            "barcodePrice" : 18, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "camlin drawing book", 
+            "barcodeNumber" : "8901425022979", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Kokuyo camlin ltd", 
+            "barcodeNumber" : "8901425036945", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel jumbo wax crayons", 
+            "barcodeNumber" : "8901425036976", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "camlin paste non toxic", 
+            "barcodeNumber" : "8901425037201", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Camlin paste non toxic", 
+            "barcodeNumber" : "8901425038154", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "camlin power mathematical drawing instrument", 
+            "barcodeNumber" : "8901425038376", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "camlin glue stick", 
+            "barcodeNumber" : "8901425040218", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "camlin prithvi mathematical drawing instrument", 
+            "barcodeNumber" : "8901425042755", 
+            "barcodePrice" : 60
+        }, 
+        {
+            "barcodeName" : "Camel exam pencils", 
+            "barcodeNumber" : "8901425048399", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Kkuyo camlin", 
+            "barcodeNumber" : "8901425048634", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel oil pastels", 
+            "barcodeNumber" : "8901425049297", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camlin notebooks", 
+            "barcodeNumber" : "8901425052235", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camlin flora pencils", 
+            "barcodeNumber" : "8901425056233", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "camlin ikon geometry box", 
+            "barcodeNumber" : "8901425057810", 
+            "barcodePrice" : 200, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Camel oil pastels junior", 
+            "barcodeNumber" : "8901425059937", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "camlin single line notebook", 
+            "barcodeNumber" : "8901425062968", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "camlin note book", 
+            "barcodeNumber" : "8901425064061", 
+            "barcodePrice" : 35
+        }, 
+        {
+            "barcodeName" : "camlin medium square notebook", 
+            "barcodeNumber" : "8901425064368", 
+            "barcodePrice" : 40
+        }, 
+        {
+            "barcodeName" : "camel wax crayon", 
+            "barcodeNumber" : "8901425073452", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "camlin notebook", 
+            "barcodeNumber" : "8901425075319", 
+            "barcodePrice" : 80
+        }, 
+        {
+            "barcodeName" : "Derver black code cologne talc", 
+            "barcodeNumber" : "8901450001758", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Denver blsck code cologne talc ", 
+            "barcodeNumber" : "8901450001772", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Denver after shave cologne spray", 
+            "barcodeNumber" : "8901450002281", 
+            "barcodePrice" : 170, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "D Denver premium body talc", 
+            "barcodeNumber" : "8901450003981", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "D denver hamilton ", 
+            "barcodeNumber" : "8901450003998", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "D Denver premium body talc", 
+            "barcodeNumber" : "8901450004001", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Denver black code", 
+            "barcodeNumber" : "8901450004179", 
+            "barcodePrice" : 32, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Denver ice cold cologne talc", 
+            "barcodeNumber" : "8901450004643", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Hamdard Safi natural blood purifier", 
+            "barcodeNumber" : "8901453040815", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Hamdard Safi Natuaral Blood Purifier", 
+            "barcodeNumber" : "8901453040839", 
+            "barcodePrice" : 200, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Kellogg's chocos", 
+            "barcodeNumber" : "8901499008169", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "healthy world rice bran oil", 
+            "barcodeNumber" : "8901512550804", 
+            "barcodePrice" : 650, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Loreal paris excellence creme triple care colour", 
+            "barcodeNumber" : "8901526100545", 
+            "barcodePrice" : 600, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "loreal paris smooth intense", 
+            "barcodeNumber" : "8901526101405", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "loreal paris smoothening and repairing serum", 
+            "barcodeNumber" : "890152610215", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Loreal Paris Skin perfect", 
+            "barcodeNumber" : "8901526104697", 
+            "barcodePrice" : 149, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Loyeal skin perfect anti imperfections whitening ", 
+            "barcodeNumber" : "8901526104727", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Garnier Wrinkle Lift Anti Ageing Cream", 
+            "barcodeNumber" : "8901526202928", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Garnier men power white", 
+            "barcodeNumber" : "8901526203574", 
+            "barcodePrice" : 180
+        }, 
+        {
+            "barcodeName" : "garnier men power white", 
+            "barcodeNumber" : "8901526204304", 
+            "barcodePrice" : 90
+        }, 
+        {
+            "barcodeName" : "Garnier Light Complete White Speed", 
+            "barcodeNumber" : "8901526205066", 
+            "barcodePrice" : 185, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "garnier men oil clear", 
+            "barcodeNumber" : "8901526205561", 
+            "barcodePrice" : 170
+        }, 
+        {
+            "barcodeName" : "Garnier BB Cream", 
+            "barcodeNumber" : "8901526207152", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Garnier BB cream", 
+            "barcodeNumber" : "8901526210824", 
+            "barcodePrice" : 165, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Garnier black naturals creme hair colour", 
+            "barcodeNumber" : "8901526211715", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Matrix opti care smooth straight", 
+            "barcodeNumber" : "8901526401260", 
+            "barcodePrice" : 445, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "matrix biolage advanced", 
+            "barcodeNumber" : "8901526407217", 
+            "barcodePrice" : 740, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Matrix opti black dazzling shine", 
+            "barcodeNumber" : "8901526407231", 
+            "barcodePrice" : 410, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "matrix opti care", 
+            "barcodeNumber" : "8901526407842", 
+            "barcodePrice" : 685, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Matrix opti long nourish protect", 
+            "barcodeNumber" : "8901526408047", 
+            "barcodePrice" : 445, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "garnier black naturals", 
+            "barcodeNumber" : "8901526506965", 
+            "barcodePrice" : 35
+        }, 
+        {
+            "barcodeName" : "Garnier men power kit", 
+            "barcodeNumber" : "8901526507856", 
+            "barcodePrice" : 185
+        }, 
+        {
+            "barcodeName" : "Matrix biolage scalppure", 
+            "barcodeNumber" : "8901526980598", 
+            "barcodePrice" : 460, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Garnier ultra blends shampoo ", 
+            "barcodeNumber" : "8901526989690", 
+            "barcodePrice" : 3, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Heritage basmati rice", 
+            "barcodeNumber" : "8901537004788", 
+            "barcodePrice" : 149
+        }, 
+        {
+            "barcodeName" : "Everyuth naturals exfoliating walnut scrub", 
+            "barcodeNumber" : "8901548143629", 
+            "barcodePrice" : 32, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "everyuth naturals golden glow peel off mask advanced", 
+            "barcodeNumber" : "8901548147184", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "everyuth naturals golden glow peel of mask advanced", 
+            "barcodeNumber" : "8901548147207", 
+            "barcodePrice" : 105, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everyuth naturals purifying exfoliating neem papaya scrub", 
+            "barcodeNumber" : "8901548147306", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "nilons green chilly sauce", 
+            "barcodeNumber" : "8901560050233", 
+            "barcodePrice" : 48
+        }, 
+        {
+            "barcodeName" : "Eno cooling", 
+            "barcodeNumber" : "8901571008865", 
+            "barcodePrice" : 8, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Chings chilli vinegar synthetic", 
+            "barcodeNumber" : "8901595852321", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "smith and jones tomato ketchup", 
+            "barcodeNumber" : "8901595853687", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Chings red chilli sauce", 
+            "barcodeNumber" : "8901595862740", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Smith Jones ginger garlic paste", 
+            "barcodeNumber" : "8901595873258", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Chings snacky Oats", 
+            "barcodeNumber" : "8901595972463", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Aashirvaad coriander powder", 
+            "barcodeNumber" : "8901725125240", 
+            "barcodePrice" : 30
+        }, 
+        {
+            "barcodeName" : "Sunfeast glucose biscuits", 
+            "barcodeNumber" : "8901725132767", 
+            "barcodePrice" : 5, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Skin Essential charmis", 
+            "barcodeNumber" : "8901725901134", 
+            "barcodePrice" : 99, 
+            "barcodePricePkt" : 99, 
+            "barcodeStock" : 1, 
+            "barcodeStockPkt" : 1
+        }, 
+        {
+            "barcodeName" : "Savlon Antiseptic liquid", 
+            "barcodeNumber" : "8901725973117", 
+            "barcodePrice" : 16.5, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Savlon  antiseptic liquid", 
+            "barcodeNumber" : "8901725973124", 
+            "barcodePrice" : 36.900001525878906, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Everest chaat masala ", 
+            "barcodeNumber" : "8901786060504", 
+            "barcodePrice" : 33, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everest kitchen king masala ", 
+            "barcodeNumber" : "8901786120505", 
+            "barcodePrice" : 33
+        }, 
+        {
+            "barcodeName" : "Everest sabji masala ", 
+            "barcodeNumber" : "8901786130504", 
+            "barcodePrice" : 28, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everest chicken masala ", 
+            "barcodeNumber" : "8901786160501", 
+            "barcodePrice" : 33, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everest tandoori chicken masala", 
+            "barcodeNumber" : "8901786170500", 
+            "barcodePrice" : 38, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Everest shahi paneer masala", 
+            "barcodeNumber" : "8901786530502", 
+            "barcodePrice" : 41, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "fevicryl acrylic colours", 
+            "barcodeNumber" : "8901860510215", 
+            "barcodePrice" : 20
+        }, 
+        {
+            "barcodeName" : "Fevi col", 
+            "barcodeNumber" : "8901860630005", 
+            "barcodePrice" : 5, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi col", 
+            "barcodeNumber" : "8901860630241", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi col", 
+            "barcodeNumber" : "8901860630432", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "fevicol mr", 
+            "barcodeNumber" : "8901860630500", 
+            "barcodePrice" : 45
+        }, 
+        {
+            "barcodeName" : "Fevicol mr", 
+            "barcodeNumber" : "8901860630708", 
+            "barcodePrice" : 115, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevicol Mr", 
+            "barcodeNumber" : "8901860630807", 
+            "barcodePrice" : 190, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi gum lime fragrance", 
+            "barcodeNumber" : "8901860633037", 
+            "barcodePrice" : 5, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi gum", 
+            "barcodeNumber" : "8901860633051", 
+            "barcodePrice" : 5, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi gum", 
+            "barcodeNumber" : "8901860633396", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "fevi gum lime fragrance", 
+            "barcodeNumber" : "8901860633433", 
+            "barcodePrice" : 30
+        }, 
+        {
+            "barcodeName" : "Fevi stik", 
+            "barcodeNumber" : "8901860633501", 
+            "barcodePrice" : 15, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi stik", 
+            "barcodeNumber" : "8901860633525", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi stik", 
+            "barcodeNumber" : "8901860633532", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fevi stik", 
+            "barcodeNumber" : "8901860633648", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dukes nibble masala", 
+            "barcodeNumber" : "8901972065689", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "Ramdev dry ginger powder", 
+            "barcodeNumber" : "8902188858065", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Ffuunn learn with fun metallic pencils", 
+            "barcodeNumber" : "8902442205789", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Youva torus geometry box", 
+            "barcodeNumber" : "8902442213685", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Youva helix geometry box", 
+            "barcodeNumber" : "8902442215481", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "youva the long book", 
+            "barcodeNumber" : "890244221612", 
+            "barcodePrice" : 150
+        }, 
+        {
+            "barcodeName" : "Ffuunn learn with fun colour pencils", 
+            "barcodeNumber" : "8902442218819", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "youva original notebook", 
+            "barcodeNumber" : "8902442221581", 
+            "barcodePrice" : 45
+        }, 
+        {
+            "barcodeName" : "Youva note book", 
+            "barcodeNumber" : "8902442221598", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Youva note book", 
+            "barcodeNumber" : "8902442225909", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Youva the original progress series", 
+            "barcodeNumber" : "8902442227118", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "youva red and blue with gap note book", 
+            "barcodeNumber" : "8902442227569", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Youva the original long book", 
+            "barcodeNumber" : "8902442227835", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "classmate note book", 
+            "barcodeNumber" : "8902519002259", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Eva sweet perfumed body talc", 
+            "barcodeNumber" : "8902618000354", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Eva fresh perfumed body talc", 
+            "barcodeNumber" : "8902618000361", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Eva mystique perfumed body talc", 
+            "barcodeNumber" : "8902618000637", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "eva fantasy perfumed talc", 
+            "barcodeNumber" : "8902618000972", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Eva cool splash perfumed body talc", 
+            "barcodeNumber" : "8902618001252", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Eva rave perfumed talc", 
+            "barcodeNumber" : "8902618001931", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Spinz exotic talc", 
+            "barcodeNumber" : "8902979020039", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "spinz bb", 
+            "barcodeNumber" : "8902979026871", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Spinz bb fairness cream", 
+            "barcodeNumber" : "8902979028462", 
+            "barcodePrice" : 52, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "spinz fantasy talc", 
+            "barcodeNumber" : "8902979028981", 
+            "barcodePrice" : 34, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Artline classic 12 sketch pens", 
+            "barcodeNumber" : "8902982200121", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Yardley london Royal Red roses", 
+            "barcodeNumber" : "8903105010412", 
+            "barcodePrice" : 155, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Yardley london imperial jasmine perfumed talc", 
+            "barcodeNumber" : "8903105010443", 
+            "barcodePrice" : 155, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Yardley london lace perfumed talc", 
+            "barcodeNumber" : "8903105010450", 
+            "barcodePrice" : 170, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Yardley london mist perfumed talc", 
+            "barcodeNumber" : "8903105010849", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Classmate invento mathematic drawing instruments", 
+            "barcodeNumber" : "8903183100029", 
+            "barcodePrice" : 125
+        }, 
+        {
+            "barcodeName" : "classmate asteroid drawing instruments", 
+            "barcodeNumber" : "8903183100302", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Saathi mathematic drawing instruments", 
+            "barcodeNumber" : "8903183100340", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild stone ultra sensual deo talc", 
+            "barcodeNumber" : "8904006301111", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Wild stone senslial ", 
+            "barcodeNumber" : "8904006301128", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild stone ultra energy ", 
+            "barcodeNumber" : "8904006301180", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Heavens garden luxury talc", 
+            "barcodeNumber" : "8904006301920", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Wild stone ultra sensual", 
+            "barcodeNumber" : "8904006302439", 
+            "barcodePrice" : 299, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "wild stone Hydra energy deo talc", 
+            "barcodeNumber" : "8904006302729", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild ston hydra energy ", 
+            "barcodeNumber" : "8904006302736", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild stone hydra energy ", 
+            "barcodeNumber" : "8904006303498", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild stone hydra energy ", 
+            "barcodeNumber" : "8904006304099", 
+            "barcodePrice" : 10, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Wild stone cool talc", 
+            "barcodeNumber" : "8904006306321", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Sloan's liniment kills pain", 
+            "barcodeNumber" : "8904026631915", 
+            "barcodePrice" : 66, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Lacto calamine oil balance face scrub", 
+            "barcodeNumber" : "8904026633636", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Ayurvedic klean stmck", 
+            "barcodeNumber" : "8904029411330", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Ayurvedic klean stmck churna powder", 
+            "barcodeNumber" : "8904029411958", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "joy honey almonds nourishing skin cream", 
+            "barcodeNumber" : "8904035413175", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Joy honey almonds nourishing skin cream", 
+            "barcodeNumber" : "8904035413182", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "joy honey almonds nourishing skin cream", 
+            "barcodeNumber" : "8904035413205", 
+            "barcodePrice" : 48, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Joy sun screen uv protect whitening lotion", 
+            "barcodeNumber" : "8904035416275", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Joy sun screen uv protect whitening lotion", 
+            "barcodeNumber" : "8904035416282", 
+            "barcodePrice" : 199
+        }, 
+        {
+            "barcodeName" : "joy skin fruits active moisture skin cream", 
+            "barcodeNumber" : "8904035416541", 
+            "barcodePrice" : 275, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "joy skin fruits active moisture", 
+            "barcodeNumber" : "8904035416619", 
+            "barcodePrice" : 48, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "joy skin fruits active moisture", 
+            "barcodeNumber" : "8904035416626", 
+            "barcodePrice" : 135, 
+            "barcodeStock" : 20
+        }, 
+        {
+            "barcodeName" : "Joy skin fruits gentle exfoliating apricot scrub", 
+            "barcodeNumber" : "8904035416848", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "joy skin fruits blackhead control", 
+            "barcodeNumber" : "8904035416855", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Joy hello sun sunblock fairness lotion ", 
+            "barcodeNumber" : "8904035417043", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Joy hello sun sunblock anti tan lotion", 
+            "barcodeNumber" : "8904035417074", 
+            "barcodePrice" : 175, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Joy sun sunblock anti tan lotion", 
+            "barcodeNumber" : "8904035417111", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "joy hello sun anti tan cream", 
+            "barcodeNumber" : "8904035417883", 
+            "barcodePrice" : 54, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Joy cocoa rich intense nourishing skin cream", 
+            "barcodeNumber" : "8904035419047", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Ultra cool impression x men cool talc", 
+            "barcodeNumber" : "8904035419535", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "24/7 active freshness x men deo talc", 
+            "barcodeNumber" : "8904035419542", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "ultra cool impression x men cool talc", 
+            "barcodeNumber" : "8904035419566", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "24/7 active freshness x men deo talc", 
+            "barcodeNumber" : "8904035419573", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Joy sun  sunblock anti tan lotion", 
+            "barcodeNumber" : "8904035420272", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Tata salt", 
+            "barcodeNumber" : "8904043901015", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Tata Sampann chana dal", 
+            "barcodeNumber" : "8904043926629", 
+            "barcodePrice" : 64
+        }, 
+        {
+            "barcodeName" : "Tata sampann masoor dal whole", 
+            "barcodeNumber" : "8904043926650", 
+            "barcodePrice" : 98
+        }, 
+        {
+            "barcodeName" : "Tata sampann chilli powder", 
+            "barcodeNumber" : "8904043927152", 
+            "barcodePrice" : 32, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Tata sampann naturally rich turmeric powder", 
+            "barcodeNumber" : "8904043927176", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "tata sampann corriander powder", 
+            "barcodeNumber" : "8904043927190", 
+            "barcodePrice" : 31
+        }, 
+        {
+            "barcodeName" : "Tata sampann chilli powder", 
+            "barcodeNumber" : "8904043927473", 
+            "barcodePrice" : 154, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Tata turmeric powder", 
+            "barcodeNumber" : "8904043927480", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Tata sampann corriander powder", 
+            "barcodeNumber" : "8904043927497", 
+            "barcodePrice" : 149
+        }, 
+        {
+            "barcodeName" : "Vitro naturals daily natural fairness", 
+            "barcodeNumber" : "8904045055105", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Divya dant manjan", 
+            "barcodeNumber" : "8904049100320", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Jiya olive cream", 
+            "barcodeNumber" : "8904050601373", 
+            "barcodePrice" : 130, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Jiya turmeric cream", 
+            "barcodeNumber" : "8904050601724", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Jiya walnut scrub", 
+            "barcodeNumber" : "8904050601755", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dr.batras sun protection cream", 
+            "barcodeNumber" : "8904050700830", 
+            "barcodePrice" : 325, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dr.batras natural skin lightening cream", 
+            "barcodeNumber" : "8904050700847", 
+            "barcodePrice" : 350, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dr.batras natural anti acne cream", 
+            "barcodeNumber" : "8904050700908", 
+            "barcodePrice" : 350, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Dr.batras intense moisturizing cream", 
+            "barcodeNumber" : "8904050701066", 
+            "barcodePrice" : 350, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Dr.batra's natural anti acne cream", 
+            "barcodeNumber" : "8904050702001", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Super max elegance", 
+            "barcodeNumber" : "8904055104084", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Super max elegance", 
+            "barcodeNumber" : "8904055104138", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Zorrik super platinum", 
+            "barcodeNumber" : "8904055104664", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Super max Kwik shaving brush", 
+            "barcodeNumber" : "8904055104855", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Super max 3 hattrick ", 
+            "barcodeNumber" : "8904055104909", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Super mach kwik ll ", 
+            "barcodeNumber" : "8904055105166", 
+            "barcodePrice" : 11, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "vidyut supermax stainless salon pack", 
+            "barcodeNumber" : "8904055110047", 
+            "barcodePrice" : 115
+        }, 
+        {
+            "barcodeName" : "Super max swit", 
+            "barcodeNumber" : "8904055131813", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Super max swift", 
+            "barcodeNumber" : "8904055131820", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "supermax s11", 
+            "barcodeNumber" : "8904055140570", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Super max sll", 
+            "barcodeNumber" : "8904055140587", 
+            "barcodePrice" : 60
+        }, 
+        {
+            "barcodeName" : "uttam chicken masala", 
+            "barcodeNumber" : "8904082701362", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "uttam garam masala", 
+            "barcodeNumber" : "8904082701393", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "uttam meat masala", 
+            "barcodeNumber" : "8904082701409", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "uttam tea masala", 
+            "barcodeNumber" : "8904082701416", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "VEGA Cotton Balls", 
+            "barcodeNumber" : "8904086302114", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vega mehndi brush", 
+            "barcodeNumber" : "8904086310232", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "vega pedicure file", 
+            "barcodeNumber" : "8904086330162", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vega pedicure file", 
+            "barcodeNumber" : "8904086340093", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vega grooming comb", 
+            "barcodeNumber" : "8904086350092", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "vega dressing comb", 
+            "barcodeNumber" : "8904086390074", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "vega graduated dressing comb", 
+            "barcodeNumber" : "8904086390128", 
+            "barcodePrice" : 175, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "VEGA The Hand Made comb", 
+            "barcodeNumber" : "8904086390135", 
+            "barcodePrice" : 150, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "jinx bandhan body talc", 
+            "barcodeNumber" : "8904086600883", 
+            "barcodePrice" : 55
+        }, 
+        {
+            "barcodeName" : "jinx aroma body talc", 
+            "barcodeNumber" : "8904086600890", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "jinx lavanya", 
+            "barcodeNumber" : "8904086600906", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "jinx chandan", 
+            "barcodeNumber" : "8904086600913", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "candid Renew Daily Calamine talc", 
+            "barcodeNumber" : "8904091121427", 
+            "barcodePrice" : 85
+        }, 
+        {
+            "barcodeName" : "Candid Renew Daily Calamine Talc", 
+            "barcodeNumber" : "8904091121434", 
+            "barcodePrice" : 175
+        }, 
+        {
+            "barcodeName" : "manforce condoms jasmine", 
+            "barcodeNumber" : "8904103301649", 
+            "barcodePrice" : 20
+        }, 
+        {
+            "barcodeName" : "manforce  black grapes flavoured", 
+            "barcodeNumber" : "8904103306415", 
+            "barcodePrice" : 25
+        }, 
+        {
+            "barcodeName" : "man force condoms sunny edition", 
+            "barcodeNumber" : "8904103320077", 
+            "barcodePrice" : 30
+        }, 
+        {
+            "barcodeName" : "Patanjali Saundarya face wash", 
+            "barcodeNumber" : "8904109400575", 
+            "barcodePrice" : 90, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Patanjali saundarya face wash ", 
+            "barcodeNumber" : "8904109400612", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "patanjali soundarya face scrub multani mitti", 
+            "barcodeNumber" : "8904109400728", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Patanjali Beauty Cream", 
+            "barcodeNumber" : "8904109450167", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Patanjali lemon honey face wash", 
+            "barcodeNumber" : "8904109450440", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "patanjali hrebal shave gel", 
+            "barcodeNumber" : "8904109450617", 
+            "barcodePrice" : 40
+        }, 
+        {
+            "barcodeName" : "patanjali herbal shave ceam ", 
+            "barcodeNumber" : "8904109450624", 
+            "barcodePrice" : 55
+        }, 
+        {
+            "barcodeName" : "patanjali kesh kanti hair conditioner", 
+            "barcodeNumber" : "8904109450716", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Patanjali rose face wash", 
+            "barcodeNumber" : "8904109451003", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Patanjali Saundarya body lotion", 
+            "barcodeNumber" : "8904109451065", 
+            "barcodePrice" : 100
+        }, 
+        {
+            "barcodeName" : "Patanjali apricot face wash", 
+            "barcodeNumber" : "8904109451348", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Patanjali neem aloe vira face wash", 
+            "barcodeNumber" : "8904109451379", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Patanjali kesh kanti aloe vera hair gel", 
+            "barcodeNumber" : "8904109451485", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Patanjali kesh kanti hair conditioner", 
+            "barcodeNumber" : "8904109451706", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pattanjali ayodin salt ", 
+            "barcodeNumber" : "8904109461026", 
+            "barcodePrice" : 12, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Tulips Colour Cotton Balls", 
+            "barcodeNumber" : "8904117401007", 
+            "barcodePrice" : 46, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "boat plug into nirvana", 
+            "barcodeNumber" : "8904130838514", 
+            "barcodePrice" : 3000
+        }, 
+        {
+            "barcodeName" : "skin123 floral bliss", 
+            "barcodeNumber" : "8904132906990", 
+            "barcodePrice" : 69, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "skin123 floral bliss", 
+            "barcodeNumber" : "8904132908642", 
+            "barcodePrice" : 170, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Ayur herbal all purpose cream", 
+            "barcodeNumber" : "8904135205076", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Herbal all purpose cream ", 
+            "barcodeNumber" : "8904135205083", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Ayur herbals cold cream", 
+            "barcodeNumber" : "8904135205120", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Trophy royale basmati rice", 
+            "barcodeNumber" : "8904250700531", 
+            "barcodePrice" : 129
+        }, 
+        {
+            "barcodeName" : "kohinoor choley masala", 
+            "barcodeNumber" : "8904250701071", 
+            "barcodePrice" : 20
+        }, 
+        {
+            "barcodeName" : " nivea pure talc", 
+            "barcodeNumber" : "8904256001908", 
+            "barcodePrice" : 70
+        }, 
+        {
+            "barcodeName" : "Dr.oetker funfoods green chilli sauce ", 
+            "barcodeNumber" : "8906002001194", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dhara kachi ghani mustard oil", 
+            "barcodeNumber" : "8906004620287", 
+            "barcodePrice" : 795, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Fortune soya health refined soyabean oil ", 
+            "barcodeNumber" : "8906007280068", 
+            "barcodePrice" : 630
+        }, 
+        {
+            "barcodeName" : "Fortunes oil", 
+            "barcodeNumber" : "8906007280280", 
+            "barcodePrice" : 610, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "fortune rice bran health", 
+            "barcodeNumber" : "8906007280716", 
+            "barcodePrice" : 695
+        }, 
+        {
+            "barcodeName" : "Fortune chhota basmati rice", 
+            "barcodeNumber" : "8906007288040", 
+            "barcodePrice" : 84, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vlcc lavang moisturiser skin defense", 
+            "barcodeNumber" : "8906008450729", 
+            "barcodePrice" : 140, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vlcc honey moisturiser", 
+            "barcodeNumber" : "8906008450743", 
+            "barcodePrice" : 215, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Vlcc pista massage cream", 
+            "barcodeNumber" : "8906008450811", 
+            "barcodePrice" : 235, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Vlcc snigdha skin whitening day cream", 
+            "barcodeNumber" : "8906008450897", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vlcc matte look sun screen block", 
+            "barcodeNumber" : "8906008451634", 
+            "barcodePrice" : 315, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vlcc rose face scrub", 
+            "barcodeNumber" : "8906008453041", 
+            "barcodePrice" : 155, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vlcc skin nourishing sun screen lotion", 
+            "barcodeNumber" : "8906008458213", 
+            "barcodePrice" : 350, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vlcc clear tan fruit face pack", 
+            "barcodeNumber" : "8906008459210", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Vlcc insta fair glow fairness cream", 
+            "barcodeNumber" : "8906008460414", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pure roots sun block lotion", 
+            "barcodeNumber" : "8906008986730", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pure roots fruit cream", 
+            "barcodeNumber" : "8906008986815", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pure roots fruit cream", 
+            "barcodeNumber" : "8906008987461", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 100
+        }, 
+        {
+            "barcodeName" : "Pure roots almonds cream", 
+            "barcodeNumber" : "8906008987911", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pure roots purifying scrub", 
+            "barcodeNumber" : "8906008988000", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pure roots gold scrub", 
+            "barcodeNumber" : "8906008988031", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pure roots sunscreen lotion", 
+            "barcodeNumber" : "8906008988697", 
+            "barcodePrice" : 180, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pure roots fairness cream", 
+            "barcodeNumber" : "8906008988734", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Pure roots rose cool talc", 
+            "barcodeNumber" : "8906008988840", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Pure roots sunscreen lotion", 
+            "barcodeNumber" : "8906008988857", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "pure roots cool herbal with pudina and neem", 
+            "barcodeNumber" : "8906008988918", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "pure roots cool classic with menthol", 
+            "barcodeNumber" : "8906008988925", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "pure roots deo talc active plus", 
+            "barcodeNumber" : "8906008988932", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vi john boro shield antiseptic cream", 
+            "barcodeNumber" : "8906010080167", 
+            "barcodePrice" : 25, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Valinta moisturizing cream", 
+            "barcodeNumber" : "8906012110411", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Valinta skin nourishing cream", 
+            "barcodeNumber" : "8906012110459", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Valinta hair serum", 
+            "barcodeNumber" : "8906012110497", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "taaza spices kashmiri mirchi powder", 
+            "barcodeNumber" : "8906013770461", 
+            "barcodePrice" : 56
+        }, 
+        {
+            "barcodeName" : "taaza sambar masala", 
+            "barcodeNumber" : "8906013770607", 
+            "barcodePrice" : 57
+        }, 
+        {
+            "barcodeName" : "taaza sambar masala", 
+            "barcodeNumber" : "8906013770744", 
+            "barcodePrice" : 31
+        }, 
+        {
+            "barcodeName" : "Taaza spices mint powder", 
+            "barcodeNumber" : "8906013770799", 
+            "barcodePrice" : 80
+        }, 
+        {
+            "barcodeName" : "Gluco energy", 
+            "barcodeNumber" : "8906013950689", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Bajaj nomarks for all skin types", 
+            "barcodeNumber" : "8906014763011", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Bajaj nomarks cream", 
+            "barcodeNumber" : "8906014763059", 
+            "barcodePrice" : 120, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "nisha color perfect", 
+            "barcodeNumber" : "8906015580600", 
+            "barcodePrice" : 30
+        }, 
+        {
+            "barcodeName" : "Nisha color perfect creme hair colour", 
+            "barcodeNumber" : "8906015580648", 
+            "barcodePrice" : 30, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Upkar punjabi chhole masala", 
+            "barcodeNumber" : "8906019490127", 
+            "barcodePrice" : 63, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Upkar green chilli pickle", 
+            "barcodeNumber" : "8906019490219", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Upkar garlic hot pickle in mustard oil ", 
+            "barcodeNumber" : "8906019490226", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "engine refined sunflower oil", 
+            "barcodeNumber" : "8906020934023", 
+            "barcodePrice" : 630, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "eyetex dazzler", 
+            "barcodeNumber" : "8906029309020", 
+            "barcodePrice" : 10
+        }, 
+        {
+            "barcodeName" : "eyetex dazzler", 
+            "barcodeNumber" : "8906029309037", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "eyetex dazller", 
+            "barcodeNumber" : "8906029309068", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Emetex dazller walnut apricot face scrub", 
+            "barcodeNumber" : "8906029309167", 
+            "barcodePrice" : 55, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Assure force fresh bady talc ", 
+            "barcodeNumber" : "8906031310656", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Assure enchant body talc", 
+            "barcodeNumber" : "8906031310663", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "TBC oil free day cream", 
+            "barcodeNumber" : "8906035312007", 
+            "barcodePrice" : 149, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "TBC white essentials purely white skin day cream", 
+            "barcodeNumber" : "8906035314506", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "TBC ultimate whitening night cream", 
+            "barcodeNumber" : "8906035314513", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "TBC strength n shine organic hair serum", 
+            "barcodeNumber" : "8906035318160", 
+            "barcodePrice" : 175, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "TB 24Ct Gold Honey And Almond Cream", 
+            "barcodeNumber" : "8906035318429", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "TBC sunscreen oil free gel", 
+            "barcodeNumber" : "8906035318610", 
+            "barcodePrice" : 149, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Nature's lacto bleach tan removal cream", 
+            "barcodeNumber" : "8906045490962", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Nature's lacto tan clear", 
+            "barcodeNumber" : "8906045491464", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Inglish shaving foam classic", 
+            "barcodeNumber" : "8906056630708", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Inglish shaving foam sensitive", 
+            "barcodeNumber" : "8906056630715", 
+            "barcodePrice" : 160, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Dfree overnight anti dandruff lotion", 
+            "barcodeNumber" : "8906067520012", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Wonder wings silky touch", 
+            "barcodeNumber" : "8906070640042", 
+            "barcodePrice" : 40, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "New Wonder wings Dry Comfort", 
+            "barcodeNumber" : "8906070640127", 
+            "barcodePrice" : 45, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Meglow fairness technology for brighter skin", 
+            "barcodeNumber" : "8906078000077", 
+            "barcodePrice" : 35, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "Meglow fairness cream for women", 
+            "barcodeNumber" : "8906078000084", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Meglow fairness technology for absolute radiance", 
+            "barcodeNumber" : "8906078000091", 
+            "barcodePrice" : 110, 
+            "barcodeStock" : 12
+        }, 
+        {
+            "barcodeName" : "luvit lollipop", 
+            "barcodeNumber" : "8906079011195", 
+            "barcodePrice" : 5
+        }, 
+        {
+            "barcodeName" : "Kal kamisori japan prime", 
+            "barcodeNumber" : "8906081440242", 
+            "barcodePrice" : 20, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "oxy only for men peel face wash", 
+            "barcodeNumber" : "8906085380216", 
+            "barcodePrice" : 99, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Aroma Papaya Exfoliate face scrub", 
+            "barcodeNumber" : "8906091730111", 
+            "barcodePrice" : 195, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Aroma Leaf Face scrub", 
+            "barcodeNumber" : "8906091730128", 
+            "barcodePrice" : 195, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Aroma 24CT Skin Radiance Face scrub", 
+            "barcodeNumber" : "8906091730135", 
+            "barcodePrice" : 245, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Aroma Tan Removal Face Scrub", 
+            "barcodeNumber" : "8906091730142", 
+            "barcodePrice" : 245, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "VLCC nourishing almond anti agieng", 
+            "barcodeNumber" : "8907122000081", 
+            "barcodePrice" : 450, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vlcc hydrating night cream", 
+            "barcodeNumber" : "8907122000098", 
+            "barcodePrice" : 450, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "vlcc paraben free sun defense", 
+            "barcodeNumber" : "8907122002603", 
+            "barcodePrice" : 250, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "vlcc sun screen lotion", 
+            "barcodeNumber" : "8907122002610", 
+            "barcodePrice" : 125, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "vlcc Snigdha Skin Whitening Cream", 
+            "barcodeNumber" : "8907122006960", 
+            "barcodePrice" : 450, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "Vlcc Ayurveda Youth Miracle Anti Ageing Cream", 
+            "barcodeNumber" : "8907122008292", 
+            "barcodePrice" : 225, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Vlcc Ayurveda Spotless Clear Active D Pigmentation Cream", 
+            "barcodeNumber" : "8907122008308", 
+            "barcodePrice" : 195, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "vlcc body lotion with goodness of aloe vera", 
+            "barcodeNumber" : "8907122010196", 
+            "barcodePrice" : 299, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "ankur ground nut oil", 
+            "barcodeNumber" : "8908000096004", 
+            "barcodePrice" : 700
+        }, 
+        {
+            "barcodeName" : "oleev active oil", 
+            "barcodeNumber" : "8908000863408", 
+            "barcodePrice" : 950, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "White tone face powder", 
+            "barcodeNumber" : "8908001158022", 
+            "barcodePrice" : 100, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "White tone face powder", 
+            "barcodeNumber" : "8908001158299", 
+            "barcodePrice" : 75, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "khushis garlic ginger mix", 
+            "barcodeNumber" : "8908002173123", 
+            "barcodePrice" : 69
+        }, 
+        {
+            "barcodeName" : "Super soft ultra secure", 
+            "barcodeNumber" : "8908007573003", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 2
+        }, 
+        {
+            "barcodeName" : "CPL Supersoft maxi secure", 
+            "barcodeNumber" : "8908007573010", 
+            "barcodePrice" : 80, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Super soft ultra comfort", 
+            "barcodeNumber" : "8908007573041", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Super soft maxi comfort", 
+            "barcodeNumber" : "8908007573058", 
+            "barcodePrice" : 65, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "Puro healthy salt", 
+            "barcodeNumber" : "8908008468087", 
+            "barcodePrice" : 95, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "FMB spices coriander powder", 
+            "barcodeNumber" : "8908008849053", 
+            "barcodePrice" : 125
+        }, 
+        {
+            "barcodeName" : "Fmb turmeric powder", 
+            "barcodeNumber" : "8908008849077", 
+            "barcodePrice" : 50, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "the lunch wrap", 
+            "barcodeNumber" : "8908009568335", 
+            "barcodePrice" : 85, 
+            "barcodeStock" : 0
+        }, 
+        {
+            "barcodeName" : "Swan cold cream", 
+            "barcodeNumber" : "8931003901015", 
+            "barcodePrice" : 70, 
+            "barcodeStock" : 10
+        }, 
+        {
+            "barcodeName" : "XMSD PROFESSIONAL", 
+            "barcodeNumber" : "MSD0032", 
+            "barcodePrice" : 60
+        }, 
+        {
+            "barcodeName" : "AROE SANDAL WOOD Face Scrub", 
+            "barcodeNumber" : "RSM110", 
+            "barcodePrice" : 60, 
+            "barcodeStock" : 1
+        }, 
+        {
+            "barcodeName" : "XMSD PROFESSIONAL", 
+            "barcodeNumber" : "WFPB0000123400L1", 
+            "barcodePrice" : 100
+        }, 
+        {
+            "barcodeName" : "bankatji chhas masala", 
+            "barcodeNumber" : "bankatjichass10", 
+            "barcodePrice" : 10
+        }
+]
