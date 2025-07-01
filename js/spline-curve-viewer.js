@@ -1,5 +1,9 @@
 import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 // import Chart from 'https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js';
+// import zoomPlugin from 'https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js';
+
+// Chart.register(zoomPlugin);
+Chart.register(window.ChartZoom);
 
 class SplineCurveViewer extends LitElement {
   static properties = {
@@ -19,7 +23,7 @@ class SplineCurveViewer extends LitElement {
 
   async loadData() {
     try {
-      const res = await fetch('./datasets/barcodesData.json'); // Ensure correct path
+      const res = await fetch('./datasets/barcodesData.json'); // Update path as needed
       this.data = await res.json();
       await this.updateComplete;
       this.renderChart();
@@ -42,12 +46,12 @@ class SplineCurveViewer extends LitElement {
 
   renderChart() {
     const ctx = this.renderRoot.querySelector('#splineChart').getContext('2d');
-    
+
     if (this.chart) {
       this.chart.destroy();
     }
 
-    const labels = this.paginatedData.map(item => item.barcodeName);
+    const labels = this.paginatedData.map((item, idx) => idx);
     const values = this.paginatedData.map(item => item.barcodePrice);
 
     this.chart = new Chart(ctx, {
@@ -75,6 +79,23 @@ class SplineCurveViewer extends LitElement {
             callbacks: {
               label: ctx => `₹ ${ctx.parsed.y}`
             }
+          },
+          zoom: {
+            pan: {
+              enabled: true,
+              mode: 'x',
+            },
+            zoom: {
+              drag: {
+                enabled: true,
+                backgroundColor: 'rgba(0, 168, 255, 0.3)'
+              },
+              mode: 'x',
+              onZoomComplete: ({ chart }) => {
+                const xAxis = chart.scales.x;
+                this.handleZoomSelection(xAxis.min, xAxis.max);
+              }
+            }
           }
         },
         scales: {
@@ -92,18 +113,41 @@ class SplineCurveViewer extends LitElement {
     });
   }
 
+  handleZoomSelection(startIndex, endIndex) {
+    const selected = this.paginatedData.slice(Math.floor(startIndex), Math.ceil(endIndex));
+    const container = this.renderRoot.querySelector('#selectionOutput');
+    container.innerHTML = '';
+
+    selected.forEach(item => {
+      const div = document.createElement('div');
+      div.textContent = `📦 ${item.barcodeName} — ₹${item.barcodePrice}`;
+      container.appendChild(div);
+    });
+  }
+
   nextPage() {
     if ((this.currentPage + 1) * this.itemsPerPage < this.data.length) {
       this.currentPage++;
-      this.updateComplete.then(() => this.renderChart());
+      this.updateComplete.then(() => {
+        this.renderChart();
+        this.clearSelectionOutput();
+      });
     }
   }
 
   prevPage() {
     if (this.currentPage > 0) {
       this.currentPage--;
-      this.updateComplete.then(() => this.renderChart());
+      this.updateComplete.then(() => {
+        this.renderChart();
+        this.clearSelectionOutput();
+      });
     }
+  }
+
+  clearSelectionOutput() {
+    const container = this.renderRoot.querySelector('#selectionOutput');
+    if (container) container.innerHTML = '';
   }
 
   static styles = css`
@@ -164,19 +208,46 @@ class SplineCurveViewer extends LitElement {
       font-size: 14px;
       color: #bbb;
     }
+
+    #selectionOutput {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #c0f0ff;
+    }
+
+    #resetZoomBtn {
+      display: block;
+      margin: 16px auto 0;
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #005577;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #resetZoomBtn:hover {
+      background-color: #0077aa;
+    }
   `;
 
   render() {
     const totalPages = Math.ceil(this.data.length / this.itemsPerPage);
     return html`
       <h2>Spline Chart: Barcode Prices</h2>
-      <canvas id="splineChart" style={"height":"70px"}></canvas>
-      
+      <canvas id="splineChart"></canvas>
+
       <div class="pagination">
         <button @click=${this.prevPage} ?disabled=${this.currentPage === 0}>⟨ Prev</button>
         <span>Page ${this.currentPage + 1} / ${totalPages}</span>
         <button @click=${this.nextPage} ?disabled=${(this.currentPage + 1) >= totalPages}>Next ⟩</button>
       </div>
+
+      <button id="resetZoomBtn" @click=${() => this.chart.resetZoom()}>Reset Zoom</button>
+
+      <div id="selectionOutput"></div>
     `;
   }
 }
