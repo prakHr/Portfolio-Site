@@ -12,7 +12,7 @@ class SplineCurveViewer extends LitElement {
     super();
     this.data = [];
     this.currentPage = 0;
-    this.itemsPerPage = 10;
+    this.itemsPerPage = 50;
     this.chart = null;
     this.loadData();
   }
