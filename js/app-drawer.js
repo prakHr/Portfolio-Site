@@ -85,6 +85,7 @@ class AppDrawer extends LitElement {
 			<button @click=${() => this.activeView = 'jsonComponent'}>Json button list viewer</button>
 			<button @click=${() => this.activeView = 'jsonChartComponent'}>Json button chart viewer</button>
 			<button @click=${() => this.activeView = 'jsonSplineChartComponent'}>Json button spline-chart viewer</button>
+			<button @click=${() => this.activeView = 'paginatedTableComponent'}>Json Data Paginated Table viewer</button>
 			
 		</div>
 		<div class="content">
@@ -117,6 +118,8 @@ class AppDrawer extends LitElement {
 				<spline-curve-viewer></spline-curve-viewer>
 				</div>
 			`;
+		case 'paginatedTableComponent':
+			return html`<paginated-animated-table></paginated-animated-table>`;
 		
 		}
 	}
