@@ -12,52 +12,67 @@ class AppDrawer extends LitElement {
 
 	static styles = css`
 	:host {
-		display: flex;
-		height: 100vh;
-		font-family: 'Segoe UI', 'Roboto', sans-serif;
-		background-color: #121212;
-		color: #ffffff;
-	}
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
 
-	.drawer {
-		width: 150px;
-		background-color: #1e1e1e;
-		display: flex;
-		flex-direction: column;
-		padding: 16px;
-		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-		border-right: 1px solid #2a2a2a;
-	}
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "cube viewer"
+        "chart spline"
+        "table table";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
 
-	.drawer h2 {
-		font-size: 20px;
-		font-weight: 600;
-		margin-bottom: 20px;
-		color: #ffffff;
-	}
+    .cube {
+      grid-area: cube;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-	.drawer button {
-		background-color: transparent;
-		border: none;
-		color: #ffffff;
-		padding: 12px 16px;
-		text-align: left;
-		cursor: pointer;
-		font-size: 16px;
-		border-radius: 8px;
-		transition: background-color 0.2s, transform 0.2s;
-	}
+    .viewer {
+      grid-area: viewer;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-	.drawer button:hover {
-		background-color: #2a2a2a;
-		transform: translateX(4px);
-	}
+    .chart {
+      grid-area: chart;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-	.drawer button:focus {
-		outline: none;
-		background-color: #333333;
-	}
+    .spline {
+      grid-area: spline;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
+    .table {
+      grid-area: table;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    #chart-area-dynamic {
+      width: 100%;
+      height: 150px;
+      background: #eee;
+      margin-top: 1rem;
+    }
+  
+	
+
+	
 	.content {
 		flex-grow: 1;
 		padding: 24px;
@@ -73,12 +88,106 @@ class AppDrawer extends LitElement {
 		background-color: #444;
 		border-radius: 3px;
 	}
+		:host {
+      display: block;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .layout-row {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+
+    
+
+    .drawer {
+		width: 100%;
+		background-color: #1e1e1e;
+		display: flex;
+		flex-direction: row; /* <-- CHANGED */
+		padding: 16px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		border-bottom: 1px solid #2a2a2a;
+		flex-wrap: wrap; /* Optional: wrap buttons if they overflow */
+	}
+
+	.drawer button {
+		background-color: transparent;
+		border: none;
+		color: #ffffff;
+		padding: 8px 12px;
+		text-align: center;
+		cursor: pointer;
+		font-size: 14px;
+		border-radius: 6px;
+		transition: background-color 0.2s, transform 0.2s;
+		white-space: nowrap;
+		margin: 4px;
+	}
+
+	.layout-column {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+    .drawer button:hover {
+      background-color: #2a2a2a;
+      transform: translateX(4px);
+    }
+
+    .drawer button:focus {
+      outline: none;
+      background-color: #333333;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      overflow: auto;
+      background-color: #f0f0f0;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-areas:
+        "cube viewer"
+        "chart spline"
+        "table table";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+
+    .dashboard-grid > div {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .cube { grid-area: cube; }
+    .viewer { grid-area: viewer; }
+    .chart { grid-area: chart; }
+    .spline { grid-area: spline; }
+    .table { grid-area: table; }
+
+    #chart-area-dynamic {
+      width: 100%;
+      height: 150px;
+      background: #eee;
+      margin-top: 1rem;
+    }
+  
+
 	`;
 
 
 	render() {
 		return html`
+		<div class="layout-column">
 		<div class="drawer">
+			<button @click=${() => this.activeView = 'MaterialUI'}>Material UI</button>
 			<button @click=${() => this.activeView = 'wordcloud'}>Word Cloud of Home page</button>
 			<button @click=${() => this.activeView = 'locationUtube'}>Location U-tube</button>
 			<button @click=${() => this.activeView = 'cubePlotter'}>3d Cube Clicked Chart-Plotter</button>
@@ -91,12 +200,37 @@ class AppDrawer extends LitElement {
 		<div class="content">
 			${this.renderView()}
 		</div>
+		</div>
 		`;
 	}
 
 	renderView() {
 		// console.log('Active view is:', this.activeView);
 		switch (this.activeView) {
+		case 'MaterialUI':
+			return html`
+			<div class="dashboard-grid">
+				<div class="cube">
+				<my-3d-cube></my-3d-cube>
+				</div>
+
+				<div class="viewer">
+				<json-button-list-viewer></json-button-list-viewer>
+				</div>
+
+				<div class="chart">
+				<json-button-chart-viewer></json-button-chart-viewer>
+				</div>
+
+				<div class="spline">
+				<spline-curve-viewer></spline-curve-viewer>
+				</div>
+
+				<div class="table">
+				<paginated-animated-table></paginated-animated-table>
+				</div>
+			</div>
+			`;
 		case 'locationUtube':
 			return html`<input-dropdown-form></input-dropdown-form>`;
 		case 'wordcloud':
@@ -119,8 +253,8 @@ class AppDrawer extends LitElement {
 				</div>
 			`;
 		case 'paginatedTableComponent':
-			return html`<paginated-animated-table></paginated-animated-table>`;
-		
+			return html`<div class="table"><paginated-animated-table></paginated-animated-table></div>`;
+			
 		}
 	}
 updated(changedProperties) {
