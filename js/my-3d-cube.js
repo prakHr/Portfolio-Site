@@ -63,6 +63,14 @@ class My3DCube extends LitElement {
     }
   `;
 
+  imageMap = {
+    'front': 'ironman Mark 42',       // Mark 42
+    'back': 'ironman Hulkbuster',        // Hulkbuster
+    'right': 'ironman Mark 85',       // Mark 85
+    'left': 'ironman Nanotech',        // Mark 3
+    'top': 'ironman Mark 7',         // Mark 7
+    'bottom': 'ironman Mark 7'       // Mark 50
+  };
   chartMap = {
     front: 'pie',
     back: 'bar',
@@ -75,7 +83,7 @@ class My3DCube extends LitElement {
   renderFace(face) {
     return html`
       <div class="face ${face}" @click=${() => this._onFaceClick(face)}>
-        ${face.toUpperCase()}
+        ${this.imageMap[face]}
       </div>
     `;
   }
