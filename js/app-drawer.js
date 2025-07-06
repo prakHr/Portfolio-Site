@@ -34,7 +34,9 @@ class AppDrawer extends LitElement {
       grid-area: cube;
       background: white;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+	
+
     }
 
     .viewer {
@@ -191,7 +193,7 @@ class AppDrawer extends LitElement {
 
 	card-input-form {
 		flex: 1 0 auto;
-		min-width: 200px;
+		min-width: 100px;
 
 		
 	}
