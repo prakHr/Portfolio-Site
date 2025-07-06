@@ -37,7 +37,7 @@ class My3DCube extends LitElement {
     }
 
     .face:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: #FF5733;
       border-color: #fff;
     }
 
