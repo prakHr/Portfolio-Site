@@ -3,11 +3,13 @@ import { LitElement, html, css } from 'https://unpkg.com/lit?module';
 class AppDrawer extends LitElement {
 	static properties = {
 		activeView: { type: String },
+		cardData: { type: Array }, // NEW
 	};
 
 	constructor() {
 		super();
 		this.activeView = 'cubePlotter';
+		this.cardData = []; // INIT
 	}
 
 	static styles = css`
@@ -178,10 +180,34 @@ class AppDrawer extends LitElement {
       background: #eee;
       margin-top: 1rem;
     }
-  
+	  
+	.card-row {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		margin-top: 1rem;
+		
+	}
 
+	card-input-form {
+		flex: 1 0 auto;
+		min-width: 200px;
+
+		
+	}
 	`;
 
+	firstUpdated() {
+		// Replace URL with your actual path or API
+		fetch('./datasets/data.json')
+			.then(res => res.json())
+			.then(data => {
+			this.cardData = data.labels.map((label, index) => ({
+				name: label,
+				amount: data.quantities[index]
+			}));
+			});
+		}
 
 	render() {
 		return html`
@@ -210,6 +236,18 @@ class AppDrawer extends LitElement {
 		case 'MaterialUI':
 			return html`
 			<div class="dashboard-grid">
+				<div class="card-row">
+					${this.cardData.map(
+						(item) => html`
+							<card-input-form
+								name=${item.name}
+								amount=${item.amount}
+								style="width: ${100 / this.cardData.length}%; color: gold; background-color:black;"
+							></card-input-form>
+								`
+					)}
+				</div>	
+				
 				<div class="cube">
 				<my-3d-cube></my-3d-cube>
 				</div>
