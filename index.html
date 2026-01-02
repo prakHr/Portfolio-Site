@@ -501,6 +501,54 @@
   </script>
       
 <body>
+	<textarea id="spreadPositivityInput" placeholder="Type to spread positivity(only English supported)..." style="
+	resize: vertical;
+  max-width: 680px;
+  margin-left: 33%;
+  padding: 28px 32px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #1f2933;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);"></textarea>
+  <br><br><br>
+  <button class="btn btn-primary" onclick="analyze()" style="margin-left: 38%;">Analyze</button>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/compromise@14.9.0/builds/compromise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/compendium-js@0.0.32/dist/compendium.minimal.min.js">
+	</script>
+
+  <script>
+    function analyze() {
+      const text = document.getElementById("spreadPositivityInput").value;
+
+      
+		// Perform analysis
+		const analysis = compendium.analyse(text);
+		let outputText = "";
+		// Process the results
+		analysis.forEach((sentence, index) => {
+		    const sentiment = sentence.profile;
+
+		    if(sentiment.label=="negative"){
+		    	let doc = nlp(sentence.raw);
+		    	doc.verbs().toNegative();
+		    	outputText += doc.text();
+		    }
+		    else{
+		    	outputText += sentence.raw;
+		    }
+		    
+		});
+		document.getElementById("spreadPositivityInput").value = outputText;
+		
+    }
+  </script>
+
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="./js/chart-display.js"></script>
     <script type="module" src="./js/my-3d-cube.js"></script>
