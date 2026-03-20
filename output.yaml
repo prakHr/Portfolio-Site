@@ -1,0 +1,1627 @@
+tag: html
+attributes: {}
+children:
+- tag: head
+  attributes: {}
+  children:
+  - tag: title
+    attributes: {}
+    children: []
+  - tag: meta
+    attributes:
+      name: viewport
+      content: width=device-width, initial-scale=1.0
+    children: []
+  - tag: title
+    attributes: {}
+    children: []
+  - tag: link
+    attributes:
+      rel: stylesheet
+      type: text/css
+      href: /Portfolio-Site/css/style.css
+    children: []
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: https://unpkg.com/carbon-components@latest/css/carbon-components.css
+    children: []
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+    children: []
+  - tag: link
+    attributes:
+      href: "\r\n\thttps://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css\r\
+        \n\t"
+      rel: stylesheet
+    children: []
+  - tag: link
+    attributes:
+      link: ''
+      rel: stylesheet
+      href: https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    children: []
+  - tag: meta
+    attributes:
+      http-equiv: Content-Security-Policy
+      content: upgrade-insecure-requests
+    children: []
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: https://unpkg.com/carbon-components@latest/css/carbon-components.css
+    children: []
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: /Portfolio-Site/css/track.css
+    children: []
+- tag: body
+  attributes: {}
+  children:
+  - tag: div
+    attributes:
+      id: globeViz-arc
+    children: []
+  - tag: img
+    attributes:
+      id: arcReactor-arc
+    children: []
+  - tag: div
+    attributes:
+      id: top
+      class: section
+    children: []
+  - tag: app-drawer
+    attributes:
+      id: enterpriseWebApps
+    children: []
+  - tag: input
+    attributes:
+      type: text
+      id: sampleTasksText
+      placeholder: Enter text for prediction, For example(Build automated scoring
+        system for quizzes)
+      style: 'border: 10px solid slateblue; border-radius: 10px; width: 50%;height:
+        200px; text-align: center; justify-content: center;margin: auto;display: block;'
+    children: []
+  - tag: div
+    attributes:
+      id: predictTasksOutput
+      style: 'border: 10px solid slateblue; border-radius: 10px; width: 30%;height:
+        200px; text-align: center; justify-content: center;margin: auto;'
+    children: []
+  - tag: div
+    attributes:
+      class: cursor
+    children: []
+  - tag: div
+    attributes:
+      class: bx--body p20
+    children:
+    - tag: div
+      attributes:
+        class: mb10
+      children:
+      - tag: div
+        attributes:
+          id: Mupdatenote
+          class: Mupdatenote mt10
+        children: []
+    - tag: video
+      attributes:
+        class: Mvideobox Mcanvasbox
+        autoplay: autoplay
+        id: Mmyvideo
+        style: 'background-color: transparent;'
+      children: []
+    - tag: canvas
+      attributes:
+        id: Mcanvas
+        class: border Mcanvasbox
+        style: 'background-color: transparent;'
+      children: []
+  - tag: div
+    attributes:
+      class: newSlider
+      id: sessions
+    children:
+    - tag: div
+      attributes:
+        class: Title
+      children: []
+    - tag: div
+      attributes:
+        class: Images
+      children:
+      - tag: img
+        attributes: {}
+        children: []
+      - tag: img
+        attributes: {}
+        children: []
+      - tag: img
+        attributes: {}
+        children: []
+      - tag: img
+        attributes: {}
+        children: []
+    - tag: div
+      attributes:
+        class: Timeline
+      children:
+      - tag: div
+        attributes:
+          class: Checkpoint
+        children:
+        - tag: div
+          attributes:
+            class: Line
+          children: []
+        - tag: div
+          attributes:
+            class: Text
+          children: []
+      - tag: div
+        attributes:
+          class: Checkpoint
+        children:
+        - tag: div
+          attributes:
+            class: Line
+          children: []
+        - tag: div
+          attributes:
+            class: Text
+          children: []
+      - tag: div
+        attributes:
+          class: Checkpoint
+        children:
+        - tag: div
+          attributes:
+            class: Line
+          children: []
+        - tag: div
+          attributes:
+            class: Text
+          children: []
+      - tag: div
+        attributes:
+          class: Checkpoint
+        children:
+        - tag: div
+          attributes:
+            class: Line
+          children: []
+        - tag: div
+          attributes:
+            class: Text
+          children: []
+  - tag: div
+    attributes:
+      class: tesseract
+      id: tesseract
+    children: []
+  - tag: div
+    attributes:
+      class: octagonMenu
+    children: []
+  - tag: div
+    attributes:
+      class: scrollerTop
+    children:
+    - tag: section
+      attributes: {}
+      children: []
+  - tag: div
+    attributes:
+      class: textHover
+    children: []
+  - tag: div
+    attributes:
+      class: products
+      id: products
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN1
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN4
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN5
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN6
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN2
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center;'
+      class: BTN7
+    children: []
+  - tag: div
+    attributes:
+      style: 'text-align: center; display: none;'
+      class: BTN3
+    children: []
+  - tag: div
+    attributes:
+      class: mb8
+      id: BTNCLASS1
+    children:
+    - tag: label
+      attributes:
+        for: productRL
+        style: 'color:palevioletred;background-color: black;border: 5px solid red;border-radius:
+          8px;'
+      children: []
+    - tag: input
+      attributes:
+        type: text
+        name: productR
+        id: productR
+        style: 'height: 200px; width: 1000px;'
+        placeholder: Master Lock 1KALJ 2734 No. 1 Long Shackle Laminated Padlock
+      children: []
+    - tag: input
+      attributes:
+        type: text
+        name: messagePR
+        id: messagePR
+        style: 'height: 50px; width: 500px;'
+        placeholder: txtfeatures
+      children: []
+    - tag: div
+      attributes: {}
+      children:
+      - tag: canvas
+        attributes:
+          id: PRChart1
+        children: []
+      - tag: canvas
+        attributes:
+          id: PRChart2
+        children: []
+      - tag: canvas
+        attributes:
+          id: PRChart3
+        children: []
+      - tag: canvas
+        attributes:
+          id: PRChart4
+        children: []
+  - tag: div
+    attributes:
+      class: mb8
+      id: BTNCLASS4
+    children:
+    - tag: input
+      attributes:
+        type: text
+        name: autoC
+        id: autoC
+        style: 'height: 200px; width: 1000px;'
+        placeholder: Enter your sentence to be autocorrected For example I am siting
+          in airoplane.
+      children: []
+  - tag: div
+    attributes:
+      class: mb10
+      id: BTNCLASS2
+    children:
+    - tag: div
+      attributes:
+        id: updatenote
+        class: updatenote mt10
+      children: []
+  - tag: div
+    attributes: {}
+    children:
+    - tag: video
+      attributes:
+        class: ' videobox canvasbox'
+        id: video
+      children: []
+    - tag: canvas
+      attributes:
+        id: canvas
+        class: border canvasbox
+      children: []
+    - tag: div
+      attributes:
+        class: alphabets
+      children: []
+  - tag: textarea
+    attributes:
+      id: spreadPositivityInput
+      placeholder: Type to spread positivity(only English supported)...
+      style: "\r\n\tresize: vertical;\r\n  max-width: 680px;\r\n  margin-left: 33%;\r\
+        \n  padding: 28px 32px;\r\n  font-family: 'Inter', system-ui, -apple-system,\
+        \ sans-serif;\r\n  font-size: 17px;\r\n  line-height: 1.65;\r\n  color: #1f2933;\r\
+        \n  background-color: #ffffff;\r\n  border-radius: 8px;\r\n  text-align: center;\r\
+        \n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);"
+    children: []
+  - tag: my-3d-cube
+    attributes: {}
+    children: []
+  - tag: div
+    attributes:
+      id: chart-area
+      style: width:30%;height:30%
+    children: []
+  - tag: div
+    attributes:
+      id: preogressbar
+    children: []
+  - tag: div
+    attributes:
+      id: scrollpath
+    children: []
+  - tag: div
+    attributes:
+      id: percent
+    children: []
+  - tag: div
+    attributes:
+      class: BodyStarter
+      style: 'background-color: greenyellow; display: none;'
+    children: []
+  - tag: div
+    attributes:
+      class: BodyStart
+      id: BTNCLASS3
+      style: 'display: none;'
+    children: []
+  - tag: section
+    attributes:
+      id: header
+    children:
+    - tag: div
+      attributes:
+        style: 'color:lightseagreen; position: relative;text-align: center;'
+        id: element
+      children: []
+    - tag: div
+      attributes:
+        class: container text-center
+      children:
+      - tag: div
+        attributes:
+          class: user-box
+          style: 'background-color: black; position: relative; margin-top: 700px;'
+        children: []
+    - tag: div
+      attributes:
+        class: scroll-btn
+      children:
+      - tag: div
+        attributes:
+          class: scroll-bar
+        children: []
+  - tag: section
+    attributes:
+      id: user-info
+    children:
+    - tag: div
+      attributes:
+        class: nav-bar
+      children:
+      - tag: nav
+        attributes:
+          class: navbar navbar-expand-lg
+        children:
+        - tag: div
+          attributes:
+            class: collapse navbar-collapse
+            id: navbarNav
+          children: []
+    - tag: div
+      attributes:
+        class: Body
+      children:
+      - tag: div
+        attributes:
+          class: container
+        children:
+        - tag: div
+          attributes:
+            class: box
+          children:
+          - tag: div
+            attributes:
+              class: card
+              style: --i:1;
+            children:
+            - tag: div
+              attributes:
+                class: imgBx
+              children:
+              - tag: img
+                attributes: {}
+                children: []
+          - tag: div
+            attributes:
+              class: card
+              style: --i:2;
+            children:
+            - tag: div
+              attributes:
+                class: imgBx
+              children:
+              - tag: img
+                attributes: {}
+                children: []
+          - tag: div
+            attributes:
+              class: card
+              style: --i:3;
+            children:
+            - tag: div
+              attributes:
+                class: imgBx
+              children:
+              - tag: img
+                attributes: {}
+                children: []
+          - tag: div
+            attributes:
+              class: card
+              style: --i:4;
+            children:
+            - tag: div
+              attributes:
+                class: imgBx
+              children:
+              - tag: img
+                attributes: {}
+                children: []
+        - tag: div
+          attributes:
+            class: btns
+          children:
+          - tag: div
+            attributes:
+              class: prev
+            children: []
+          - tag: div
+            attributes:
+              class: next
+            children: []
+    - tag: div
+      attributes:
+        class: Body2
+      children:
+      - tag: div
+        attributes:
+          class: container
+        children:
+        - tag: div
+          attributes:
+            class: card
+            style: --clr:#e9a643;
+          children:
+          - tag: div
+            attributes:
+              class: imgBx
+            children:
+            - tag: img
+              attributes: {}
+              children: []
+          - tag: img
+            attributes:
+              class: c3d
+            children: []
+        - tag: div
+          attributes:
+            class: card
+            style: --clr:#e9a643;
+          children:
+          - tag: div
+            attributes:
+              class: imgBx
+            children:
+            - tag: img
+              attributes: {}
+              children: []
+          - tag: img
+            attributes:
+              class: c3d
+            children: []
+    - tag: div
+      attributes:
+        class: Body3
+      children:
+      - tag: div
+        attributes:
+          class: container
+        children:
+        - tag: div
+          attributes:
+            class: item img1
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+        - tag: div
+          attributes:
+            class: item img2
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+        - tag: div
+          attributes:
+            class: item img3
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+        - tag: div
+          attributes:
+            class: item img4
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+        - tag: div
+          attributes:
+            class: item img5
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+        - tag: div
+          attributes:
+            class: item img6
+          children:
+          - tag: img
+            attributes: {}
+            children: []
+    - tag: div
+      attributes:
+        class: about container
+        id: about
+      children:
+      - tag: div
+        attributes:
+          class: row
+        children:
+        - tag: div
+          attributes:
+            class: col-md-6 text-center
+          children:
+          - tag: img
+            attributes:
+              class: profile-img
+              style: width:250px;height:300px;
+            children: []
+        - tag: div
+          attributes:
+            class: col-md-6
+          children:
+          - tag: div
+            attributes:
+              class: skills-bar
+            children:
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:95%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:95%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:95%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:95%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:95%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:80%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:75%
+                children: []
+            - tag: div
+              attributes:
+                class: progress
+              children:
+              - tag: div
+                attributes:
+                  class: progress-bar
+                  style: width:90%
+                children: []
+    - tag: div
+      attributes:
+        class: social-icons
+      children: []
+    - tag: div
+      attributes:
+        class: col-md-6
+      children: []
+    - tag: div
+      attributes:
+        class: projects
+        id: projects
+      children:
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children:
+                - tag: img
+                  attributes:
+                    alt: Project Euler Questions
+                    style: width:420px;height:210px;
+                  children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+    - tag: div
+      attributes:
+        class: mainSlider
+      children:
+      - tag: div
+        attributes:
+          class: slider
+        children: []
+    - tag: div
+      attributes:
+        class: certifications
+        id: certifications
+      children:
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+    - tag: div
+      attributes:
+        class: technologies
+        id: technologies
+      children: []
+    - tag: div
+      attributes:
+        class: company
+        id: company
+      children:
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children: []
+    - tag: div
+      attributes:
+        class: works
+        id: works
+      children:
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children:
+                - tag: i
+                  attributes:
+                    class: fa fa-handshake-o
+                  children: []
+                - tag: span
+                  attributes: {}
+                  children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children:
+                - tag: i
+                  attributes:
+                    class: fa fa-line-chart
+                  children: []
+                - tag: span
+                  attributes: {}
+                  children: []
+                - tag: ol
+                  attributes: {}
+                  children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: div
+                attributes:
+                  class: services-box
+                children:
+                - tag: i
+                  attributes:
+                    class: fa fa-laptop
+                  children: []
+                - tag: span
+                  attributes: {}
+                  children: []
+                - tag: ol
+                  attributes: {}
+                  children: []
+    - tag: div
+      attributes:
+        class: resources
+        id: resources
+      children:
+      - tag: div
+        attributes:
+          class: services
+          id: services
+        children:
+        - tag: div
+          attributes:
+            class: container
+          children:
+          - tag: div
+            attributes:
+              class: splide
+              aria-label: Slide Container Example
+              data-splide: '{"type":"loop","fixedHeight":500}'
+            children:
+            - tag: div
+              attributes:
+                class: splide__track
+              children: []
+      - tag: div
+        attributes:
+          class: contact
+          id: contact
+        children:
+        - tag: div
+          attributes:
+            class: container text-center
+          children:
+          - tag: div
+            attributes:
+              class: row
+            children:
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: i
+                attributes:
+                  class: fa fa-phone
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: i
+                attributes:
+                  class: fa fa-envelope
+                children: []
+            - tag: div
+              attributes:
+                class: col-md-4
+              children:
+              - tag: i
+                attributes:
+                  class: fa fa-github
+                children: []
+          - tag: div
+            attributes:
+              class: footer text-center
+            children: []
+      - tag: div
+        attributes:
+          class: BodyEnd
+        children:
+        - tag: div
+          attributes:
+            class: banner
+          children:
+          - tag: video
+            attributes:
+              autoplay: ''
+              muted: ''
+              loop: ''
+            children:
+            - tag: source
+              attributes:
+                type: video/mp4
+              children: []
+      - tag: div
+        attributes: {}
+        children:
+        - tag: input
+          attributes:
+            type: gmap
+            name: gmap
+            id: igmap
+            placeholder: '  Enter any indian address'
+            style: 'height:100%;width:50%;border: 1px solid lavenderblush;border-radius:
+              10px;'
+          children: []

@@ -1,9 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
  /* Basic reset for full-page effect */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	overflow: hidden;
+}
+
+/* 🌍 Globe */
+#globeViz {
+	width: 100vw;
+	height: 100vh;
+	transition: opacity 1s ease;
+}
+
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* ⚡ Arc Reactor */
+#arcReactor {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	z-index: 10;
+	pointer-events: none;
+	animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+	0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+	50% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+	100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+}
+
+/* 📋 Navbar */
+.navbar-arc {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: black;
+	padding: 10px;
+	z-index: 1000;
+	display: flex;
+	gap: 15px;
+}
+
+.nav-link-arc {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 🔙 Back Button */
+#backBtn-arc {
+	position: fixed;
+	top: 50px;
+	left: 20px;
+	padding: 10px 15px;
+	background: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+#top, #tesseract, #products, #about, #resume,
+#certifications, #technologies, #projects,
+#company, #works, #resources, #contact,
+#enterpriseWebApps {
+	display: none;
+	height: 100vh;
+	padding: 80px 20px;
+}
+
+/* 🧊 3D ScrollBox */
+.scrollbox {
+	width: 80%;
+	height: 300px;
+	margin: 40px auto;
+	perspective: 1000px;
+}
+
+.scroll-content {
+	height: 100%;
+	overflow-y: auto;
+	padding: 20px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 15px;
+	transform: rotateX(10deg);
+	transition: 0.3s;
+}
+
+.scrollbox:hover .scroll-content {
+	transform: rotateX(0deg) scale(1.02);
 }
 .newSlider{
 	color: #fff;
