@@ -73,7 +73,32 @@
     <a class="nav-link-arc" href="#about-arc">ABOUT</a>
     <a class="nav-link-arc" href="#contact-arc">CONTACT</a>
   </div> -->
+	<script>
+	const style = document.createElement("style");
+	style.innerHTML = `
+	#backBtn-arc {
+		background-color: #e0e0e0;
+		color: #333;
+		padding: 10px 18px;
+		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+	}
 
+	#backBtn-arc:hover {
+		background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+		background-size: 1400% 1400%;
+		animation: rainbowMove 1.5s forwards;
+	}
+
+	@keyframes rainbowMove {
+		100% {
+		background: #87cefa;
+		}
+	}
+	`;
+	document.head.appendChild(style);
+	</script>
 		<!-- 🔙 Back -->
 		<button id="backBtn-arc">⬅ Back</button>
 
