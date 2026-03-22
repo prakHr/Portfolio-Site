@@ -959,10 +959,11 @@
 			button.addEventListener("click", function () {
 
 				const targetId = this.getAttribute("data-target");
+				console.log("Button clicked, target ID:", targetId); // debug
 				const targetElement = document.getElementById(targetId);
 
-				console.log(targetElement); // debug
-
+				console.log("Button clicked, target Element:", targetElement); // debug
+				
 				if (targetElement) {
 					targetElement.scrollIntoView({
 					behavior: "smooth",
