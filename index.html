@@ -98,7 +98,7 @@
 		/* 🌍 Generate random points */ 
 		function getRandomCoord() { return { lat: Math.random() * 180 - 90, lng: Math.random() * 360 - 180 }; } 
 		/* 🌍 Create dummy markers */ 
-		const markers = Array.from({ length: 15 }).map(() => { 
+		const markers = Array.from({ length: 1000 }).map(() => { 
 			const coord = getRandomCoord(); return { lat: coord.lat, lng: coord.lng, label: "SELF SUSTAINABLE ENERGY" }; 
 		});
 		/* 🌍 Init Globe */ 
@@ -959,18 +959,14 @@
 			button.addEventListener("click", function () {
 
 				const targetId = this.getAttribute("data-target");
-				console.log("Button clicked, target ID:", targetId); // debug
 				const targetElement = document.getElementById(targetId);
 
-				console.log("Button clicked, target Element:", targetElement); // debug
+				// console.log("Button clicked, target Element:", targetElement); // debug
 				
 				if (targetElement) {
 					setTimeout(() => {
 						targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
 					}, 100); // 100ms delay often fixes the "jump"
-				}
- 				else {
-					console.warn("Element not found:", targetId);
 				}
 
 				// Close navbar on mobile (Bootstrap)
