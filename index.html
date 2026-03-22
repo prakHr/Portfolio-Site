@@ -938,6 +938,40 @@
 				</div>
 			</nav>
 		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+
+			document.querySelectorAll(".nav-link").forEach(button => {
+
+			button.addEventListener("click", function () {
+
+				const targetId = this.getAttribute("data-target");
+				const targetElement = document.getElementById(targetId);
+
+				console.log(targetElement); // debug
+
+				if (targetElement) {
+					targetElement.scrollIntoView({
+					behavior: "smooth",
+					block: "start"
+					});
+				} else {
+					console.warn("Element not found:", targetId);
+				}
+
+				// Close navbar on mobile (Bootstrap)
+				const nav = document.querySelector('.navbar-collapse');
+					if (nav.classList.contains('show')) {
+						nav.classList.remove('show');
+					}
+
+				});
+
+			});
+
+			});
+		</script>
 		<!--Cool 3d ScrollBox-->
 		<div class="Body">
 			<div class="container">
