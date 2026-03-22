@@ -53,9 +53,7 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 /* 🔙 Back Button */
 #backBtn-arc {
   background-color: #e0e0e0;
