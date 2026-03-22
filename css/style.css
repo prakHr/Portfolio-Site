@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 /* 🌍 Globe */
@@ -106,11 +106,13 @@ body {
 #certifications, #technologies, #projects,
 #company, #works, #resources, #contact,
 #enterpriseWebApps {
-	display: none;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 80px 20px;
 }
-
+.hidden-section {
+	visibility: hidden;
+	position: absolute;
+}
 /* 🧊 3D ScrollBox */
 .scrollbox {
 	width: 80%;
