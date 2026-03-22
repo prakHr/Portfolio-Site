@@ -1,5 +1,3 @@
-
-let lastLabel = null; // 🧠 remember previous state
 const Mvideo = document.getElementById("Mmyvideo");
 const Mcanvas = document.getElementById("Mcanvas");
 const Mcontext = Mcanvas.getContext("2d");
@@ -47,28 +45,28 @@ function MtoggleVideo() {
     }
 }
 
-// function MrunDetection() {
-//     if (!Mvideo.paused && MisVideo) {
-//         Mmodel.detect(Mvideo).then(Mpredictions => {
-//             // console.log("MPredictions: ", Mpredictions);
-//             if (Mpredictions.length > 0) {
-//                 let label = Mpredictions[0].label;
+function MrunDetection() {
+    if (!Mvideo.paused && MisVideo) {
+        Mmodel.detect(Mvideo).then(Mpredictions => {
+            // console.log("MPredictions: ", Mpredictions);
+            if (Mpredictions.length > 0) {
+                let label = Mpredictions[0].label;
                 
-//                 // console.log(label);
+                // console.log(label);
 
-//                 if (label == 'closed') {
-//                     // Scroll a little bit up (e.g., 100 pixels)
-//                     window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
-//                 } else if (label == 'open') {
-//                     // Scroll a little bit down (e.g., 100 pixels)
-//                     window.scrollBy(0, 100); // The second parameter is the vertical scroll distance (positive value for downward scroll)
-//                 }
-//             }
-//             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
-//             requestAnimationFrame(MrunDetection); // Continue detection
-//         });
-//     }
-// }
+                if (label == 'closed') {
+                    // Scroll a little bit up (e.g., 100 pixels)
+                    window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
+                } else if (label == 'open') {
+                    // Scroll a little bit down (e.g., 100 pixels)
+                    window.scrollBy(0, 100); // The second parameter is the vertical scroll distance (positive value for downward scroll)
+                }
+            }
+            Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
+            requestAnimationFrame(MrunDetection); // Continue detection
+        });
+    }
+}
 
 // Load the model.
 handTrack.load(MmodelParams).then(lmodel => {
@@ -86,49 +84,3 @@ function updateCanvasPosition() {
 
 // Listen to scroll events to move the canvas
 window.addEventListener('scroll', updateCanvasPosition);
-function MtoggleVideo() {
-    if (!MisVideo) {
-        MupdateNote.innerText = "Starting video";
-        MstartVideo();
-    } else {
-        MupdateNote.innerText = "Stopping video";
-        handTrack.stopVideo(Mvideo);
-        MisVideo = false;
-        MupdateNote.innerText = "Video stopped";
-    }
-}
-// function MrunDetection() {
-//     if (!Mvideo.paused && MisVideo) {
-//         Mmodel.detect(Mvideo).then(Mpredictions => {
-
-//             if (Mpredictions.length > 0) {
-//                 let label = Mpredictions[0].label;
-
-//                 // 🔁 Only act when label CHANGES
-//                 if (label !== lastLabel) {
-
-//                     if (label === 'closed') {
-//                         // 🔼 Scroll UP
-//                         window.scrollBy({
-//                             top: -200,
-//                             behavior: 'smooth'
-//                         });
-//                     } 
-//                     else if (label === 'open') {
-//                         // 🔽 Scroll DOWN
-//                         window.scrollBy({
-//                             top: 200,
-//                             behavior: 'smooth'
-//                         });
-//                     }
-
-//                     // 🧠 Update last state
-//                     lastLabel = label;
-//                 }
-//             }
-
-//             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
-//             requestAnimationFrame(MrunDetection);
-//         });
-//     }
-// }
