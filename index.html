@@ -137,13 +137,13 @@
 		});
 		/* 🌍 Init Globe */ 
 		const globe = Globe()(globeContainer) .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg') .pointsData(markers) .pointLabel('label') .pointAltitude(0.02) .onPointClick(() => { 
-				// Animation 
-				globeContainer.classList.add('hidden'); 
-				arcReactor.classList.add('hidden'); 
-				// 🪄 Scroll to bottom
-				document.getElementById('user-info').scrollIntoView({
-					behavior: 'smooth'
-				});
+			// Animation 
+			globeContainer.classList.add('hidden'); 
+			arcReactor.classList.add('hidden'); 
+			// 🪄 Scroll to bottom
+			document.getElementById('user-info').scrollIntoView({
+				behavior: 'smooth'
+			});
 		}); 
 		/* Auto rotate */ 
 		globe.controls().autoRotate = false; 
