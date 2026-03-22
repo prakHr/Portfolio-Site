@@ -125,6 +125,7 @@
 	<script> 
 		
 		document.getElementById("backBtn-arc").addEventListener("click", () => {
+			e.preventDefault(); // stops the jump-to-top behavior
 			window.location.href = "https://prakhr.github.io/Portfolio-Site/";
 		});
 		const globeContainer = document.getElementById('globeViz-arc'); 
