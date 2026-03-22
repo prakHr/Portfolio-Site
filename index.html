@@ -107,7 +107,10 @@
 	</script>
 		
 	<!-- 🔙 Back -->
-	<button id="backBtn-arc">⬅ ARC REACTOR</button>
+	
+	<button id="backBtn-arc">
+		⬅ ARC REACTOR
+	</button>
 		
 	<!-- 🌍 Globe -->
 	<div id="globeViz-arc"></div>
@@ -120,18 +123,10 @@
 	<script src="https://unpkg.com/globe.gl"></script>
 
 	<script> 
-		document.getElementById('backBtn-arc').addEventListener('click', () => {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
+		
+		document.getElementById("backBtn-arc").addEventListener("click", () => {
+			window.location.href = "https://prakhr.github.io/Portfolio-Site/";
 		});
-		// document.getElementById('backBtn-arc').addEventListener(
-		// 'click',
-		// 	() => {
-		// 		location.reload();
-		// 	}
-		// );
 		const globeContainer = document.getElementById('globeViz-arc'); 
 		const arcReactor = document.getElementById('arcReactor-arc'); 
 		/* 🌍 Generate random points */ 
