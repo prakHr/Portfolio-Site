@@ -106,11 +106,6 @@
 		document.head.appendChild(style);
 	</script>
 		
-	<!-- 🔙 Back -->
-	
-	<button id="backBtn-arc">
-		⬅ ARC REACTOR
-	</button>
 		
 	<!-- 🌍 Globe -->
 	<div id="globeViz-arc"></div>
@@ -125,7 +120,6 @@
 	<script> 
 		
 		document.getElementById("backBtn-arc").addEventListener("click", () => {
-			e.preventDefault(); // stops the jump-to-top behavior
 			window.location.href = "https://prakhr.github.io/Portfolio-Site/";
 		});
 		const globeContainer = document.getElementById('globeViz-arc'); 
@@ -138,13 +132,13 @@
 		});
 		/* 🌍 Init Globe */ 
 		const globe = Globe()(globeContainer) .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg') .pointsData(markers) .pointLabel('label') .pointAltitude(0.02) .onPointClick(() => { 
-			// Animation 
-			globeContainer.classList.add('hidden'); 
-			arcReactor.classList.add('hidden'); 
-			// 🪄 Scroll to bottom
-			document.getElementById('user-info').scrollIntoView({
-				behavior: 'smooth'
-			});
+				// Animation 
+				globeContainer.classList.add('hidden'); 
+				arcReactor.classList.add('hidden'); 
+				// 🪄 Scroll to bottom
+				document.getElementById('user-info').scrollIntoView({
+					behavior: 'smooth'
+				});
 		}); 
 		/* Auto rotate */ 
 		globe.controls().autoRotate = false; 
