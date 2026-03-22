@@ -965,11 +965,11 @@
 				console.log("Button clicked, target Element:", targetElement); // debug
 				
 				if (targetElement) {
-					targetElement.scrollIntoView({
-					behavior: "auto",
-					block: "start"
-					});
-				} else {
+					setTimeout(() => {
+						targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+					}, 100); // 100ms delay often fixes the "jump"
+				}
+ 				else {
 					console.warn("Element not found:", targetId);
 				}
 
