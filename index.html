@@ -69,34 +69,9 @@
 		<link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
 		<link rel="stylesheet" href="/Portfolio-Site/css/track.css">
 
-		<!-- 📋 Navbar -->
-		<!-- <div class="navbar-arc">
-    <a class="nav-link-arc" href="#top-arc">HOME</a>
-    <a class="nav-link-arc" href="#about-arc">ABOUT</a>
-    <a class="nav-link-arc" href="#contact-arc">CONTACT</a>
-  </div> -->
 	<script>
 		const style = document.createElement("style");
 		style.innerHTML = `
-		#backBtn-arc {
-			background-color: #e0e0e0;
-			color: #333;
-			padding: 10px 18px;
-			border-radius: 8px;
-			border: none;
-			cursor: pointer;
-			position: fixed;
-			top: 20px;
-			left: 20px; /* or right: 20px */
-			z-index: 1000; 
-		}
-
-		#backBtn-arc:hover {
-			background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
-			background-size: 1400% 1400%;
-			animation: rainbowMove 1.5s forwards;
-		}
-
 		@keyframes rainbowMove {
 			100% {
 			background: #87cefa;
@@ -118,10 +93,6 @@
 	<script src="https://unpkg.com/globe.gl"></script>
 
 	<script> 
-		
-		document.getElementById("backBtn-arc").addEventListener("click", () => {
-			window.location.href = "https://prakhr.github.io/Portfolio-Site/";
-		});
 		const globeContainer = document.getElementById('globeViz-arc'); 
 		const arcReactor = document.getElementById('arcReactor-arc'); 
 		/* 🌍 Generate random points */ 
