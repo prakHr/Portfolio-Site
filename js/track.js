@@ -1,58 +1,5 @@
-const Mvideo = document.getElementById("Mmyvideo"); 
-const Mcanvas = document.getElementById("Mcanvas");
-const Mcontext = Mcanvas.getContext("2d");
-let MtrackButton = document.getElementById("Mtrackbutton");
-let MupdateNote = document.getElementById("Mupdatenote");
+let lastLabel = null; // 🧠 remember previous state
 
-let MisVideo = false;
-let Mmodel = null;
-
-// 🌀 Smooth scrolling variables
-let scrollSpeed = 0;
-let maxSpeed = 15;
-let acceleration = 1;
-let decay = 0.9;
-
-// 🧠 Stability variables
-let lastLabel = "";
-let stableCount = 0;
-let stabilityThreshold = 3;
-
-const MmodelParams = {
-    flipHorizontal: true,
-    maxNumBoxes: 20,
-    iouThreshold: 0.5,
-    scoreThreshold: 0.6,
-};
-
-// Start video
-function MstartVideo() {
-    handTrack.startVideo(Mvideo).then(function (status) {
-        if (status) {
-            MupdateNote.innerText = "Video started. Now tracking";
-            MisVideo = true;
-            MrunDetection();
-            smoothScrollLoop(); // 🚀 start smooth scrolling
-        } else {
-            MupdateNote.innerText = "Please enable video";
-        }
-    });
-}
-
-function MtoggleVideo() {
-    if (!MisVideo) {
-        MupdateNote.innerText = "Starting video";
-        MstartVideo();
-    } else {
-        MupdateNote.innerText = "Stopping video";
-        handTrack.stopVideo(Mvideo);
-        MisVideo = false;
-        scrollSpeed = 0;
-        MupdateNote.innerText = "Video stopped";
-    }
-}
-
-// 🧠 Detection loop
 function MrunDetection() {
     if (!Mvideo.paused && MisVideo) {
         Mmodel.detect(Mvideo).then(Mpredictions => {
@@ -60,58 +7,31 @@ function MrunDetection() {
             if (Mpredictions.length > 0) {
                 let label = Mpredictions[0].label;
 
-                // 🧠 Stability check
-                if (label === lastLabel) {
-                    stableCount++;
-                } else {
-                    stableCount = 0;
-                }
-                lastLabel = label;
+                // 🔁 Only act when label CHANGES
+                if (label !== lastLabel) {
 
-                if (stableCount > stabilityThreshold) {
                     if (label === 'closed') {
-                        scrollSpeed -= acceleration; // scroll up
-                    } else if (label === 'open') {
-                        scrollSpeed += acceleration; // scroll down
+                        // 🔼 Scroll UP
+                        window.scrollBy({
+                            top: -200,
+                            behavior: 'smooth'
+                        });
+                    } 
+                    else if (label === 'open') {
+                        // 🔽 Scroll DOWN
+                        window.scrollBy({
+                            top: 200,
+                            behavior: 'smooth'
+                        });
                     }
+
+                    // 🧠 Update last state
+                    lastLabel = label;
                 }
             }
 
-            // Clamp speed
-            scrollSpeed = Math.max(-maxSpeed, Math.min(maxSpeed, scrollSpeed));
-
-            // Draw predictions
             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
-
             requestAnimationFrame(MrunDetection);
         });
     }
 }
-
-// 🌀 Smooth scroll loop
-function smoothScrollLoop() {
-    if (MisVideo) {
-        if (Math.abs(scrollSpeed) > 0.1) {
-            window.scrollBy(0, scrollSpeed);
-            scrollSpeed *= decay; // friction effect
-        } else {
-            scrollSpeed = 0;
-        }
-        requestAnimationFrame(smoothScrollLoop);
-    }
-}
-
-// Load model
-handTrack.load(MmodelParams).then(lmodel => {
-    Mmodel = lmodel;
-    MupdateNote.innerText = "Loaded Model!";
-    MtrackButton.disabled = false;
-});
-
-// Canvas follows scroll
-function updateCanvasPosition() {
-    Mcanvas.style.position = 'absolute';
-    Mcanvas.style.top = window.scrollY + 'px';
-}
-
-window.addEventListener('scroll', updateCanvasPosition);
