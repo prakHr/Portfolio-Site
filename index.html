@@ -98,7 +98,7 @@
 		/* 🌍 Generate random points */ 
 		function getRandomCoord() { return { lat: Math.random() * 180 - 90, lng: Math.random() * 360 - 180 }; } 
 		/* 🌍 Create dummy markers */ 
-		const randomLength = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
+		const randomLength = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 		const markers = Array.from({ length: randomLength }).map(() => { 
 			const coord = getRandomCoord(); return { lat: coord.lat, lng: coord.lng, label: "SELF SUSTAINABLE ENERGY" }; 
 		});

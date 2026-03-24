@@ -1,4 +1,4 @@
-const Mvideo = document.getElementById("Mmyvideo");
+const Mvideo = document.getElementById("Mmyvideo"); 
 const Mcanvas = document.getElementById("Mcanvas");
 const Mcontext = Mcanvas.getContext("2d");
 let MtrackButton = document.getElementById("Mtrackbutton");
@@ -7,26 +7,32 @@ let MupdateNote = document.getElementById("Mupdatenote");
 let MisVideo = false;
 let Mmodel = null;
 
+// 🌀 Smooth scrolling variables
+let scrollSpeed = 0;
+let maxSpeed = 15;
+let acceleration = 1;
+let decay = 0.9;
+
+// 🧠 Stability variables
+let lastLabel = "";
+let stableCount = 0;
+let stabilityThreshold = 3;
+
 const MmodelParams = {
-    flipHorizontal: true,   // flip e.g for video  
-    maxNumBoxes: 20,        // maximum number of boxes to detect
-    iouThreshold: 0.5,      // ioU threshold for non-max suppression
-    scoreThreshold: 0.6,    // confidence threshold for predictions.
+    flipHorizontal: true,
+    maxNumBoxes: 20,
+    iouThreshold: 0.5,
+    scoreThreshold: 0.6,
 };
 
-// Wait for video to load before starting detection
-Mvideo.addEventListener("loadeddata", () => {
-    // console.log("Video data loaded, now ready to start detection.");
-    // MstartVideo();
-});
-
+// Start video
 function MstartVideo() {
     handTrack.startVideo(Mvideo).then(function (status) {
-        // console.log("video started", status);
         if (status) {
             MupdateNote.innerText = "Video started. Now tracking";
             MisVideo = true;
             MrunDetection();
+            smoothScrollLoop(); // 🚀 start smooth scrolling
         } else {
             MupdateNote.innerText = "Please enable video";
         }
@@ -41,46 +47,71 @@ function MtoggleVideo() {
         MupdateNote.innerText = "Stopping video";
         handTrack.stopVideo(Mvideo);
         MisVideo = false;
+        scrollSpeed = 0;
         MupdateNote.innerText = "Video stopped";
     }
 }
 
+// 🧠 Detection loop
 function MrunDetection() {
     if (!Mvideo.paused && MisVideo) {
         Mmodel.detect(Mvideo).then(Mpredictions => {
-            // console.log("MPredictions: ", Mpredictions);
+
             if (Mpredictions.length > 0) {
                 let label = Mpredictions[0].label;
-                
-                // console.log(label);
 
-                if (label == 'closed') {
-                    // Scroll a little bit up (e.g., 100 pixels)
-                    window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
-                } else if (label == 'open') {
-                    // Scroll a little bit down (e.g., 100 pixels)
-                    window.scrollBy(0, 100); // The second parameter is the vertical scroll distance (positive value for downward scroll)
+                // 🧠 Stability check
+                if (label === lastLabel) {
+                    stableCount++;
+                } else {
+                    stableCount = 0;
+                }
+                lastLabel = label;
+
+                if (stableCount > stabilityThreshold) {
+                    if (label === 'closed') {
+                        scrollSpeed -= acceleration; // scroll up
+                    } else if (label === 'open') {
+                        scrollSpeed += acceleration; // scroll down
+                    }
                 }
             }
+
+            // Clamp speed
+            scrollSpeed = Math.max(-maxSpeed, Math.min(maxSpeed, scrollSpeed));
+
+            // Draw predictions
             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
-            requestAnimationFrame(MrunDetection); // Continue detection
+
+            requestAnimationFrame(MrunDetection);
         });
     }
 }
 
-// Load the model.
+// 🌀 Smooth scroll loop
+function smoothScrollLoop() {
+    if (MisVideo) {
+        if (Math.abs(scrollSpeed) > 0.1) {
+            window.scrollBy(0, scrollSpeed);
+            scrollSpeed *= decay; // friction effect
+        } else {
+            scrollSpeed = 0;
+        }
+        requestAnimationFrame(smoothScrollLoop);
+    }
+}
+
+// Load model
 handTrack.load(MmodelParams).then(lmodel => {
     Mmodel = lmodel;
     MupdateNote.innerText = "Loaded Model!";
     MtrackButton.disabled = false;
 });
-// Update canvas position with scroll
+
+// Canvas follows scroll
 function updateCanvasPosition() {
-    // You can update the canvas's position (e.g., using top or transform)
-    // This ensures it moves with the scroll
-    Mcanvas.style.position = 'absolute'; // or 'fixed' based on your needs
-    Mcanvas.style.top = window.scrollY + 'px'; // Adjust the canvas position with the scroll
+    Mcanvas.style.position = 'absolute';
+    Mcanvas.style.top = window.scrollY + 'px';
 }
 
-// Listen to scroll events to move the canvas
 window.addEventListener('scroll', updateCanvasPosition);
