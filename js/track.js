@@ -53,16 +53,16 @@ function drawRepulsor(ctx, x, y, firing) {
 
     ctx.save();
 
-    // 🔆 Core glow
     ctx.shadowColor = firing ? "yellow" : "rgba(255,255,0,0.3)";
     ctx.shadowBlur = firing ? 40 : 10;
 
+    // Core
     ctx.beginPath();
     ctx.arc(x, y, coreRadius, 0, 2 * Math.PI);
     ctx.fillStyle = "yellow";
     ctx.fill();
 
-    // ⚡ Beam when firing
+    // Beam only when closed
     if (firing) {
         const gradient = ctx.createLinearGradient(x, y, x, y - beamLength);
         gradient.addColorStop(0, "rgba(255,255,0,1)");
@@ -98,31 +98,32 @@ function MrunDetection() {
 
             Mcontext.clearRect(0, 0, Mcanvas.width, Mcanvas.height);
 
-            // Draw detection boxes
-            Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
+            // 🎯 FILTER: only open & closed
+            const validPredictions = Mpredictions.filter(
+                p => p.label === "open" || p.label === "closed"
+            );
 
-            if (Mpredictions.length > 0) {
-                const pred = Mpredictions[0];
+            // Draw only valid boxes
+            Mmodel.renderPredictions(validPredictions, Mcanvas, Mcontext, Mvideo);
+
+            if (validPredictions.length > 0) {
+                const pred = validPredictions[0];
                 const [x, y, width, height] = pred.bbox;
 
                 const targetX = x + width / 2;
                 const targetY = y + height / 2;
 
-                // 🧠 Smooth tracking (lerp)
+                // 🧠 Smooth tracking
                 lastX = lastX * 0.7 + targetX * 0.3;
                 lastY = lastY * 0.7 + targetY * 0.3;
 
                 const isFiring = (pred.label === "closed");
 
-                // ⚡ Draw repulsor
                 drawRepulsor(Mcontext, lastX, lastY, isFiring);
 
-                // 🖐 UI hint
-                if (isFiring) {
-                    MupdateNote.innerText = "🔥 FIRING";
-                } else {
-                    MupdateNote.innerText = "🟡 AIMING";
-                }
+                MupdateNote.innerText = isFiring ? "🔥 FIRING" : "🟡 AIMING";
+            } else {
+                MupdateNote.innerText = "✋ Show open/closed hand";
             }
 
             requestAnimationFrame(MrunDetection);
