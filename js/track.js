@@ -104,6 +104,8 @@ function MrunDetection() {
                 p.label.toLowerCase().includes("closed")
             );
 
+            console.log("Valid predictions:", validPredictions);
+
             // 🎨 Draw ONLY filtered bounding boxes
             validPredictions.forEach(pred => {
                 const [x, y, width, height] = pred.bbox;
