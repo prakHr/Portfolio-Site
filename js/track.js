@@ -13,14 +13,14 @@ function MrunDetection() {
                     if (label === 'closed') {
                         // 🔼 Scroll UP
                         window.scrollBy({
-                            top: -200,
+                            top: -1000,
                             behavior: 'smooth'
                         });
                     } 
                     else if (label === 'open') {
                         // 🔽 Scroll DOWN
                         window.scrollBy({
-                            top: 200,
+                            top: 1000,
                             behavior: 'smooth'
                         });
                     }
