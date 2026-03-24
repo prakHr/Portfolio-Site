@@ -17,7 +17,7 @@ const MmodelParams = {
 // Wait for video to load before starting detection
 Mvideo.addEventListener("loadeddata", () => {
     // console.log("Video data loaded, now ready to start detection.");
-    MstartVideo();
+    // MstartVideo();
 });
 
 function MstartVideo() {
@@ -56,16 +56,10 @@ function MrunDetection() {
 
                 if (label == 'closed') {
                     // Scroll a little bit up (e.g., 100 pixels)
-                    window.scrollBy({
-                        top: -1000,
-                        behavior: 'smooth'
-                    }); // The second parameter is the vertical scroll distance (negative value for upward scroll)
+                    window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
                 } else if (label == 'open') {
                     // Scroll a little bit down (e.g., 100 pixels)
-                    window.scrollBy({
-                        top: 1000,
-                        behavior: 'smooth'
-                    }); // The second parameter is the vertical scroll distance (positive value for downward scroll)
+                    window.scrollBy(0, 100); // The second parameter is the vertical scroll distance (positive value for downward scroll)
                 }
             }
             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
