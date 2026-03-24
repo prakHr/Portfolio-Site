@@ -7,22 +7,18 @@ let MupdateNote = document.getElementById("Mupdatenote");
 let MisVideo = false;
 let Mmodel = null;
 
+let pulse = 0;
+
 const MmodelParams = {
-    flipHorizontal: true,   // flip e.g for video  
-    maxNumBoxes: 20,        // maximum number of boxes to detect
-    iouThreshold: 0.5,      // ioU threshold for non-max suppression
-    scoreThreshold: 0.6,    // confidence threshold for predictions.
+    flipHorizontal: true,
+    maxNumBoxes: 20,
+    iouThreshold: 0.5,
+    scoreThreshold: 0.6,
 };
 
-// Wait for video to load before starting detection
-Mvideo.addEventListener("loadeddata", () => {
-    // console.log("Video data loaded, now ready to start detection.");
-    // MstartVideo();
-});
-
+// 🎥 Start video
 function MstartVideo() {
     handTrack.startVideo(Mvideo).then(function (status) {
-        // console.log("video started", status);
         if (status) {
             MupdateNote.innerText = "Video started. Now tracking";
             MisVideo = true;
@@ -45,42 +41,95 @@ function MtoggleVideo() {
     }
 }
 
+// ⚡ Draw Iron Man repulsor beam
+function drawRepulsor(ctx, x, y) {
+    pulse += 0.15;
+
+    const coreRadius = 8 + Math.sin(pulse) * 3;
+    const beamLength = 150 + Math.sin(pulse) * 20;
+
+    ctx.save();
+
+    // 🔆 Core glow
+    ctx.shadowColor = "yellow";
+    ctx.shadowBlur = 30;
+
+    ctx.beginPath();
+    ctx.arc(x, y, coreRadius, 0, 2 * Math.PI);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+
+    // ⚡ Beam (gradient)
+    const gradient = ctx.createLinearGradient(x, y, x, y - beamLength);
+    gradient.addColorStop(0, "rgba(255,255,0,1)");
+    gradient.addColorStop(1, "rgba(255,255,0,0)");
+
+    ctx.beginPath();
+    ctx.moveTo(x - 4, y);
+    ctx.lineTo(x + 4, y);
+    ctx.lineTo(x + 2, y - beamLength);
+    ctx.lineTo(x - 2, y - beamLength);
+    ctx.closePath();
+
+    ctx.fillStyle = gradient;
+    ctx.fill();
+
+    // ✨ Outer glow beam
+    ctx.beginPath();
+    ctx.moveTo(x - 8, y);
+    ctx.lineTo(x + 8, y);
+    ctx.lineTo(x + 4, y - beamLength);
+    ctx.lineTo(x - 4, y - beamLength);
+    ctx.closePath();
+
+    ctx.fillStyle = "rgba(255,255,0,0.2)";
+    ctx.fill();
+
+    ctx.restore();
+}
+
+// 🔍 Detection loop
 function MrunDetection() {
     if (!Mvideo.paused && MisVideo) {
         Mmodel.detect(Mvideo).then(Mpredictions => {
-            // console.log("MPredictions: ", Mpredictions);
+
             if (Mpredictions.length > 0) {
                 let label = Mpredictions[0].label;
-                
-                // console.log(label);
 
                 if (label == 'closed') {
-                    // Scroll a little bit up (e.g., 100 pixels)
-                    window.scrollBy(0, -100); // The second parameter is the vertical scroll distance (negative value for upward scroll)
+                    window.scrollBy(0, -100);
                 } else if (label == 'open') {
-                    // Scroll a little bit down (e.g., 100 pixels)
-                    window.scrollBy(0, 100); // The second parameter is the vertical scroll distance (positive value for downward scroll)
+                    window.scrollBy(0, 100);
                 }
             }
+
+            // Draw boxes
             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
-            requestAnimationFrame(MrunDetection); // Continue detection
+
+            // ⚡ Draw repulsor beams
+            Mpredictions.forEach(pred => {
+                const [x, y, width, height] = pred.bbox;
+
+                const centerX = x + width / 2;
+                const centerY = y + height / 2;
+
+                drawRepulsor(Mcontext, centerX, centerY);
+            });
+
+            requestAnimationFrame(MrunDetection);
         });
     }
 }
 
-// Load the model.
+// Load model
 handTrack.load(MmodelParams).then(lmodel => {
     Mmodel = lmodel;
     MupdateNote.innerText = "Loaded Model!";
     MtrackButton.disabled = false;
 });
-// Update canvas position with scroll
-function updateCanvasPosition() {
-    // You can update the canvas's position (e.g., using top or transform)
-    // This ensures it moves with the scroll
-    Mcanvas.style.position = 'absolute'; // or 'fixed' based on your needs
-    Mcanvas.style.top = window.scrollY + 'px'; // Adjust the canvas position with the scroll
-}
 
-// Listen to scroll events to move the canvas
-window.addEventListener('scroll', updateCanvasPosition);
+// Keep canvas aligned with scroll
+function updateCanvasPosition() {
+    Mcanvas.style.position = 'absolute';
+    Mcanvas.style.top = window.scrollY + 'px';
+}
