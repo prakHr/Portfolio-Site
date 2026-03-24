@@ -9,9 +9,9 @@ let Mmodel = null;
 
 // 🌀 Smooth scrolling variables
 let scrollSpeed = 0;
-let maxSpeed = 15;
-let acceleration = 1;
-let decay = 0.9;
+let maxSpeed = 40;     // was 15 → much faster top speed
+let acceleration = 3;  // was 1 → speeds up quicker
+let decay = 0.95;      // was 0.9 → keeps momentum longer
 
 // 🧠 Stability variables
 let lastLabel = "";
