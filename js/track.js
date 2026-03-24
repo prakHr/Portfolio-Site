@@ -98,14 +98,30 @@ function MrunDetection() {
 
             Mcontext.clearRect(0, 0, Mcanvas.width, Mcanvas.height);
 
-            // 🎯 FILTER: only open & closed
-            const validPredictions = Mpredictions.filter(
-                p => p.label === "open" || p.label === "closed"
+            // 🎯 FILTER: only open & closed (robust)
+            const validPredictions = Mpredictions.filter(p =>
+                p.label.toLowerCase().includes("open") ||
+                p.label.toLowerCase().includes("closed")
             );
 
-            // Draw only valid boxes
-            Mmodel.renderPredictions(validPredictions, Mcanvas, Mcontext, Mvideo);
+            // 🎨 Draw ONLY filtered bounding boxes
+            validPredictions.forEach(pred => {
+                const [x, y, width, height] = pred.bbox;
 
+                Mcontext.beginPath();
+                Mcontext.rect(x, y, width, height);
+                Mcontext.lineWidth = 3;
+                Mcontext.strokeStyle =
+                    pred.label.toLowerCase().includes("closed") ? "red" : "lime";
+                Mcontext.stroke();
+
+                // Label text
+                Mcontext.font = "16px Arial";
+                Mcontext.fillStyle = "white";
+                Mcontext.fillText(pred.label, x, y > 10 ? y - 5 : 10);
+            });
+
+            // 🎯 Use first valid hand
             if (validPredictions.length > 0) {
                 const pred = validPredictions[0];
                 const [x, y, width, height] = pred.bbox;
@@ -117,7 +133,7 @@ function MrunDetection() {
                 lastX = lastX * 0.7 + targetX * 0.3;
                 lastY = lastY * 0.7 + targetY * 0.3;
 
-                const isFiring = (pred.label === "closed");
+                const isFiring = pred.label.toLowerCase().includes("closed");
 
                 drawRepulsor(Mcontext, lastX, lastY, isFiring);
 
@@ -131,14 +147,14 @@ function MrunDetection() {
     }
 }
 
-// Load model
+// 📦 Load model
 handTrack.load(MmodelParams).then(lmodel => {
     Mmodel = lmodel;
     MupdateNote.innerText = "Model loaded. Click Start!";
     MtrackButton.disabled = false;
 });
 
-// Keep canvas aligned
+// 📐 Keep canvas aligned
 function updateCanvasPosition() {
     Mcanvas.style.top = window.scrollY + 'px';
 }
