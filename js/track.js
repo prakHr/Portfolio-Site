@@ -1,13 +1,15 @@
 const Mvideo = document.getElementById("Mmyvideo");
 const Mcanvas = document.getElementById("Mcanvas");
 const Mcontext = Mcanvas.getContext("2d");
-let MtrackButton = document.getElementById("Mtrackbutton");
-let MupdateNote = document.getElementById("Mupdatenote");
+const MtrackButton = document.getElementById("Mtrackbutton");
+const MupdateNote = document.getElementById("Mupdatenote");
 
 let MisVideo = false;
 let Mmodel = null;
 
 let pulse = 0;
+let lastX = 320;
+let lastY = 240;
 
 const MmodelParams = {
     flipHorizontal: true,
@@ -20,70 +22,71 @@ const MmodelParams = {
 function MstartVideo() {
     handTrack.startVideo(Mvideo).then(function (status) {
         if (status) {
-            MupdateNote.innerText = "Video started. Now tracking";
+            MupdateNote.innerText = "Video started. Use your hand!";
             MisVideo = true;
             MrunDetection();
         } else {
-            MupdateNote.innerText = "Please enable video";
+            MupdateNote.innerText = "Please enable camera";
         }
     });
 }
 
+// 🔁 Toggle
 function MtoggleVideo() {
     if (!MisVideo) {
-        MupdateNote.innerText = "Starting video";
         MstartVideo();
     } else {
-        MupdateNote.innerText = "Stopping video";
         handTrack.stopVideo(Mvideo);
         MisVideo = false;
         MupdateNote.innerText = "Video stopped";
     }
 }
 
-// ⚡ Draw Iron Man repulsor beam
-function drawRepulsor(ctx, x, y) {
+MtrackButton.addEventListener("click", MtoggleVideo);
+
+// ⚡ Draw repulsor beam
+function drawRepulsor(ctx, x, y, firing) {
     pulse += 0.15;
 
     const coreRadius = 8 + Math.sin(pulse) * 3;
-    const beamLength = 150 + Math.sin(pulse) * 20;
+    const beamLength = 220 + Math.sin(pulse) * 30;
 
     ctx.save();
 
     // 🔆 Core glow
-    ctx.shadowColor = "yellow";
-    ctx.shadowBlur = 30;
+    ctx.shadowColor = firing ? "yellow" : "rgba(255,255,0,0.3)";
+    ctx.shadowBlur = firing ? 40 : 10;
 
     ctx.beginPath();
     ctx.arc(x, y, coreRadius, 0, 2 * Math.PI);
     ctx.fillStyle = "yellow";
     ctx.fill();
 
-    // ⚡ Beam (gradient)
-    const gradient = ctx.createLinearGradient(x, y, x, y - beamLength);
-    gradient.addColorStop(0, "rgba(255,255,0,1)");
-    gradient.addColorStop(1, "rgba(255,255,0,0)");
+    // ⚡ Beam when firing
+    if (firing) {
+        const gradient = ctx.createLinearGradient(x, y, x, y - beamLength);
+        gradient.addColorStop(0, "rgba(255,255,0,1)");
+        gradient.addColorStop(1, "rgba(255,255,0,0)");
 
-    ctx.beginPath();
-    ctx.moveTo(x - 4, y);
-    ctx.lineTo(x + 4, y);
-    ctx.lineTo(x + 2, y - beamLength);
-    ctx.lineTo(x - 2, y - beamLength);
-    ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(x - 6, y);
+        ctx.lineTo(x + 6, y);
+        ctx.lineTo(x + 2, y - beamLength);
+        ctx.lineTo(x - 2, y - beamLength);
+        ctx.closePath();
+        ctx.fillStyle = gradient;
+        ctx.fill();
 
-    ctx.fillStyle = gradient;
-    ctx.fill();
-
-    // ✨ Outer glow beam
-    ctx.beginPath();
-    ctx.moveTo(x - 8, y);
-    ctx.lineTo(x + 8, y);
-    ctx.lineTo(x + 4, y - beamLength);
-    ctx.lineTo(x - 4, y - beamLength);
-    ctx.closePath();
-
-    ctx.fillStyle = "rgba(255,255,0,0.2)";
-    ctx.fill();
+        // Outer glow
+        ctx.beginPath();
+        ctx.moveTo(x - 12, y);
+        ctx.lineTo(x + 12, y);
+        ctx.lineTo(x + 4, y - beamLength);
+        ctx.lineTo(x - 4, y - beamLength);
+        ctx.closePath();
+        ctx.fillStyle = "rgba(255,255,0,0.2)";
+        ctx.fill();
+    }
 
     ctx.restore();
 }
@@ -93,28 +96,34 @@ function MrunDetection() {
     if (!Mvideo.paused && MisVideo) {
         Mmodel.detect(Mvideo).then(Mpredictions => {
 
-            if (Mpredictions.length > 0) {
-                let label = Mpredictions[0].label;
+            Mcontext.clearRect(0, 0, Mcanvas.width, Mcanvas.height);
 
-                if (label == 'closed') {
-                    window.scrollBy(0, -100);
-                } else if (label == 'open') {
-                    window.scrollBy(0, 100);
-                }
-            }
-
-            // Draw boxes
+            // Draw detection boxes
             Mmodel.renderPredictions(Mpredictions, Mcanvas, Mcontext, Mvideo);
 
-            // ⚡ Draw repulsor beams
-            Mpredictions.forEach(pred => {
+            if (Mpredictions.length > 0) {
+                const pred = Mpredictions[0];
                 const [x, y, width, height] = pred.bbox;
 
-                const centerX = x + width / 2;
-                const centerY = y + height / 2;
+                const targetX = x + width / 2;
+                const targetY = y + height / 2;
 
-                drawRepulsor(Mcontext, centerX, centerY);
-            });
+                // 🧠 Smooth tracking (lerp)
+                lastX = lastX * 0.7 + targetX * 0.3;
+                lastY = lastY * 0.7 + targetY * 0.3;
+
+                const isFiring = (pred.label === "closed");
+
+                // ⚡ Draw repulsor
+                drawRepulsor(Mcontext, lastX, lastY, isFiring);
+
+                // 🖐 UI hint
+                if (isFiring) {
+                    MupdateNote.innerText = "🔥 FIRING";
+                } else {
+                    MupdateNote.innerText = "🟡 AIMING";
+                }
+            }
 
             requestAnimationFrame(MrunDetection);
         });
@@ -124,12 +133,12 @@ function MrunDetection() {
 // Load model
 handTrack.load(MmodelParams).then(lmodel => {
     Mmodel = lmodel;
-    MupdateNote.innerText = "Loaded Model!";
+    MupdateNote.innerText = "Model loaded. Click Start!";
     MtrackButton.disabled = false;
 });
 
-// Keep canvas aligned with scroll
+// Keep canvas aligned
 function updateCanvasPosition() {
-    Mcanvas.style.position = 'absolute';
     Mcanvas.style.top = window.scrollY + 'px';
 }
+window.addEventListener('scroll', updateCanvasPosition);
