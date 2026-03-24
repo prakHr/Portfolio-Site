@@ -788,15 +788,9 @@
 		btn4.addEventListener("click", function () {
 			var div = document.getElementById("BTNCLASS4");
 			div.style.display = div.style.display == "none" ? "block" : "none";
-			// console.log(div);
-
+			
 		});
 
-		function getBrightColorForBlack() {
-			const hue = Math.floor(Math.random() * 360);
-			return `hsl(${hue}, 100%, 65%)`;
-		}
-		
 	</script>
 
 	<!---------------Header Section----------->
@@ -884,6 +878,12 @@
 		</div>
 	</section>
 	<br><br><br><br><br><br><br><br><br><br><br>
+	<script>
+		function getVIBGYORColor() {
+			const colors = ["violet", "indigo", "blue", "green", "yellow", "orange", "red"];
+			return colors[Math.floor(Math.random() * colors.length)];
+		}
+	</script>
 	<!-- <br><br><br><br><br><br><br><br><br><br><br> -->
 	<!-- <br><br><br><br><br><br><br><br><br><br><br> -->
 	<!---------------User Info Section----------->
@@ -901,55 +901,55 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="top" style="color: getBrightColorForBlack();background-color:black">HOME</button>
+							<button type="button" class="nav-link" data-target="top" style="background-color:white; color:violet;">HOME</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="tesseract" style="color: getBrightColorForBlack();background-color:black">TESSERACT</button>
+							<button type="button" class="nav-link" data-target="tesseract" style="background-color:white; color: indigo;">TESSERACT</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="products" style="color: getBrightColorForBlack();background-color:black">PRODUCTS</button>
+							<button type="button" class="nav-link" data-target="products" style="background-color:white; color: blue;">PRODUCTS</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="about" style="color: getBrightColorForBlack();background-color:black">ABOUT ME</button>
+							<button type="button" class="nav-link" data-target="about" style="background-color:white; color: green;">ABOUT ME</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="resume" style="color: getBrightColorForBlack();background-color:black">RESUME</button>
+							<button type="button" class="nav-link" data-target="resume" style="background-color:white; color: red;">RESUME</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="certifications" style="color: getBrightColorForBlack();background-color:black">CERTIFICATIONS DONE</button>
+							<button type="button" class="nav-link" data-target="certifications" style="background-color:white; color: orange;">CERTIFICATIONS DONE</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="technologies" style="color: getBrightColorForBlack();background-color:black">TECH STACK USED</button>
+							<button type="button" class="nav-link" data-target="technologies" style="background-color:white; color: red;">TECH STACK USED</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="projects" style="color: getBrightColorForBlack();background-color:black">PROJECTS</button>
+							<button type="button" class="nav-link" data-target="projects" style="background-color:white; color: violet;">PROJECTS</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="company" style="color: getBrightColorForBlack();background-color:black">COMPANY SERVICES</button>
+							<button type="button" class="nav-link" data-target="company" style="background-color:white; color: indigo;">COMPANY SERVICES</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="works" style="color: getBrightColorForBlack();background-color:black">OFFERED WORK</button>
+							<button type="button" class="nav-link" data-target="works" style="background-color:white; color: blue;">OFFERED WORK</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="resources" style="color: getBrightColorForBlack();background-color:black">FREE RESOURCES TO UPSKILL</button>
+							<button type="button" class="nav-link" data-target="resources" style="background-color:white; color: green;">FREE RESOURCES TO UPSKILL</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="contact" style="color: getBrightColorForBlack();background-color:black">CONTACT</button>
+							<button type="button" class="nav-link" data-target="contact" style="background-color:white; color: red;">CONTACT</button>
 						</li>
 
 						<li class="nav-item">
-							<button type="button" class="nav-link" data-target="enterpriseWebApps" style="color: getBrightColorForBlack();background-color:black">SCALED WEB APPS</button>
+							<button type="button" class="nav-link" data-target="enterpriseWebApps" style="background-color:white; color: orange;">SCALED WEB APPS</button>
 						</li>
 
 					</ul>
