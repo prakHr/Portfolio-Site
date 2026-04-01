@@ -6,6 +6,153 @@ body {
 	overflow-x: hidden;
 }
 
+.beauty{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.beautifulSlider{
+	position: relative;
+	inset:80px 200px 80px 80px;
+	background: #000;
+}
+
+.beautifulSlider .slides{
+	position: absolute;
+	top: 50%;
+	transform:  translateY(-50%);
+	width: 240px;
+	height: 320px;
+	background: var(--img);
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+	border-radius: 20px;
+	box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: flex-start;
+}
+.beautifulSlider .slides:nth-child(1),
+.beautifulSlider .slides:nth-child(2){
+	position:relative;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(0);
+	box-shadow: 0 25px 50px rgba(0,0,0,0);
+}
+.beautifulSlider .slides:nth-child(3){
+	left:calc(50%+240px);
+	background-size: cover;
+}
+
+.beautifulSlider .slides:nth-child(4){
+	left:calc(50%+500px);
+	background-size: cover;
+}
+
+.beautifulSlider .slides:nth-child(5){
+	left:calc(50%+760px);
+	background-size: cover;
+}
+
+.beautifulSlider .slides:nth-child(6){
+	left:calc(50%+1020px);
+	background-size: cover;
+	opacity:0;
+}
+
+.dirButtons{
+	position:relative;
+	bottom: 15px;
+	display: flex;
+	gap:20px;
+}
+.dirButtons span{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #111;
+	cursor:pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.dirButtons span::before{
+	content:'';
+	position: relative;
+	width: 15px;
+	height: 15px;
+	border-top: 4px solid #fff;
+	border-left:4px solid #fff;
+	transform: rotate(315deg) translate(2px,2px);
+}
+.dirButtons span:nth-child(2)::before{
+	transform: rotate(135deg) translate(2px,2px);
+}
+.dirButtons span:active{
+	opacity: 0.5;
+}
+.content
+{
+	position: relative;
+	padding: 40px;
+	max-width: 600px;
+	transition: 0.5s;
+	transition-delay: 0s;
+	transform: translateY(40px);
+	z-index: 10000;
+
+}
+.content h2{
+	font-size: 4em;
+}
+.beautifulSlider .slides:nth-child(1) .content,
+.beautifulSlider .slides:nth-child(2) .content{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.5s;
+}
+
+@media (max-width:900px){
+	.beautifulSlider{
+		position:absolute;
+		inset:40px 40px 40px 40px;
+		/* background: #ccc;	
+		border-radius:20px; */
+	}
+	.beautifulSlider .slides{
+		width: 100px;
+		height: 100px;
+		top:initial;
+		bottom: -170px;
+	}
+	.beautifulSlider .slides:nth-child(1),
+	.beautifulSlider .slides:nth-child(2){
+		top:initial;
+		bottom: 0px;
+	}
+	.beautifulSlider .slides:nth-child(3){
+		left:0;
+	}
+	.beautifulSlider .slides:nth-child(4){
+		left:120px;
+	}
+	.beautifulSlider .slides:nth-child(5){
+		left:240px;
+	}
+	.beautifulSlider .slides:nth-child(6){
+		left:360px;
+	}
+}
+
 /* 🌍 Globe */
 #globeViz {
 	width: 100vw;

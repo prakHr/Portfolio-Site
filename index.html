@@ -35,8 +35,8 @@
 
 
 		<!-- 	<link rel="stylesheet" type="text/css" href="https://github.com/prakHr/Portfolio-Site/blob/master/css/style.css"> -->
-		<link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css">
-		<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="/Portfolio-Site/css/style.css"> -->
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
@@ -292,7 +292,74 @@
 	</div>
 
 
+		<!-- <div class="Title" style="color: red;background-color: #00b0fe;">
+			<h1>Reached here!</h1>
+			
+		</div> -->
+		
+	<div class="beauty" >
+		<div class="beautifulSlider">
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main1.jpg')">
+				<div class="content">
+					<h2>Slide 1</h2>
+					<p>Direction</p>
+				</div>
+			</div>
+			
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main2.jpg')">
+				<div class="content">
+					<h2>Slide 2</h2>
+					<p>Beauty</p>
+				</div>
+			</div>
+			
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main3.jpg')">
+				<div class="content">
+					<h2>Slide 3</h2>
+					<p>Meaning</p>
+				</div>
+			</div>
 
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main1.jpg')">
+				<div class="content">
+					<h2>Slide 4</h2>
+					<p>Faith</p>
+				</div>
+			</div>
+			
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main2.jpg')">
+				<div class="content">
+					<h2>Slide 5</h2>
+					<p>God</p>
+				</div>
+			</div>
+			
+			<div class="slides" style="--img:url('/Portfolio-Site/images/main3.jpg')">
+				<div class="content">
+					<h2>Slide 6</h2>
+					<p>Belief</p>
+				</div>
+			</div>			
+		</div>
+		<div class="dirButtons">
+			<span class="prev">❮</span>
+			<span class="next">❯</span>
+		</div>
+	</div>
+	<script>
+		let next1 = document.querySelector('.next');
+		let prev1 = document.querySelector('.prev');
+		let slider1 = document.querySelector('.beautifulSlider');
+
+		next1.addEventListener('click', function(){
+			let slides = document.querySelectorAll('.slides');
+			slider1.appendChild(slides[0]);
+		})
+		prev1.addEventListener('click', function(){
+			let slides = document.querySelectorAll('.slides');
+			slider1.prepend(slides[slides.length - 1]);
+		})
+	</script>
 	<div class="newSlider" id="sessions">
 		<div class="Title">
 			<h1>My Journey</h1>
