@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
- /* Basic reset for full-page effect */
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -23,7 +22,7 @@ body {
 }
 
 .beautifulSlider .slides{
-	position: absolute;
+	position: relative;
 	top: 50%;
 	transform:  translateY(-50%);
 	width: 240px;
@@ -123,10 +122,8 @@ body {
 
 @media (max-width:900px){
 	.beautifulSlider{
-		position:absolute;
+		position:relative;
 		inset:40px 40px 40px 40px;
-		/* background: #ccc;	
-		border-radius:20px; */
 	}
 	.beautifulSlider .slides{
 		width: 100px;
