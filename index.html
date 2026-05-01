@@ -171,10 +171,22 @@
 		}));
 
 
+		/* 🎵 SONG POINTS */
+		const songPoints6 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Fireworks",
+		url: "https://www.youtube.com/watch?v=jFWnVdsSgxs",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+
+
 
 
 		/* 🌌 MERGE BOTH */
-		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5];
+		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5, ...songPoints6];
 
 		/* 🌍 INIT GLOBE */
 		const globe = Globe()(globeContainer)
