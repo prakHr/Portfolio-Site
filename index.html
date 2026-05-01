@@ -95,27 +95,116 @@
 	<script src="https://unpkg.com/globe.gl"></script>
 
 	<script> 
-		const globeContainer = document.getElementById('globeViz-arc'); 
-		const arcReactor = document.getElementById('arcReactor-arc'); 
-		/* 🌍 Generate random points */ 
-		function getRandomCoord() { return { lat: Math.random() * 180 - 90, lng: Math.random() * 360 - 180 }; } 
-		/* 🌍 Create dummy markers */ 
-		const randomLength = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-		const markers = Array.from({ length: randomLength }).map(() => { 
-			const coord = getRandomCoord(); return { lat: coord.lat, lng: coord.lng, label: "SELF SUSTAINABLE ENERGY" }; 
+		const globeContainer = document.getElementById('globeViz-arc');
+		const arcReactor = document.getElementById('arcReactor-arc');
+
+		/* 🌍 Random coord generator */
+		function getRandomCoord() {
+		return {
+			lat: Math.random() * 180 - 90,
+			lng: Math.random() * 360 - 180
+		};
+		}
+
+		/* 🌱 ENERGY POINTS */
+		const energyPoints = Array.from({
+		length: Math.floor(Math.random() * 100) + 1
+		}).map(() => {
+		const coord = getRandomCoord();
+		return {
+			lat: coord.lat,
+			lng: coord.lng,
+			label: "SELF SUSTAINABLE ENERGY",
+			type: "energy",
+			color: "#00ffcc"
+		};
 		});
-		/* 🌍 Init Globe */ 
-		const globe = Globe()(globeContainer) .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg') .pointsData(markers) .pointLabel('label') .pointAltitude(0.02) .onPointClick(() => { 
-				// Animation 
-				globeContainer.classList.add('hidden'); 
-				arcReactor.classList.add('hidden'); 
-				// 🪄 Scroll to bottom
-				document.getElementById('user-info').scrollIntoView({
-					behavior: 'smooth'
-				});
-		}); 
-		/* Auto rotate */ 
-		globe.controls().autoRotate = false; 
+
+		/* 🎵 SONG POINTS */
+		const songPoints = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "JALWA",
+		url: "https://www.youtube.com/watch?v=NapGAjs2nXE",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+		/* 🎵 SONG POINTS */
+		const songPoints2 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Let Her Go - Passenger (Tiffany Alvord Cover)",
+		url: "https://www.youtube.com/watch?v=FzeO1JoONDE",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+		/* 🎵 SONG POINTS */
+		const songPoints3 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Duniya Layi",
+		url: "https://www.youtube.com/watch?v=0DxtE0WSqE4",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+		/* 🎵 SONG POINTS */
+		const songPoints4 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Believer",
+		url: "https://www.youtube.com/watch?v=RPEZtu0ya9A",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+		/* 🎵 SONG POINTS */
+		const songPoints5 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Frame of mind",
+		url: "https://www.youtube.com/watch?v=hab6MeMVEFk",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+
+
+
+		/* 🌌 MERGE BOTH */
+		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5];
+
+		/* 🌍 INIT GLOBE */
+		const globe = Globe()(globeContainer)
+		.globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
+		.pointsData(allPoints)
+		.pointLabel('label')
+		.pointAltitude(0.02)
+		.pointColor('color')
+
+		/* 🎬 ONE CLICK HANDLER */
+		.onPointClick(point => {
+
+			if (point.type === "song") {
+			// 🎵 open video
+			window.open(point.url, '_blank');
+			}
+
+			if (point.type === "energy") {
+			// 🌱 animation + scroll
+			globeContainer.classList.add('hidden');
+			arcReactor.classList.add('hidden');
+
+			document.getElementById('user-info').scrollIntoView({
+				behavior: 'smooth'
+			});
+			}
+		});
+
+		/* 🎯 CONTROLS */
+		globe.controls().autoRotate = false;
 		globe.controls().autoRotateSpeed = 0; 
 	</script>
 		
