@@ -745,10 +745,9 @@ h1{
 }
 
 .mainSlider{
-	
+
 	box-sizing: border-box;
 	font-family: "Poppins",sans-serif;
-	height: 50%;
 }
 .mainSlider .slider{
 	position: relative;
