@@ -845,6 +845,118 @@
 	</script>
 
 <body>
+	<style>
+	.robott{
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		width:70px;
+		height:70px;
+		border-radius:50%;
+		background:#4a90e2;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		cursor:pointer;
+		font-size:35px;
+	}
+
+	.chatt{
+		position:fixed;
+		bottom:100px;
+		right:20px;
+		width:300px;
+		background:white;
+		border:1px solid #ccc;
+		display:none;
+		padding:10px;
+	}
+
+	.messagess{
+		height:200px;
+		overflow:auto;
+		margin-bottom:10px;
+	}
+
+	.msgg{
+		margin:8px 0;
+	}
+	</style>
+	
+	<div class="robott" onclick="toggleChat()">
+	🤖🔵⚡
+	</div>
+
+	<div class="chatt" id="chatt">
+		<div class="messagess" id="messagess">
+			<div class="msgg">
+				Bot: Ask me "github", "doCalculus" or "hello" to get started!
+			</div>
+		</div>
+
+		<input id="input" style="color:beige;background-color: blueviolet;">
+		<button onclick="reply()" style="color:beige;background-color: blueviolet; border: 1px solid blueviolet; border-radius: 5px;margin:10px;">Send</button>
+	</div>
+
+	<script>
+
+	function toggleChat(){
+		let chat=document.getElementById("chatt");
+
+		chat.style.display=
+		chat.style.display==="block"
+		? "none"
+		: "block";
+	}
+
+	function reply(){
+
+		let input=document.getElementById("input");
+		let text=input.value.trim().toLowerCase();
+
+		let messages=document.getElementById("messagess");
+
+		messages.innerHTML +=
+		`<div class="msgg">You: ${text}</div>`;
+
+		let botReply;
+
+		if(text==="github"){
+			botReply=`
+			Bot:
+			<a href="https://github.com/prakHr"
+			target="_blank">
+			Open Source Github Profile for inspiration
+			</a>
+			`;
+		}
+		else if(text==="hello"){
+			botReply=
+			"Bot: Hello there! How can I assist you today?";
+		}
+		else if(text==="docalculus"){
+			botReply=`
+			Bot:
+			<a href="https://huggingface.co/spaces/MonkeyDBoa/chatbotForCalculus"
+			target="_blank">
+			Open Calculus Chatbot
+			</a>
+			`;
+			
+		}
+		else{
+			botReply=
+			"Bot: I only answer 'github', 'doCalculus', 'hello' for now. Try asking one of those!";
+		}
+
+		messages.innerHTML +=
+		`<div class="msgg">${botReply}</div>`;
+
+		input.value="";
+	}
+
+	</script>
+
 	<music-player></music-player>
 
   	<script src="./js/music-player.js"></script>
