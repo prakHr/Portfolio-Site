@@ -890,7 +890,7 @@
 	<div class="chatt" id="chatt">
 		<div class="messagess" id="messagess">
 			<div class="msgg">
-				Bot: Ask me "github", "docalculus" or "hello" to get started!
+				Bot: Ask me "github", "docalculus", "automate-supervised-dataset-generation", "automate-unsupervised-dataset-generation", "shorAlgorithm", "bestFriendSuggestion", "blockchainWebapp", or "generalAlgebra" to get started!
 			</div>
 		</div>
 
@@ -912,7 +912,7 @@
 	function reply(){
 
 		let input=document.getElementById("input");
-		let text=input.value.trim().toLowerCase();
+		let text=input.value;
 
 		let messages=document.getElementById("messagess");
 
@@ -930,10 +930,71 @@
 			</a>
 			`;
 		}
-		else if(text==="hello"){
+		else if(text==="automate-supervised-dataset-generation"){
 			botReply=
-			"Bot: Hello there! How can I assist you today?";
+			`
+			Bot:
+			<a href="https://pypi.org/project/automate-supervised-dataset-generation/"
+			target="_blank">
+			Open Source Package for automating supervised dataset generation
+			</a>
+			`;
+			
 		}
+		else if(text==="automate-unsupervised-dataset-generation"){
+			botReply=
+			`
+			Bot:
+			<a href="https://pypi.org/project/automate-unsupervised-dataset-generation/"
+			target="_blank">
+			Open Source Package for automating unsupervised dataset generation
+			</a>
+			`;
+			
+		}
+		else if(text==="shorAlgorithm"){
+			botReply=
+			`
+			Bot:
+			<a href="https://pypi.org/project/my-shor-package/"
+			target="_blank">
+			Open Source Package for shor algorithm implementation
+			</a>
+			`;
+			
+		}
+		else if(text==="bestFriendSuggestion"){
+			botReply=
+			`
+			Bot:
+			<a href="https://pypi.org/project/your-best-friend/"
+			target="_blank">
+			Open Source Package for suggesting best friends
+			</a>
+			`;
+			
+		}
+		else if(text==="blockchainWebapp"){
+			botReply=
+			`
+			Bot:
+			<a href="https://pypi.org/project/prakhar-nft-app/"
+			target="_blank">	
+			Open Source Package for blockchain webapp
+			</a>
+			`;
+		}
+		else if(text==="generalAlgebra"){
+			botReply=
+			`
+			Bot:
+			<a href="https://pypi.org/project/pyAlgebra/"
+			target="_blank">	
+			Open Source Package for general algebra
+			</a>
+			`;
+		}
+		
 		else if(text==="docalculus"){
 			botReply=`
 			Bot:
@@ -946,7 +1007,7 @@
 		}
 		else{
 			botReply=
-			"Bot: I only answer 'github', 'doCalculus', 'hello' for now. Try asking one of those!";
+			"Bot: I only answer 'github', 'doCalculus', 'automate-supervised-dataset-generation', 'automate-unsupervised-dataset-generation', 'shorAlgorithm', 'bestFriendSuggestion', 'blockchainWebapp', or 'generalAlgebra' for now. Try asking one of those!";
 		}
 
 		messages.innerHTML +=
