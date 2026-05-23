@@ -844,7 +844,42 @@
 
 	</script>
 
-<body>
+	<body>
+	<div class="magic">
+		<section>MAGIC</section>
+	</div>
+
+	<script>
+		let section = document.querySelector('.magic section');
+
+		for(let i = 0; i < 600; i++) {
+			let div = document.createElement('div');
+			section.appendChild(div);
+		}
+
+		const divs = document.querySelectorAll('.magic section div');
+
+		document.addEventListener("mousemove", function(e){
+
+			divs.forEach(div => {
+				const rect = div.getBoundingClientRect();
+
+				// center point of each div
+				const x = rect.left + rect.width/2 - e.clientX;
+				const y = rect.top + rect.height/2 - e.clientY;
+
+				const dist = Math.sqrt(x*x + y*y);
+				const score = Math.exp(dist * -0.01);
+
+				div.style.transform = `scale(${score *  4}) rotate(${score * 180}deg)`;
+				div.style.opacity = score*2;
+				let randomHue = Math.random() * 720;
+				div.style.filter = `hue-rotate(${randomHue}deg)`;
+			});
+
+		});
+	</script>
+	
 	<style>
 	.robott{
 		position:fixed;
