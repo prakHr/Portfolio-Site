@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     }
     speakBtn.addEventListener("click",()=>{
-        readOut("Welcome to my website, it contains our services to help you...")
+        readOut("Hi I am JARVIS, at your service sir...")
         
     })
     window.onload = function(){
