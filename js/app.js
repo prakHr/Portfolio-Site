@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     // sr result
     recognition.onresult = function(event){
-        console.log(event);
+        // console.log(event);
         let current    = event.resultIndex
         let transcript = event.results[current][0].transcript
         transcript = transcript.toLowerCase()
