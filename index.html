@@ -355,7 +355,7 @@
 			document.addEventListener("DOMContentLoaded", () => {
 				let cursor = document.querySelector('.cursor');
 				// let cursor = document.querySelector('body');
-				let textContent = "2d github ml integrated website";
+				let textContent = "hulkbuster";
 				for (let i = 0; i < textContent.length; i++) {
 					let span = document.createElement('span');
 					span.classList.add('text');
@@ -900,9 +900,205 @@
 
 	<body>
 
+	<div id="legend1" style="margin-left: 30%;"></div>
+	<div id="d3Data1" style="margin-left: 33%;"></div>
+
 	<div id="legend" style="margin-left: 30%;"></div>
 	<div id="d3Data" style="margin-left: 33%;"></div>
 
+	<script>
+
+	d3.json("./datasets/barcodesData.json")
+		.then(function(data){
+
+			const width = 3000;
+			const height = 3400;
+
+			const svg = d3.select("#d3Data")
+				.append("svg")
+				.attr("width", width)
+				.attr("height", height);
+
+			const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+			const groups = [
+				{name:"₹0-50",min:0,max:50},
+				{name:"₹51-100",min:50,max:100},
+				{name:"₹101-150",min:100,max:150},
+				{name:"₹151-200",min:150,max:200},
+				{name:"₹201-250",min:200,max:250},
+				{name:"₹251-300",min:250,max:300},
+				{name:"₹301-400",min:300,max:400},
+				{name:"₹401-500",min:400,max:500},
+				{name:"₹501-1000",min:500,max:1000},
+				{name:"₹1000+",min:1000,max:Infinity}
+			];
+
+			let nodes = [];
+			let links = [];
+
+			// Create category nodes
+			groups.forEach(group=>{
+
+				nodes.push({
+					id:group.name,
+					group:group.name,
+					category:true
+				});
+
+				// Add products
+				data
+				.filter(d =>
+					d.barcodePrice >= group.min &&
+					d.barcodePrice < group.max
+				)
+				.forEach(d=>{
+
+					nodes.push({
+						id:d.barcodeName,
+						value:d.barcodePrice,
+						group:group.name,
+						category:false
+					});
+
+					links.push({
+						source:group.name,
+						target:d.barcodeName
+					});
+
+				});
+
+			});
+
+			const simulation=d3.forceSimulation(nodes)
+
+				.force(
+					"link",
+					d3.forceLink(links)
+					.id(d=>d.id)
+					.distance(50)
+				)
+
+				.force(
+					"charge",
+					d3.forceManyBody()
+					.strength(-80)
+				)
+
+				.force(
+					"center",
+					d3.forceCenter(
+						width/2,
+						height/2
+					)
+				)
+
+				.force(
+					"collision",
+					d3.forceCollide()
+					.radius(d =>
+						d.category ? 30 : 12
+					)
+				);
+
+			const link = svg
+				.append("g")
+				.selectAll("line")
+				.data(links)
+				.enter()
+				.append("line")
+				.attr("stroke","#aaa");
+
+			const node = svg
+				.append("g")
+				.selectAll("circle")
+				.data(nodes)
+				.enter()
+				.append("circle")
+
+				.attr(
+					"r",
+					d => d.category ? 25 : 8
+				)
+
+				.attr(
+					"fill",
+					d => color(d.group)
+				)
+
+				.call(
+					d3.drag()
+					.on("start",dragStarted)
+					.on("drag",dragged)
+					.on("end",dragEnded)
+				);
+
+			const label = svg
+				.append("g")
+				.selectAll("text")
+				.data(nodes.filter(d=>d.category))
+				.enter()
+				.append("text")
+				.text(d=>d.id)
+				.style("font-size","12px");
+
+			simulation.on("tick",()=>{
+
+				link
+					.attr("x1",d=>d.source.x)
+					.attr("y1",d=>d.source.y)
+					.attr("x2",d=>d.target.x)
+					.attr("y2",d=>d.target.y);
+
+				node
+					.attr(
+						"cx",
+						d=>d.x
+					)
+					.attr(
+						"cy",
+						d=>d.y
+					);
+
+				label
+					.attr(
+						"x",
+						d=>d.x+30
+					)
+					.attr(
+						"y",
+						d=>d.y
+					);
+
+			});
+
+			function dragStarted(event,d){
+
+				if(!event.active)
+					simulation.alphaTarget(0.3).restart();
+
+				d.fx=d.x;
+				d.fy=d.y;
+			}
+
+			function dragged(event,d){
+
+				d.fx=event.x;
+				d.fy=event.y;
+			}
+
+			function dragEnded(event,d){
+
+				if(!event.active)
+					simulation.alphaTarget(0);
+
+				d.fx=null;
+				d.fy=null;
+			}
+
+		});
+
+	</script>
 	<script>
 
 		d3.json("./datasets/barcodesData.json")
@@ -1027,7 +1223,7 @@
 				.padding(10)
 				(root);
 
-			const svg=d3.select("#d3Data")
+			const svg=d3.select("#d3Data1")
 				.append("svg")
 				.attr("width",width)
 				.attr("height",height);
@@ -1039,7 +1235,7 @@
 			const color=d3.scaleOrdinal(d3.schemeCategory10);
 
 			// Dynamic legend generation
-			d3.select("#legend")
+			d3.select("#legend1")
 				.selectAll(".legend-item")
 				.data(hierarchicalData.children)
 				.enter()
