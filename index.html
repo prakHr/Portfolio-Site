@@ -903,15 +903,15 @@
 	<div id="legend1" style="margin-left: 30%;"></div>
 	<div id="d3Data1" style="margin-left: 33%;"></div>
 
-	<div id="legend" style="margin-left: 30%;"></div>
-	<div id="d3Data" style="margin-left: 33%;"></div>
+	<div id="legend"></div>
+	<div id="d3Data"></div>
 
 	<script>
 
 	d3.json("./datasets/barcodesData.json")
 		.then(function(data){
 
-			const width = 300;
+			const width = 2300;
 			const height = 3400;
 
 			const svg = d3.select("#d3Data")
