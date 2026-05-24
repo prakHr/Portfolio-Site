@@ -11,6 +11,7 @@
 	<title>V.E.R.O.N.I.C.A</title>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+		<script src="https://d3js.org/d3.v7.min.js"></script>	
 		<!-- Load wordcloud2.js globally -->
 		<!-- Load wordcloud2.js -->
 		<script src="https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js"></script>
@@ -844,7 +845,304 @@
 
 	</script>
 
+
+	<style>
+
+
+	#legend{
+		display:flex;
+		flex-wrap:wrap;
+		gap:15px;
+		margin-bottom:20px;
+		padding:10px;
+	}
+
+	.legend-item{
+		display:flex;
+		align-items:center;
+		gap:8px;
+		padding:4px 8px;
+	}
+
+	.legend-color{
+		width:18px;
+		height:18px;
+		border-radius:50%;
+		border:1px solid #ccc;
+	}
+
+	text{
+		font-size:11px;
+		text-anchor:middle;
+		pointer-events:none;
+		font-weight:bold;
+	}
+
+	circle{
+		stroke:#fff;
+		stroke-width:2px;
+		transition:all .2s;
+	}
+
+	.tooltip{
+		position:absolute;
+		background:white;
+		border:1px solid #ccc;
+		border-radius:8px;
+		padding:10px;
+		font-size:13px;
+		opacity:0;
+		pointer-events:none;
+		box-shadow:0 3px 12px rgba(0,0,0,0.2);
+	}
+
+	</style>
+
 	<body>
+
+	<div id="legend" style="margin-left: 30%;"></div>
+	<div id="d3Data" style="margin-left: 33%;"></div>
+
+	<script>
+
+		d3.json("./datasets/barcodesData.json")
+		.then(function(data){
+
+			const hierarchicalData={
+				name:"Products",
+				children:[
+
+				{
+					name:"₹0-50",
+					children:data
+					.filter(d=>d.barcodePrice>=0 && d.barcodePrice<50)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹51-100",
+					children:data
+					.filter(d=>d.barcodePrice>=50 && d.barcodePrice<100)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹101-150",
+					children:data
+					.filter(d=>d.barcodePrice>=100 && d.barcodePrice<150)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹151-200",
+					children:data
+					.filter(d=>d.barcodePrice>=150 && d.barcodePrice<200)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹201-250",
+					children:data
+					.filter(d=>d.barcodePrice>=200 && d.barcodePrice<250)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹251-300",
+					children:data
+					.filter(d=>d.barcodePrice>=250 && d.barcodePrice<300)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹301-400",
+					children:data
+					.filter(d=>d.barcodePrice>=300 && d.barcodePrice<400)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹401-500",
+					children:data
+					.filter(d=>d.barcodePrice>=400 && d.barcodePrice<500)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹501-1000",
+					children:data
+					.filter(d=>d.barcodePrice>=500 && d.barcodePrice<1000)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				},
+
+				{
+					name:"₹1000+",
+					children:data
+					.filter(d=>d.barcodePrice>=1000)
+					.map(d=>({
+						name:d.barcodeName,
+						value:d.barcodePrice
+					}))
+				}
+
+				].filter(d=>d.children.length>0)
+			};
+
+			const root=d3.hierarchy(hierarchicalData)
+				.sum(d=>d.value||0)
+				.sort((a,b)=>b.value-a.value);
+
+			const width=1000;
+			const height=700;
+
+			d3.pack()
+				.size([width,height])
+				.padding(10)
+				(root);
+
+			const svg=d3.select("#d3Data")
+				.append("svg")
+				.attr("width",width)
+				.attr("height",height);
+
+			const tooltip=d3.select("body")
+				.append("div")
+				.attr("class","tooltip");
+
+			const color=d3.scaleOrdinal(d3.schemeCategory10);
+
+			// Dynamic legend generation
+			d3.select("#legend")
+				.selectAll(".legend-item")
+				.data(hierarchicalData.children)
+				.enter()
+				.append("div")
+				.attr("class","legend-item")
+				.each(function(d){
+
+					const item=d3.select(this);
+
+					item.append("div")
+						.attr("class","legend-color")
+						.style(
+							"background",
+							color(d.name)
+						);
+
+					item.append("span")
+						.text(d.name);
+
+				});
+
+			const node=svg
+				.selectAll("g")
+				.data(root.descendants())
+				.enter()
+				.append("g")
+				.attr(
+					"transform",
+					d=>`translate(${d.x},${d.y})`
+				);
+
+			node.append("circle")
+				.attr("r",d=>d.r)
+				.attr("fill",d=>{
+
+					if(d.depth===0)
+						return "#f0f0f0";
+
+					if(d.depth===1)
+						return color(d.data.name);
+
+					return color(d.parent.data.name);
+				})
+
+				.on("mouseover",function(event,d){
+
+					if(d.depth===2){
+
+						tooltip
+						.style("opacity",1)
+						.html(`
+							<b>${d.data.name}</b><br>
+							Price: ₹${d.value}
+						`);
+					}
+
+					d3.select(this)
+						.attr("stroke","black")
+						.attr("stroke-width",3);
+
+				})
+
+				.on("mousemove",function(event){
+
+					tooltip
+						.style(
+							"left",
+							(event.pageX+15)+"px"
+						)
+						.style(
+							"top",
+							(event.pageY-20)+"px"
+						);
+
+				})
+
+				.on("mouseout",function(){
+
+					tooltip.style("opacity",0);
+
+					d3.select(this)
+						.attr("stroke","#fff")
+						.attr("stroke-width",2);
+
+				});
+
+			// Category labels
+			node
+				.filter(d=>d.depth===1)
+				.append("text")
+				.text(d=>d.data.name)
+				.attr("dy",5);
+
+		})
+		.catch(function(error){
+
+			// console.error(error);
+
+		});
+
+	</script>
+
+		
 	<div class="magic">
     	<section>Let's explore magic. Take my hand and i will make you understand,</section>
 	</div>
