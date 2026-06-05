@@ -255,7 +255,8 @@ body {
 .box {
 	margin:1000px;
 	position: relative;
-	display: flex; justify-content: center; align-items: center; height: 100px;
+	width: 20px;
+	height: 200px;
 	transform-style: preserve-3d;
 	animation: animate 20s linear infinite;
 }
