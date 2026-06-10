@@ -180,12 +180,24 @@
 		color: `hsl(${Math.random() * 360}, 100%, 50%)`
 		}));
 
+				/* 🎵 SONG POINTS */
+		const songPoints7 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Impossible Car Game",
+		url: "https://www.kodub.com/apps/polytrack",
+		type: "song",
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		}));
+
+
+
 
 
 
 
 		/* 🌌 MERGE BOTH */
-		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5, ...songPoints6];
+		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5, ...songPoints6, ...songPoints7];
 
 		/* 🌍 INIT GLOBE */
 		const globe = Globe()(globeContainer)
