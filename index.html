@@ -180,24 +180,67 @@
 		color: `hsl(${Math.random() * 360}, 100%, 50%)`
 		}));
 
-				/* 🎵 SONG POINTS */
-		const songPoints7 = Array.from({ length: 50 }, () => ({
+		/* GAME POINTS */
+		const gamePoints1 = Array.from({ length: 50 }, () => ({
 		lat: Math.random() * 180 - 90,
 		lng: Math.random() * 360 - 180,
-		label: "Impossible Car Game",
+		label: "Random Game 1",
 		url: "https://www.kodub.com/apps/polytrack",
-		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		type: "game",
+		color: "#8B0000" // dark red
 		}));
 
 
 
+		/* GAME POINTS */
+		const gamePoints2 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Random Game 2",
+		url: "https://bruno-simon.com/",
+		type: "game",
+		color: "#8B0000" // dark red
+		}));
 
 
+		/* GAME POINTS */
+		const gamePoints3 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Random Game 3",
+		url: "https://bloxorz.io/",
+		type: "game",
+		color: "#8B0000" // dark red
+		}));
+
+		/* GAME POINTS */
+		const gamePoints4 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Random Game 4",
+		url: "https://bloxd.io/",
+		type: "game",
+		color: "#8B0000" // dark red
+		}));
+
+
+		
+		/* GAME POINTS */
+		const gamePoints5 = Array.from({ length: 50 }, () => ({
+		lat: Math.random() * 180 - 90,
+		lng: Math.random() * 360 - 180,
+		label: "Random Game 5",
+		url: "https://rocketgoal.io/",
+		type: "game",
+		color: "#8B0000" // dark red
+		}));
 
 
 		/* 🌌 MERGE BOTH */
-		const allPoints = [...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5, ...songPoints6, ...songPoints7];
+		const allPoints = [
+			...energyPoints, ...songPoints, ...songPoints2, ...songPoints3, ...songPoints4, ...songPoints5, ...songPoints6,
+		 	...gamePoints1, ...gamePoints2, ...gamePoints3, ...gamePoints4, ...gamePoints5
+		];
 
 		/* 🌍 INIT GLOBE */
 		const globe = Globe()(globeContainer)
@@ -209,6 +252,12 @@
 
 		/* 🎬 ONE CLICK HANDLER */
 		.onPointClick(point => {
+
+			if (point.type === "game") {
+			// 🎵 open video
+			window.open(point.url, '_blank');
+			}
+
 
 			if (point.type === "song") {
 			// 🎵 open video
@@ -228,7 +277,7 @@
 
 		/* 🎯 CONTROLS */
 		globe.controls().autoRotate = false;
-		globe.controls().autoRotateSpeed = 0; 
+		globe.controls().autoRotateSpeed = 0.01; 
 	</script>
 		
 		<style type="text/css">
