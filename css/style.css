@@ -5,6 +5,90 @@ body {
 	overflow-x: hidden;
 }
 
+
+.badge-div-container{
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:wrap;
+	page-break-after: 50px 20px;
+	transform-style: preserve-3d;
+}
+
+.badge-div-container .badge-card{
+	width: 300px;
+	height: 300px;
+	margin: 50px 20px;
+	background: rgba(255,255,255,0.1);
+	display: flex;
+	border-radius: 5px;
+	flex-direction: column;
+	transform-style: preserve-3d;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	transition: height 0.5s ease-in-out;
+}
+.badge-div-container .badge-card:hover .badge-imgBx-card{
+	top: -60px;
+	left: 20px;
+	right: 20px;
+	width: 260px;
+	transform: translate3d(0,0,75px);
+}
+
+.js-tilt-glare{
+	border-radius: 4px;
+}
+.badge-div-container .badge-card:hover{
+	height: 440px;
+}
+
+.badge-div-container .badge-card .badge-imgBx-card{
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-width: initial;
+	width: 300px;
+	height: 260px;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	transition: 0.5s;
+}
+
+.badge-div-container .badge-card .badge-imgBx-card img{
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.badge-div-container .badge-card .badge-content-card h2{
+	background-color: black;
+}
+
+.badge-div-container .badge-card .badge-content-card p{
+	background-color: black;
+}
+
+.badge-div-container .badge-card .badge-content-card{
+	position: relative;
+	padding: 10px 15px;
+	text-align: center;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(-140px) scale(1);
+}
+
+.badge-div-container .badge-card:hover .badge-content-card{
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(-40px) scale(1);
+}
+
 .sssection{
 	display:flex;
 	justify-content: center;
