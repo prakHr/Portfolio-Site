@@ -1198,6 +1198,15 @@
 	</style>
 
 	<body>
+		<section class="sectionn">
+			<p class="textt"></p>
+		</section>
+		<script>
+			let paragraph = document.querySelector('.textt');
+			let textt = "I have worked on making personal top 50 ideas and made them come to reality. Currently working in Accenture Private Limited Bangalore, previous client included ENIQ(Ericsson), MBRDI(Mercedes Benz Research and Development India) and Wipro Private Limited for automation of software and optimization related algorithms on various paradigm shift of software. Previously worked in Standard Chartered Bank Global Business Services Private Limited @ Bangalore office on building solutions in Machine Learning, Deep Learning, Artificial Intelligence and Computer Vision.".repeat(15);
+			paragraph.textContent = textt;
+			paragraph.innerHTML = paragraph.textContent.replace(/\S/g,"<span>$&</span>");
+		</script>
 
 	<div id="legend1" style="margin-left: 30%;"></div>
 	<div id="d3Data1" style="margin-left: 33%;"></div>
