@@ -383,6 +383,8 @@ body {
 }
 .box {
 	margin-left:50%;
+	margin-top: 50%;
+	margin-bottom: 50%;
 	position: relative;
 	width: 200px;
 	height: 200px;
