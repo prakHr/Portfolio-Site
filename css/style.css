@@ -5,6 +5,69 @@ body {
 	overflow-x: hidden;
 }
 
+.sectionvideo{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.sectionvideo .sectionbox{
+	position: absolute;
+	top: calc(50% - 200px);
+	left: calc(50% - 200px);
+	width: 400px;
+	height: 400px;
+	transform-style: preserve-3d;
+}
+
+.sectionvideo .sectionbox div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+
+	
+}
+
+.sectionvideo .sectionbox div span{
+	position: absolute;
+	top:0;
+	left:0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(0,0,0,.1);
+	background: #ccc;
+}
+
+.sectionvideo .sectionbox div span video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sectionvideo .sectionbox div span:nth-child(1){
+	transform: rotateX(0deg) translate3d(0,0,200px);
+}
+
+.sectionvideo .sectionbox div span:nth-child(2){
+	transform: rotateY(90deg) translate3d(0,0,-200px);
+}
+
+.sectionvideo .sectionbox div span:nth-child(2) video{
+	transform: rotateY(180deg);
+
+}
+.sectionvideo .sectionbox div span:nth-child(3){
+	transform: rotateX(90deg) translate3d(0,0,200px);
+}
+
 .sectionn{
 	position: relative;
 	width: 100%;
