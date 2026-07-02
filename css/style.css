@@ -5,6 +5,137 @@ body {
 	overflow-x: hidden;
 }
 
+.pointssection{
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+	min-height: 100vh;
+	background: #350048;
+}
+
+.pointssection::before{
+	content:'';
+	position:absolute;
+	top:45%;
+	left:0;
+	width:100%;
+	height:50px;
+	background:#bd00ff;
+}
+
+.pointscontainer{
+	width:900px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+
+.pointscontainer .pointscard{
+	position:relative;
+	width:250px;
+	height:300px;
+	text-align: center;
+	z-index:10;
+	margin: 20px 20px 60px;
+}
+
+.pointscontainer .pointscard .pointsbox{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255,255,255,0.05);
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);	
+	backdrop-filter: blur(15px);
+	border: 1px solid rgba(255,255,255,0.1);
+	z-index:10;
+	border-radius:10px;
+}
+
+.pointspercent{
+	position:relative;
+	width:150px;
+	height:150px;
+	border-radius:50%;
+}
+
+.pointspercent .pointsnumber{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pointspercent .pointsnumber h2{
+	color:#fff;
+	font-weight:700;
+	font-size:50px;
+}
+
+.pointspercent .pointsnumber h2 span{
+	font-size:24px;
+}
+
+.pointstext{
+	position:absolute;
+	bottom:-42px;
+	left:50%;
+	transform: translateX(-50%);
+	text-align:center;
+	padding:30px 20px 10px;
+	background: #f00;
+	border-radius:10px;
+	font-weight:800;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	z-index: 1;
+	pointer-events: none;
+	transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+	transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+	color:#fff;
+}
+
+.pointscard:hover .pointstext{
+	transition-delay: 0s, 0.5s, 0s, 0s;
+	bottom: -70px;
+	z-index: 11;
+	transform: translateX(-50%) translateY(-50px);
+	padding: 10px 20px 10px;
+
+}
+
+.pointscard:nth-child(1) .pointstext{
+	background: #ff0461;
+}
+
+svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+svg circle{
+	width:100%;
+	height:100%;
+	fill:none;
+	stroke-width: 10;
+	stroke: rgba(255,255,255,0.05);
+	transform: translate(5px,5px);
+	stroke-linecap: round;
+
+}
+
 .sectionvideo{
 	position: relative;
 	width: 100%;
