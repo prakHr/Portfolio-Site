@@ -4612,6 +4612,22 @@
 		</div>
 	</div>
 
+	<h2 style="color:red;background-color: #000000;">Dynamic HTML Renderer</h2>
+
+	<button id="addBtnCCCC" style="color: yellowgreen; background-color: #000000; margin-left: 33%;">
+		Add Text Area
+	</button>
+
+	<button id="submitBtnCCCC" style="color: yellowgreen; background-color: #000000;">
+		Submit
+	</button>
+
+	<div id="containerCCCC" style="color:black;background-color: white;"></div>
+
+	<div id="outputCCCC"  style="color:black;background-color: white;"></div>
+
+
+
 	<div>
 
 		<input type="gmap" name="gmap" id="igmap" placeholder="  Enter any indian address"
@@ -4666,6 +4682,101 @@
 	</script>
 
 
+
+	<script>
+		const container = document.getElementById("containerCCCC");
+		const output = document.getElementById("outputCCCC");
+		const addBtn = document.getElementById("addBtnCCCC");
+		const submitBtn = document.getElementById("submitBtnCCCC");
+
+		let count = 1;
+
+		function addTextArea() {
+
+			// Wrapper for textarea + delete button
+			const wrapper = document.createElement("div");
+			wrapper.className = "textarea-wrapper";
+			wrapper.style.marginBottom = "15px";
+
+			// Textarea
+			const textarea = document.createElement("textarea");
+			textarea.className = "dynamic-textareaCCCC";
+			textarea.placeholder = `Enter HTML ${count} (e.g. <p>Hello</p>)`;
+
+			// Delete button
+			const deleteBtn = document.createElement("button");
+			deleteBtn.textContent = "Delete";
+			deleteBtn.style.marginLeft = "10px";
+			deleteBtn.style.color = "red";
+			deleteBtn.style.backgroundColor = "#000";
+			deleteBtn.style.cursor = "pointer";
+
+			// Delete this textarea
+			deleteBtn.addEventListener("click", () => {
+				wrapper.remove();
+			});
+
+			wrapper.appendChild(textarea);
+			wrapper.appendChild(deleteBtn);
+
+			container.appendChild(wrapper);
+
+			count++;
+		}
+
+		// Create a textarea only when the Add button is clicked
+		addBtn.addEventListener("click", addTextArea);
+
+		// Submit
+		submitBtn.addEventListener("click", () => {
+
+			const values = [...document.querySelectorAll(".dynamic-textareaCCCC")]
+				.map(textarea => textarea.value);
+
+			// console.log(values);
+
+			// Your rendering code goes here...
+			let table = `
+				<table>
+					<tr>
+						<th></th>
+						
+					</tr>
+			`;
+
+			values.forEach((html, index) => {
+
+				table += `
+					<tr>
+						
+						<td>
+							<div class="preview-box">
+								${html}
+							</div>
+						</td>
+					</tr>
+				`;
+			});
+
+			table += "</table>";
+
+			output.innerHTML = `
+				<div class="table-container">
+					${table}
+				</div>
+			`;
+			// output.innerHTML = table;
+
+		});
+
+		// Escape HTML so the source code is displayed literally
+		function escapeHtml(str) {
+			return str
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;");
+		}
+	</script>
 
 </body>
 

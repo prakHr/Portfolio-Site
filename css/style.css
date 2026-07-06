@@ -5,6 +5,27 @@ body {
 	overflow-x: hidden;
 }
 
+.preview-box {
+    width: 300px;          /* Fixed width */
+    height: 200px;         /* Fixed height */
+    border: 1px solid #888;
+    padding: 10px;
+    overflow: auto;        /* Scroll if content overflows */
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.table-container table {
+    width: auto;          /* Don't stretch to full width */
+    max-width: 90%;
+}
+
 .pointssection{
 	position:relative;
 	display:flex;
@@ -114,6 +135,8 @@ body {
 	padding: 10px 20px 10px;
 
 }
+
+
 
 .pointscard:nth-child(1) .pointstext{
 	background: #ff0461;
