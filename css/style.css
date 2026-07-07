@@ -16,11 +16,58 @@ body {
 }
 
 .table-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    position: relative;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.table-container i {
+	position: absolute;
+	inset: 0;
+	border: 2px solid #fff;
+	transition: 0.5s;
+}
+
+.table-container i:nth-child(1){
+	border-radius: 43% 57% 74% 26% / 44% 30% 70% 56%;
+	animation: animate 6s linear infinite;
+}
+
+.table-container i:nth-child(2){
+	border-radius: 62% 38% 42% 58% / 52% 38% 62% 48%;
+	animation: animate 4s linear infinite;
+}
+
+.table-container i:nth-child(3){
+	border-radius: 44% 56% 42% 58% / 37% 65% 35% 63%;
+	animation: animate2 10s linear infinite;
+}
+
+@keyframes animate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate2 {
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.table-container:hover i
+{
+	border: 6px solid var(--clr);
+	filter: drop-shadow(0 0 20px var(--clr));
+}
 .table-container table {
     width: auto;          /* Don't stretch to full width */
     max-width: 90%;
