@@ -6,7 +6,7 @@ def download_mp3(url):
         'outtmpl': '%(title)s.%(ext)s',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
+            'preferredcodec': 'webm',
             'preferredquality': '192',
         }],
     }
@@ -15,8 +15,7 @@ def download_mp3(url):
         ydl.download([url])
 
 id_list = [
-    # 'UG0FwNfB8SQ',
-    'fFCBJDqMEm8'
+    'A0d1DqZkZu8'
 ]
 for song in id_list:
     download_mp3(f"https://www.youtube.com/watch?v={song}")

@@ -1239,6 +1239,34 @@
 	</style>
 
 	<body>
+		<h1>Alchemist</h1>
+
+		<div class="videoSlider">
+			<section class="videoSliderSection">
+				<video id="vslider" autoplay loop>
+					<source src="/Portfolio-Site/videos/video/video5.mp4" type="video/mp4">
+
+				</video>
+
+				<ul class="navigation">
+					<li onclick="videoUrl('/Portfolio-Site/videos/video/video1.mp4')"><img src="/Portfolio-Site/images/video1.png"></li>
+					<li onclick="videoUrl('/Portfolio-Site/videos/video/video2.mp4')"><img src="/Portfolio-Site/images/video2.png"></li>
+					<li onclick="videoUrl('/Portfolio-Site/videos/video/video3.mp4')"><img src="/Portfolio-Site/images/video3.png"></li>
+					<li onclick="videoUrl('/Portfolio-Site/videos/video/video4.mp4')"><img src="/Portfolio-Site/images/video4.png"></li>
+					<li onclick="videoUrl('/Portfolio-Site/videos/video/video5.mp4')"><img src="/Portfolio-Site/images/video5.png"></li>
+				</ul>
+			</section>
+			<script type="text/javascript">
+				function videoUrl(hmmmm){
+					document.getElementById("vslider").src = hmmmm;
+				}
+
+			</script>
+
+		</div>
+
+		
+
 
 		<div class="agi" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; color: white;">
 			<h1 style="text-align: center; background-color:gold; border-radius: 1000px; border:10px solid black;">Artificial General Intelligence <a href="https://github.com/prakHr/agi-ArtificialGeneralIntelligence" target="_blank">LINK TO A.G.I.</a></h1>
