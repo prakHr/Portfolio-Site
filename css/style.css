@@ -30,7 +30,7 @@ body {
 }
 
 .majorBrands .card .circle{
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -43,7 +43,7 @@ body {
 
 .majorBrands .card .circle::before{
 	content: '';
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 350px;
@@ -79,7 +79,7 @@ body {
 
 
 .majorBrands .card .product_img{
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0) rotate(315deg);
@@ -97,7 +97,7 @@ body {
 }
 
 .majorBrands .card .content{
-	position: absolute;
+	position: relative;
 	width: 50%;
 	left: 20%;
 	padding: 20px 20px 20px 40px;
