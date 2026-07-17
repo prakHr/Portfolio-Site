@@ -1274,13 +1274,38 @@
 
 		<div class="agi" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; color: white;">
 			<h1 style="text-align: center; background-color:gold; border-radius: 1000px; border:10px solid black;">Artificial General Intelligence <a href="https://github.com/prakHr/agi-ArtificialGeneralIntelligence" target="_blank">LINK TO A.G.I.</a></h1>
-			<iframe
-				width="80%"
-				height="60%"
-				src="https://www.youtube.com/embed/A0d1DqZkZu8?autoplay=1&mute=1"
-				allow="autoplay"
-				allowfullscreen>
-			</iframe>
+			<div class="video-container">
+				<video class="vvslider" autoplay loop muted>
+					<source src="/Portfolio-Site/videos/video/video6.mp4" type="video/mp4">
+				</video>
+
+				<button class="mute-btn" onclick="toggleMute(this)">
+					🔇 Unmute
+				</button>
+			</div>
+
+			<div class="video-container">
+				<video class="vvslider" autoplay loop muted>
+					<source src="/Portfolio-Site/videos/video/video7.mp4" type="video/mp4">
+				</video>
+
+				<button class="mute-btn" onclick="toggleMute(this)">
+					🔇 Unmute
+				</button>
+			</div>
+			<script>
+				function toggleMute(button) {
+					const video = button.parentElement.querySelector("video");
+
+					video.muted = !video.muted;
+
+					if (video.muted) {
+						button.innerHTML = "🔇 Unmute";
+					} else {
+						button.innerHTML = "🔊 Mute";
+					}
+				}
+			</script>
 		</div>
 		<section class="sectionn">
 			<p class="textt"></p>
