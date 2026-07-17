@@ -5,6 +5,7 @@ body {
 	overflow-x: hidden;
 }
 .majorBrands {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
