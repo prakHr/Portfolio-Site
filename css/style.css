@@ -13,20 +13,19 @@ body {
 }
 .majorBrands .card{
 	position: relative;
-	width: 350px;
-	height: 350px;
+	width: 300px;
+	height: 300px;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: 0.5s;
 	background: #333;
-	border-radius: 20px;
-	transition-delay: 0.5s;;
+	transition-delay: 0.5s;
 }
 
 .majorBrands .card:hover{
-	width: 600px;
+	width: 300px;
 	transition-delay: 0.5s;
 }
 
@@ -43,7 +42,6 @@ body {
 }
 
 .majorBrands .card .circle::before{
-	content: '';
 	position: relative;
 	top: 0;
 	left: 0;
