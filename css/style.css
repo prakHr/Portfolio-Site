@@ -1284,7 +1284,20 @@ h1{
 
 
 }
+#d3Data,
+#d3Data1{
+    position: relative;
+    z-index: 9999 !important;
+}
 
+/* #d3Data svg, */
+#d3Data1 svg{
+    position: relative;
+    z-index: 9999;
+    background: transparent;
+	height: 1000px;
+	width: 100%;
+}
 .newSlider::before{
 	content: '';
 	background: rgba(0, 0, 0, .5);
