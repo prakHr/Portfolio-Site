@@ -4,6 +4,45 @@ body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 }
+
+.rain .slider {
+    width: 100%;
+    height: 500px;          /* Visible area */
+    overflow: hidden;
+    background: #111;
+    color: white;
+    position: relative;
+	display: flex;
+	gap: 30px;
+	align-items: flex-start;
+	border: 10px solid white;
+}
+
+.rain .slider span {
+    display: inline-block;
+    text-align: center;
+    animation: slideUp 8s linear infinite;
+	line-height: 1.2;
+}
+
+@keyframes topToBottom {
+    from {
+        transform: translateY(-120%);
+    }
+    to {
+        transform: translateY(120vh);
+    }
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateY(120vh);
+    }
+    to {
+        transform: translateY(-120%);
+    }
+}
+
 .majorBrands {
 	position: relative;
 	display: flex;

@@ -1254,7 +1254,188 @@
 	</style>
 
 	<body>
-		
+		<h1>ISHAN</h1>
+		<div class="rain" style="margin: 10%;">
+			<div class="slider">
+				<span>
+					For me coding, development, technology, engineering 
+				</span>
+
+				<span>
+					whatever you want to say is in general a hope in my darkest hours. 
+				</span>
+
+				<span>
+					For me to be worthy to become the beacon of that hope for whoever  
+				</span>
+
+				<span>
+					is reading this, at some point before even the beginning of my career, 
+				</span>
+
+				<span>
+					I knew that someday the skills I have gained in these darkest hours would
+				</span>
+
+				<span>
+					return to me and my belief in God would be reawakened in my heart.
+				</span>
+
+				<span>
+					And my belief in love, art, creativity and the ability to turn soulless tasks, 
+				</span>
+
+				<span>
+					things into problem solving would still remain there for a long time in a journey that I am having.
+				</span>
+
+				<span>
+					Creative and Innovative mould of thinking, consistency, aspiration and motivation are the important skills 
+				</span>
+
+				<span>
+					for a being to strive towards an ideal to reach to the sun. Every idea was started in a basic container like garage. 
+				</span>
+
+				<span>
+					Any impossible can be reached is my motto and one's thirst for knowledge and passion will help her/him to leave 
+				</span>
+
+				<span>
+					a significant mark in any field. Thus, I am inclined to get to the next level in career, personality and competitive programming.
+				</span>
+
+				<span>
+					For me coding, development, technology, engineering 
+				</span>
+
+				<span>
+					whatever you want to say is in general a hope in my darkest hours. 
+				</span>
+
+				<span>
+					For me to be worthy to become the beacon of that hope for whoever  
+				</span>
+
+				<span>
+					is reading this, at some point before even the beginning of my career, 
+				</span>
+
+				<span>
+					I knew that someday the skills I have gained in these darkest hours would
+				</span>
+
+				<span>
+					return to me and my belief in God would be reawakened in my heart.
+				</span>
+
+				<span>
+					And my belief in love, art, creativity and the ability to turn soulless tasks, 
+				</span>
+
+				<span>
+					things into problem solving would still remain there for a long time in a journey that I am having.
+				</span>
+
+				<span>
+					Creative and Innovative mould of thinking, consistency, aspiration and motivation are the important skills 
+				</span>
+
+				<span>
+					for a being to strive towards an ideal to reach to the sun. Every idea was started in a basic container like garage. 
+				</span>
+
+				<span>
+					Any impossible can be reached is my motto and one's thirst for knowledge and passion will help her/him to leave 
+				</span>
+
+				<span>
+					a significant mark in any field. Thus, I am inclined to get to the next level in career, personality and competitive programming.
+				</span>
+
+				<span>
+					For me coding, development, technology, engineering 
+				</span>
+
+				<span>
+					whatever you want to say is in general a hope in my darkest hours. 
+				</span>
+
+				<span>
+					For me to be worthy to become the beacon of that hope for whoever  
+				</span>
+
+				<span>
+					is reading this, at some point before even the beginning of my career, 
+				</span>
+
+				<span>
+					I knew that someday the skills I have gained in these darkest hours would
+				</span>
+
+				<span>
+					return to me and my belief in God would be reawakened in my heart.
+				</span>
+
+				<span>
+					And my belief in love, art, creativity and the ability to turn soulless tasks, 
+				</span>
+
+				<span>
+					things into problem solving would still remain there for a long time in a journey that I am having.
+				</span>
+
+				<span>
+					Creative and Innovative mould of thinking, consistency, aspiration and motivation are the important skills 
+				</span>
+
+				<span>
+					for a being to strive towards an ideal to reach to the sun. Every idea was started in a basic container like garage. 
+				</span>
+
+				<span>
+					Any impossible can be reached is my motto and one's thirst for knowledge and passion will help her/him to leave 
+				</span>
+
+				<span>
+					a significant mark in any field. Thus, I am inclined to get to the next level in career, personality and competitive programming.
+				</span>
+
+
+
+			</div>
+			
+		</div>
+		<script>
+			document.querySelectorAll(".slider span").forEach(span => {
+				const textT = span.textContent.trim();
+
+				span.innerHTML = textT
+					.split("")
+					.map(char => char === " " ? "&nbsp;" : char)
+					.join("<br>");
+
+				const hue = Math.floor(Math.random() * 360);
+
+				span.style.color = `hsl(${hue}, 90%, 60%)`;
+				span.style.left = Math.random() * 95 + "%";
+
+				// Random animation duration (5–12 seconds)
+				const duration = 15 + Math.random() * 7;
+				span.style.animation = `rotate ${duration}s linear infinite`;
+
+				// Random delay
+				const delay = Math.random() * 5;
+
+				// 50% chance of either direction
+				const animation =
+					Math.random() < 0.5 ? "topToBottom" : "bottomToTop";
+
+				span.style.animation = `${animation} ${duration}s linear ${delay}s infinite`;
+
+			});
+
+		</script>
 		
 		<div class="videoSlider">
 			<section class="videoSliderSection">
