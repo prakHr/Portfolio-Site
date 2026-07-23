@@ -2398,10 +2398,15 @@ body
 }
 
 /*---------------Services-------------*/
+/* .services-box::before{
+	filter: url(#wavy);
+	border: 10px solid gold;
+} */
 .services
 {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	
 }
 .services h1{
 	margin-bottom: 15px;
@@ -2412,6 +2417,10 @@ body
 	margin-top: 20px;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
+	
+	filter: url(#wavy);
+	border: 5px solid gold;
+	-webkit-box-reflect: below 15px linear-gradient(transparent,transparent,rgba(0,0,0,.2));
 }
 .services-box .fa
 {
