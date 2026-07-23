@@ -4992,12 +4992,13 @@
 			const wrapper = document.createElement("div");
 			wrapper.className = "textarea-wrapper";
 			wrapper.style.marginBottom = "15px";
+			wrapper.style.backgroundColor = "black";
 
 			// Textarea
 			const textarea = document.createElement("textarea");
 			textarea.className = "dynamic-textareaCCCC";
 			textarea.placeholder = `Enter HTML ${count} (e.g. <p>Hello</p>)`;
-
+			
 			// Delete button
 			const deleteBtn = document.createElement("button");
 			deleteBtn.textContent = "Delete";
@@ -5056,7 +5057,7 @@
 			table += "</table>";
 
 			output.innerHTML = `
-				<div class="table-container">
+				<div class="table-container" style="margin-left:50%;">
 					<i style= "--clr:#00ff0a;"></i>
 					<i style= "--clr:#ff0057;"></i>
 					<i style= "--clr:#fffc44;"></i>
@@ -5185,8 +5186,7 @@
 		gbtn.addEventListener('click', function () {
 			var countryCode = "in";
 			var address = document.getElementById("igmap").value;
-			// console.log(address);
-
+			
 			if (document.getElementById("1")) {
 				document.getElementById("1").remove();
 			}
