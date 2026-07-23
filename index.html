@@ -117,7 +117,9 @@
 			lng: coord.lng,
 			label: "SELF SUSTAINABLE ENERGY",
 			type: "energy",
-			color: "#00ffcc"
+			color: "#00ffcc",
+			altitude:0.02
+			
 		};
 		});
 
@@ -128,7 +130,8 @@
 		label: "JALWA",
 		url: "https://www.youtube.com/watch?v=NapGAjs2nXE",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 		/* 🎵 SONG POINTS */
@@ -138,7 +141,8 @@
 		label: "Let Her Go - Passenger (Tiffany Alvord Cover)",
 		url: "https://www.youtube.com/watch?v=FzeO1JoONDE",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 		/* 🎵 SONG POINTS */
@@ -148,7 +152,8 @@
 		label: "Duniya Layi",
 		url: "https://www.youtube.com/watch?v=0DxtE0WSqE4",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 		/* 🎵 SONG POINTS */
@@ -158,7 +163,8 @@
 		label: "Believer",
 		url: "https://www.youtube.com/watch?v=RPEZtu0ya9A",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 		/* 🎵 SONG POINTS */
@@ -168,7 +174,8 @@
 		label: "Frame of mind",
 		url: "https://www.youtube.com/watch?v=hab6MeMVEFk",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 
@@ -179,7 +186,8 @@
 		label: "Fireworks",
 		url: "https://www.youtube.com/watch?v=jFWnVdsSgxs",
 		type: "song",
-		color: `hsl(${Math.random() * 360}, 100%, 50%)`
+		color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+		altitude: 0.01 + Math.random() * 0.08     
 		}));
 
 		/* GAME POINTS */
@@ -190,6 +198,9 @@
 		url: "https://www.kodub.com/apps/polytrack",
 		type: "game",
 		color: "#8B0000" // dark red
+		,
+			altitude:0.04
+		
 		}));
 
 
@@ -202,6 +213,8 @@
 		url: "https://bruno-simon.com/",
 		type: "game",
 		color: "#8B0000" // dark red
+		,
+			altitude:0.04
 		}));
 
 
@@ -213,6 +226,8 @@
 		url: "https://bloxorz.io/",
 		type: "game",
 		color: "#8B0000" // dark red
+		,
+			altitude:0.04
 		}));
 
 		/* GAME POINTS */
@@ -223,6 +238,8 @@
 		url: "https://bloxd.io/",
 		type: "game",
 		color: "#8B0000" // dark red
+		,
+			altitude:0.04
 		}));
 
 
@@ -235,6 +252,8 @@
 		url: "https://rocketgoal.io/",
 		type: "game",
 		color: "#8B0000" // dark red
+		,
+			altitude:0.04
 		}));
 
 
@@ -249,7 +268,7 @@
 		.globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
 		.pointsData(allPoints)
 		.pointLabel('label')
-		.pointAltitude(0.02)
+		.pointAltitude(d => d.altitude)
 		.pointColor('color')
 
 		/* 🎬 ONE CLICK HANDLER */
