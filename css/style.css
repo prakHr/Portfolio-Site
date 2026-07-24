@@ -23,35 +23,31 @@ body {
 	transform-style:  preserve-3d;
 }
 
-.isometric-section .isometric-div:before{
-    content: '';
-    width: 100%;
-    height: 50px;
+.isometric-section .isometric-div::after{
+    content: "";
     position: absolute;
     bottom: -50px;
     left: 0;
-    background: #ff3b3b;
-    transform: skewX(-45deg);
+    width: 100%;
+    height: 50px;
+    background: red;
 
-    animation: glow 2s infinite alternate;
+    transform: skewX(-45deg);
+    filter: blur(12px);
+    opacity: .6;
+    z-index: -1;
+
+    animation: pulse 2s infinite alternate;
 }
 
-@keyframes glow{
+@keyframes pulse{
     from{
-        box-shadow:
-            0 0 10px #ff3b3b,
-            0 0 20px #ff3b3b,
-            0 0 30px #ff3b3b;
+        opacity: .3;
     }
     to{
-        box-shadow:
-            0 0 20px #ff3b3b,
-            0 0 40px #ff3b3b,
-            0 0 80px #ff3b3b,
-            0 0 120px #ff3b3b;
+        opacity: .8;
     }
 }
-
 .scbtshirt{
 	margin-top: 30%;
 	margin-left: 80%;
