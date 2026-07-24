@@ -5,14 +5,51 @@ body {
 	overflow-x: hidden;
 }
 
-.gif-container {
-    width: 300px;
-    height: 300px;
-	margin-left: 40%;
-    background-image: url("/Portfolio-Site/images/all_ds-combined.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.isometric-section{
+	width: 100%;
+	height: 100vh;
+	
+}
+.isometric-section .isometric-div {
+	
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	background: url("/Portfolio-Site/images/all_ds-combined.gif");
+	background-size: cover;
+	transform: translate(-50%,-50%) rotateX(45deg) rotateZ(-45deg);
+	transform-style:  preserve-3d;
+}
+
+.isometric-section .isometric-div:before{
+    content: '';
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    background: #ff3b3b;
+    transform: skewX(-45deg);
+
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:
+            0 0 10px #ff3b3b,
+            0 0 20px #ff3b3b,
+            0 0 30px #ff3b3b;
+    }
+    to{
+        box-shadow:
+            0 0 20px #ff3b3b,
+            0 0 40px #ff3b3b,
+            0 0 80px #ff3b3b,
+            0 0 120px #ff3b3b;
+    }
 }
 
 .scbtshirt{
