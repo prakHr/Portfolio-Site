@@ -5,6 +5,16 @@ body {
 	overflow-x: hidden;
 }
 
+.gif-container {
+    width: 300px;
+    height: 300px;
+	margin-left: 40%;
+    background-image: url("/Portfolio-Site/images/all_ds-combined.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .scbtshirt{
 	margin-top: 30%;
 	margin-left: 80%;
