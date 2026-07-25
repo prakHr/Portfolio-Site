@@ -2131,7 +2131,7 @@ h2:hover span:nth-child(even){
 	background: #2225;
 	z-index: 1000;
 	transform: translateY(240px) rotateX(90deg) scale(1.1);
-	filter: blur(8px);
+	filter: blur(40px);
 }
 .Body .box .card{
 	position: absolute;
