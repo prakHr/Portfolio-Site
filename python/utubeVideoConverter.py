@@ -14,9 +14,7 @@ def download_mp3(url):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-id_list = [
-    '304QjnowLZ8'
-]
+id_list = ['304QjnowLZ8']
 
 for song in id_list:
     download_mp3(f"https://www.youtube.com/watch?v={song}")
