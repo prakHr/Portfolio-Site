@@ -15,7 +15,7 @@ def download_mp3(url):
         ydl.download([url])
 
 id_list = [
-    'A0d1DqZkZu8'
+    '304QjnowLZ8'
 ]
 for song in id_list:
     download_mp3(f"https://www.youtube.com/watch?v={song}")

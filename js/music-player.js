@@ -45,7 +45,7 @@ class MusicPlayer extends HTMLElement {
     const title = this.querySelector('#title');
     const cover = this.querySelector('#cover');
 
-    const songs = ['superheroWorkoutMotivation', 'IncredibleLove', 'iWillBecomeHokage'];
+    const songs = ['superheroWorkoutMotivation', 'IncredibleLove', 'ihaveBecomeHokage', 'enchantedToMeetU'];
     let songIndex = songs.length - 1;
 
     function loadSong(song) {
