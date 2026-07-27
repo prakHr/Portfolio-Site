@@ -2253,7 +2253,7 @@ body
 	z-index: 10000;
 }
 
-.coontainer .immgBx i{
+.coontainer .immgBx:first-of-type i{
 	display: block;
 	width:100%;
 	height: 100%;
@@ -2265,12 +2265,24 @@ body
 
 }
 
+.coontainer .immgBx:last-of-type i{
+	display: block;
+	width:100%;
+	height: 100%;
+	background: #fff;
+	border: 1px solid black;
+	background-size: 300px;
+	background-position: center;
+	transition: transform 0.3s ease;
+
+}
+
 .coontainer .immgBx:first-of-type i{
 	background: url('/Portfolio-Site/hover-image/box-img1.png');
 }
 
 .coontainer .immgBx:last-of-type i{
-	background: url('/Portfolio-Site/hover-image/box-img1.png');
+	background: url('/Portfolio-Site/hover-image/box-img2.png');
 }
 
 
