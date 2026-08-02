@@ -633,14 +633,24 @@ svg circle{
 }
 
 .sectionvideo .sectionbox{
-	position: absolute;
-	top: calc(50% - 200px);
-	left: calc(50% - 200px);
-	width: 400px;
-	height: 400px;
-	transform-style: preserve-3d;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+
+    animation: videoCubeRotate 12s linear infinite;
 }
 
+@keyframes videoCubeRotate{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
 .sectionvideo .sectionbox div{
 	position: absolute;
 	top: 0;
