@@ -1071,10 +1071,10 @@ svg circle{
 	width: 200px;
 	height: 200px;
 	transform-style: preserve-3d;
-	animation: animate 20s linear infinite;
+	animation: rotateCube 20s linear infinite;
 }
 
-@keyframes animate {
+@keyframes rotateCube {
 	0%
 	{
 		transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
@@ -1139,7 +1139,7 @@ svg circle{
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: rotate 3s linear infinite;
+  animation: rotateeee 3s linear infinite;
 
   animation-play-state: paused;
 }
@@ -1148,7 +1148,7 @@ svg circle{
   animation-play-state: running;
 }
 
-@keyframes rotate {
+@keyframes rotateeee {
   from {
     transform: rotate(0deg);
   }
@@ -2326,11 +2326,11 @@ h2:hover span:nth-child(even){
 
 .multicolortext .char{
 	visibility: hidden;
-	animation: animate 0s steps(50) forwards;
+	animation: animatee 0s steps(50) forwards;
 	animation-delay: calc(0.005s*var(--char-index));
 }
 
-@keyframes animate {
+@keyframes animatee {
 	0%{
 		visibility: hidden;
 	}
