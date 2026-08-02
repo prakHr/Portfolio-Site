@@ -2321,6 +2321,22 @@ h2:hover span:nth-child(even){
     background-clip: text;
    	color: transparent;
    	border: 1px solid black;
+
+}
+
+.multicolortext .char{
+	visibility: hidden;
+	animation: animate 0s steps(50) forwards;
+	animation-delay: calc(0.005s*var(--char-index));
+}
+
+@keyframes animate {
+	0%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
 }
 
 body
