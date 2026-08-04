@@ -4,7 +4,12 @@ body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 }
-
+.text-center{
+	border-radius: 100px;
+	border: 10px solid lightseagreen;
+	background-color: black;
+	
+}
 .hopeMessage{
 	position: relative;
 	width: 100%;
