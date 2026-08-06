@@ -6,18 +6,37 @@ body {
 }
 
 .donate .donateImg{
+	width: 100%;
+	height: 100%;
+
+}
+
+.donate .donateImg{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	background: blueviolet url(/Portfolio-Site/DonationImages/sparkles.png);
+	animation: animateeeeE 2s linear infinite;
+}
+
+@keyframes animateeeeE {
+	0%
+	{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 0 -64px;
+	}
 }
 
 .donate .donateImg .dimg{
 	border: 5px solid black;
-	margin: 10px;
-	padding: 5px;
+	margin: 20%;
+	padding: 50px;
 	background-color: blueviolet;
 	width: 30%;
+	height: 100%;	
 }
 
 .softwareDevDropBody{
