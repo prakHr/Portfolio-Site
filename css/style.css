@@ -5,13 +5,10 @@ body {
 	overflow-x: hidden;
 }
 
+
 .donate .donateImg{
 	width: 100%;
 	height: 100%;
-
-}
-
-.donate .donateImg{
 	display: flex;
 	justify-content:center;
 	align-items: center;
@@ -32,10 +29,10 @@ body {
 
 .donate .donateImg .dimg{
 	border: 5px solid black;
-	margin: 20%;
+	margin: 5%;
 	padding: 50px;
 	background-color: blueviolet;
-	width: 30%;
+	width: 50%;
 	height: 100%;	
 }
 
