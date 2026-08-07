@@ -20,7 +20,6 @@
 	<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js "></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-
 	<script type="module" src="./js/svg-word-cloud.js"></script>
 	<script type="module" src="./js/input-dropdown-form.js"></script>
 	<script type="module" src="./js/json-button-list-viewer.js"></script>
@@ -5598,12 +5597,61 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 			<div class="dimg">
 				<img class="img-responsive" src="/Portfolio-Site/DonationImages/Donations2.png">
 			</div>
-				
-
 		</section>
 	</div>
 
-	
+	<div class="happy">
+		<div class="container">
+			<div class="slide">
+				<div class="active"><img src="/Portfolio-Site/memory-images/1.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/2.jpeg"></div>
+
+				<div><img src="/Portfolio-Site/memory-images/3.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/4.jpeg"></div>
+
+				<div><img src="/Portfolio-Site/memory-images/5.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/6.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/7.jpeg"></div>
+
+
+				<div><img src="/Portfolio-Site/memory-images/8.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/9.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/10.jpeg"></div>
+
+
+				<div><img src="/Portfolio-Site/memory-images/11.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/12.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/13.jpeg"></div>
+
+				<div><img src="/Portfolio-Site/memory-images/14.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/15.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/16.jpeg"></div>
+
+				<div><img src="/Portfolio-Site/memory-images/17.jpeg"></div>
+				<div><img src="/Portfolio-Site/memory-images/18.jpeg"></div>
+			</div>
+			<div class="control">
+				<h2 class="next">Next</h2>
+				<h2 class="prev">Prev</h2>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+			
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.happy .container .control .next').click(function(){
+				$('.happy .container .slide').find('div.active').next().addClass('active');
+				$('.happy .container .slide').find('div.active').prev().removeClass('active');
+			})
+			$('.happy .container .control .prev').click(function(){
+				$('.happy .container .slide').find('div.active').prev().addClass('active');
+				$('.happy .container .slide').find('div.active').next().removeClass('active');
+			})
+			
+		})
+	</script>	
 
 </body>
 
