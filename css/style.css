@@ -98,27 +98,26 @@ body {
 	position: absolute;
 	width: 80px;
 	height: 80px;
-	margin:0;
+	margin: 0;
 	padding: 0;
-	background: goldenrod;
-	color: #262626;
+	background: red;
+	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	border: 10px solid navajowhite;
 }
 
 .happy .container .control .next{
 	bottom: 80px;
 	right:0;
 	border-bottom: 1px solid rgba(0,0,0,.2);
-
 }
 
 .happy .container .control .prev{
 	bottom: 0px;
 	right: 0;
-
 }
 
 .donate .donateImg{
