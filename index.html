@@ -1057,19 +1057,42 @@
 		</script>
 	</div>
 	<!----------------Scroll to see magic------------------>
+	<!----------------Scroll to see magic------------------>
 	<div class="scrollerTop">
 		<section>
-			<h2>I_am_Harry_Potter-u_can_become_one_too</h2>
+
+			<div class="large centered row" style="color:#008aff;">
+				<p id="magic-text" class="text-xl">
+					I am Harry Potter-u can become one too
+				</p>
+			</div>
+
+			<div class="small row"></div>
+
+			<script type="module">
+				import {
+					animate,
+					stagger,
+					splitText
+				} from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+
+				const { chars } = splitText('#magic-text', {
+					chars: {
+						wrap: 'clip'
+					}
+				});
+
+				animate(chars, {
+					y: ['0%','75%'],
+					duration: 750,
+					ease: 'out(3)',
+					delay: stagger(50),
+					loop: true,
+					alternate: true
+				});
+			</script>
+
 		</section>
-		<script>
-			let text = document.querySelector('h2');
-			let textString = text.textContent;
-			let split = textString.split("");
-			text.textContent = "";
-			for (let i = 0; i < split.length; i++) {
-				text.innerHTML += "<span>" + split[i] + "</span>";
-			}
-		</script>
 	</div>
 	<!----------------Code,sleep,eat,repeat------------------>
 	<div class="textHover">
