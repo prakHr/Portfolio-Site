@@ -5,6 +5,58 @@ body {
 	overflow-x: hidden;
 }
 
+.heartttbody{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.heartttbody .heartttcontainer{
+	position: relative;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e80202;
+	overflow: hidden;
+}
+
+.heartttbody .heartttcontainer .hearttt{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background: #e80202;
+	transform: rotate(45deg);
+	box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
+}
+
+.heartttbody .heartttcontainer .hearttt::before{
+	content:'';
+	position: absolute;
+	top:-50%;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #e80202;
+	border-radius: 50%;
+	box-shadow: 0 -20px 20px rgba(0,0,0,0.1);
+}
+
+.heartttbody .heartttcontainer .hearttt::after{
+	content:'';
+	position: absolute;
+	left:-50%;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: #e80202;
+	border-radius: 50%;
+	box-shadow: -20px 0 20px rgba(0,0,0,0.1);
+}
+
 
 .musicBodyy{
 	margin: 100px;
@@ -2107,21 +2159,22 @@ h1{
 	transition: transform 1s;
 	transform-origin: top;
 }
-.scrollerTop{
+.heartttbody .heartttcontainer .scrollerTop{
 	margin: 0;
 	padding: 0;
+	width:50%;
 	box-sizing: border-box;
 	font-family: "Poppins",sans-serif;
 }
 
-.scrollerTop section{
+.heartttbody .heartttcontainer .scrollerTop section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	background: #111;
 }
-.scrollerTop h2{
+.heartttbody .heartttcontainer .scrollerTop h2{
 	color: #fff;
 	font-size: 4em;
 	display: flex;

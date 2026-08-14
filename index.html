@@ -1056,43 +1056,83 @@
 			};
 		</script>
 	</div>
-	<!----------------Scroll to see magic------------------>
-	<!----------------Scroll to see magic------------------>
-	<div class="scrollerTop">
-		<section>
 
-			<div class="large centered row" style="color:#008aff;">
-				<p id="magic-text" class="text-xl">
-					I am Harry Potter-u can become one too
-				</p>
+	
+	<div class="heartttbody">
+		<div class="heartttcontainer">
+			<div class="hearttt"></div>
+
+			<!----------------Scroll to see magic------------------>
+			<!----------------Scroll to see magic------------------>
+			<div class="scrollerTop">
+				<section>
+
+					<div class="large centered row" style="color:#008aff;">
+						<p id="magic-text" class="text-xl">
+							I am Harry Potter-u can become one too
+						</p>
+					</div>
+
+					<div class="small row"></div>
+
+					<script type="module">
+						import {
+							animate,
+							stagger,
+							splitText
+						} from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+
+						const { chars } = splitText('#magic-text', {
+							chars: {
+								wrap: 'clip'
+							}
+						});
+
+						animate(chars, {
+							y: ['0%','75%'],
+							duration: 750,
+							ease: 'out(3)',
+							delay: stagger(50),
+							loop: true,
+							alternate: true
+						});
+					</script>
+
+				</section>
 			</div>
+			
 
-			<div class="small row"></div>
+		</div>
 
-			<script type="module">
-				import {
-					animate,
-					stagger,
-					splitText
-				} from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+		<script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
 
-				const { chars } = splitText('#magic-text', {
-					chars: {
-						wrap: 'clip'
-					}
-				});
+		<script>
+			const containert = document.querySelector(
+				'.heartttbody .heartttcontainer'
+			);
 
-				animate(chars, {
-					y: ['0%','75%'],
-					duration: 750,
-					ease: 'out(3)',
-					delay: stagger(50),
-					loop: true,
-					alternate: true
-				});
-			</script>
+			// Create 50 hearts
+			for (let i = 0; i < 50; i++) {
+				const heart = document.createElement('div');
+				heart.classList.add('hearttt');
+				containert.appendChild(heart);
+			}
 
-		</section>
+			// Anime.js v4
+			const { animate, utils } = anime;
+
+			animate('.heartttbody .heartttcontainer .hearttt', {
+				translateX: () => utils.random(-700, 700),
+				translateY: () => utils.random(-500, 500),
+				duration: 1500,
+				delay: () => utils.random(0, 1000),
+				loop: true,
+				alternate: true,
+				rotate:45,
+				scale:()=>utils.random(1,5),
+				ease: 'inOutSine'
+			});
+		</script>
 	</div>
 	<!----------------Code,sleep,eat,repeat------------------>
 	<div class="textHover">
