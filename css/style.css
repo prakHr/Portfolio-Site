@@ -5,6 +5,75 @@ body {
 	overflow-x: hidden;
 }
 
+.agenticBody{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30%;
+	background: whitesmoke;
+	overflow: hidden;
+	border-radius: 100px;
+}
+
+.agenticBody .container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.agenticBody .container .btn{
+	position: relative;
+	width: 240px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 2em;
+	transition: 0.5s;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color:#e50914;
+	transition-delay: 1s;
+}
+
+.agenticBody .container .btn:hover{
+	filter: drop-shadow(0 0 10px #e50914) drop-shadow(0 0 30px #e50914);
+	letter-spacing: 0.2em;
+	color:#fff;
+}
+
+.agenticBody .container .btn span{
+	position: absolute;
+	top:0;
+	width: 2px;
+	height: 100%;
+	background: #e50914;
+	pointer-events: none;
+	transition: transform 0.2s ease-in-out;
+	z-index: -1;
+	transform: scaleY(0);
+	transform-origin: bottom;
+}
+
+.agenticBody .container .btn:hover span{
+	transform: scaleY(1);
+	transform-origin: top;
+}
+
+.agenticBody .container .btn span:nth-child(even){
+	transform-origin: top;
+}
+
+.agenticBody .container .btn:hover span:nth-child(even){
+	transform-origin: bottom;
+}
+
 .heartttbody{
 	margin: 0;
 	padding: 0;
