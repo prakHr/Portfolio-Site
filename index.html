@@ -5843,6 +5843,38 @@
 			})
 		})
 	</script>
+
+	<div class="agenticBody2" id="agenticBody2">
+		<div class="container">
+			<img src="/Portfolio-Site/agentic-images/1.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/2.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/3.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/4.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/5.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/6.jpg" class="img">
+			<img src="/Portfolio-Site/agentic-images/7.jpg" class="img">
+			
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			document.querySelectorAll(".agenticBody2 .container .img").forEach((box,index,boxes)=>{
+				box.addEventListener('mouseover',()=>{
+					boxes.forEach((b,i)=>{
+						let className = i < index ? 'prev': i===index ? 'hovered' : 'next';
+						b.classList.remove('prev','next','hovered');
+						b.classList.add(className);
+					})
+				})
+
+				box.addEventListener('mouseleave',()=>{
+					boxes.forEach((b)=>{
+						b.classList.remove('prev','next','hovered');
+					})
+				})
+			})
+		})
+	</script>
 </body>
 
 </html>
