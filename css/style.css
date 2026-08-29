@@ -82,7 +82,8 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	color:#e50914;
+	/* color:#e50914; */
+	color:var(--random-color);
 	transition-delay: 1s;
 }
 

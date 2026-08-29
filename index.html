@@ -356,7 +356,13 @@
 		</style>
 
 	</head>
+	<script>
+		const randomColor = '#' + Math.floor(Math.random() * 16777215)
+		.toString(16)
+		.padStart(6, '0');
 
+		document.documentElement.style.setProperty('--random-color', randomColor);
+	</script>
 	<div class="agenticBody" id="agenticBody">
 		<div class="container">
 			<a href="https://github.com/prakHr/AgenticAI/tree/main" target="_blank" class="btn">Agentic AI</a>
