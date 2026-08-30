@@ -1,20 +1,40 @@
 import yt_dlp
 
+
 def download_mp3(url):
     ydl_opts = {
-        'format': 'bestaudio/best',
-        'outtmpl': '%(title)s.%(ext)s',
-        'postprocessors': [{
-            'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'webm',
-            'preferredquality': '192',
-        }],
+        "format": "bestaudio/best",
+
+        "outtmpl": "%(title)s.%(ext)s",
+
+        # Use Deno for YouTube's JavaScript challenges
+        "js_runtimes": {
+            "deno": {}
+        },
+
+        # Convert downloaded audio to MP3
+        "postprocessors": [
+            {
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "mp3",
+                "preferredquality": "192",
+            }
+        ],
+
+        "noplaylist": True,
+        "quiet": False,
     }
 
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        ydl.download([url])
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
 
-id_list = ['304QjnowLZ8']
+    except yt_dlp.utils.DownloadError as e:
+        print(f"\nDownload failed:\n{e}")
 
-for song in id_list:
-    download_mp3(f"https://www.youtube.com/watch?v={song}")
+
+song = "Co3jhNSkUK8"
+
+download_mp3(
+    f"https://www.youtube.com/watch?v={song}"
+)
