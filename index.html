@@ -858,7 +858,7 @@
 		<div style="display: flex; gap: 40px; margin: 20px;">
 			<img src="/Portfolio-Site/award-image/GoldAwardRelative.jpeg" style="width: 33%; height: auto;" loading="lazy" decoding="async">
 			<img src="/Portfolio-Site/award-image/GoldAward.jpeg" style="width: 33%; height: auto;" loading="lazy" decoding="async">
-			<img src="/Portfolio-Site/award-image/GoldAwardRelative2.jpeg" style="width: 33%; height: auto;">
+			<img src="/Portfolio-Site/award-image/GoldAwardRelative2.jpeg" style="width: 33%; height: auto;" loading="lazy" decoding="async">
 		</div>
 	</div>
 
@@ -1420,31 +1420,108 @@
 		<div class="packageBody">
 			<div class="container">
 				<ul class="thumb">
-					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/1.jpg')"><img src="/Portfolio-Site/package-images/1.jpg" alt="Image 1"></li>
-					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/2.jpg')"><img src="/Portfolio-Site/package-images/2.jpg" alt="Image 2"></li>
-					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/3.jpg')"><img src="/Portfolio-Site/package-images/3.jpg" alt="Image 3"></li>
-					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/4.jpg')"><img src="/Portfolio-Site/package-images/4.jpg" alt="Image 4"></li>
+					<li data-image="/Portfolio-Site/package-images/1.webp">
+						<img
+							src="/Portfolio-Site/package-images/1.webp"
+							alt="Image 1"
+							loading="lazy"
+							decoding="async"
+						>
+					</li>
+
+					<li data-image="/Portfolio-Site/package-images/2.webp">
+						<img
+							src="/Portfolio-Site/package-images/2.webp"
+							alt="Image 2"
+							loading="lazy"
+							decoding="async"
+						>
+					</li>
+
+					<li data-image="/Portfolio-Site/package-images/3.webp">
+						<img
+							src="/Portfolio-Site/package-images/3.webp"
+							alt="Image 3"
+							loading="lazy"
+							decoding="async"
+						>
+					</li>
+
+					<li data-image="/Portfolio-Site/package-images/4.webp">
+						<img
+							src="/Portfolio-Site/package-images/4.webp"
+							alt="Image 4"
+							loading="lazy"
+							decoding="async"
+						>
+					</li>
 				</ul>
 
 				<div class="imgBox">
 					<h2>Scalable Python Packages</h2>
-					<img src="/Portfolio-Site/package-images/1.jpg" class="packagesss">
-					<ul class="size"> 
+
+					<img
+						src="/Portfolio-Site/package-images/1.webp"
+						class="packagesss"
+						alt="Scalable Python Packages"
+						decoding="async"
+					>
+
+					<ul class="size">
 						<span>Size</span>
-						<li><a href="https://pypi.org/project/scalableExplainabilities/0.2.0/" class="size-link">7</a></li>
-						<li><a href="https://pypi.org/project/scalableSearches/0.6.0/" class="size-link">8</a></li>
-						<li><a href="https://pypi.org/project/scalableOcrs/" class="size-link">9</a></li>
-						<li><a href="https://pypi.org/project/scalableDistances/0.1.0/" class="size-link">10</a></li>
+
+						<li>
+							<a target="_blank" href="https://pypi.org/project/scalableExplainabilities/0.2.0/" class="size-link">7</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="https://pypi.org/project/scalableSearches/0.6.0/" class="size-link">8</a>
+						</li>
+
+						<li>
+							<a target="_blank"="https://pypi.org/project/scalableOcrs/" class="size-link">9</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="https://pypi.org/project/scalableDistances/0.1.0/" class="size-link">10</a>
+						</li>
 					</ul>
-					<a target="_blank" href="https://github.com/prakHr" class="btn">Go to Github</a>
+
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://github.com/prakHr"
+						class="btn"
+					>
+						Go to Github
+					</a>
 				</div>
 			</div>
 		</div>
 
 		<script>
-			function changeImgSrc(anything) {
-				document.querySelector('.packageBody .container .imgBox .packagesss').src = anything;
-			}
+			document.addEventListener("DOMContentLoaded", () => {
+
+				const mainImage = document.querySelector(".packagesss");
+				const thumbnails = document.querySelectorAll(".thumb li");
+
+				if (!mainImage || !thumbnails.length) return;
+
+				thumbnails.forEach(thumbnail => {
+
+					thumbnail.addEventListener("mouseenter", () => {
+
+						const image = thumbnail.dataset.image;
+
+						if (image && mainImage.src !== new URL(image, window.location.href).href) {
+							mainImage.src = image;
+						}
+
+					});
+
+				});
+
+			});
 		</script>
 
 
