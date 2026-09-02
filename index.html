@@ -1416,6 +1416,38 @@
 	</style>
 
 	<body>
+		<h1>SPECIAL PRODUCTS</h1>
+		<div class="packageBody">
+			<div class="container">
+				<ul class="thumb">
+					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/1.jpg')"><img src="/Portfolio-Site/package-images/1.jpg" alt="Image 1"></li>
+					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/2.jpg')"><img src="/Portfolio-Site/package-images/2.jpg" alt="Image 2"></li>
+					<li onmouseover="changeImgSrc('/Portfolio-Site/package-images/3.jpg')"><img src="/Portfolio-Site/package-images/3.jpg" alt="Image 3"></li>
+				</ul>
+
+				<div class="imgBox">
+					<h2>Scalable Python Packages</h2>
+					<img src="/Portfolio-Site/package-images/1.jpg" class="packagesss">
+					<ul class="size"> 
+						<span>Size</span>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+					<a target="_blank" href="https://github.com/prakHr" class="btn">Go to Github</a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function changeImgSrc(anything) {
+				document.querySelector('.packageBody .container .imgBox .packagesss').src = anything;
+			}
+		</script>
+
+
+
 		<h1 style="color: #04fc43; background-color: darkgreen; display: flex; align-items: center; justify-content: center;">AWESOME MATRIX RAIN EFFECTS</h1>
 		<div class="rain" style="margin: 10%;">
 			<div class="slider">
