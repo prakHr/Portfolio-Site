@@ -33,7 +33,7 @@ def download_mp3(url):
         print(f"\nDownload failed:\n{e}")
 
 
-song = "Co3jhNSkUK8"
+song = "fZYz0sotJWk"
 
 download_mp3(
     f"https://www.youtube.com/watch?v={song}"
