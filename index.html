@@ -596,27 +596,15 @@
 		} from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
 
 		document.addEventListener('DOMContentLoaded', () => {
-
-			/* =========================================================
-			IMAGE DOT ANIMATION
-			========================================================= */
-
 			const immgBox = document.querySelectorAll('.immgBx');
-
 			const gridSize = 10;
 			const cellSize = 300 / gridSize;
 
 			immgBox.forEach(imgBox => {
-
 				for (let row = 0; row < gridSize; row++) {
-
 					for (let col = 0; col < gridSize; col++) {
-
 						const dot = document.createElement('i');
-
-						dot.style.backgroundPosition =
-							`${-col * cellSize}px ${-row * cellSize}px`;
-
+						dot.style.backgroundPosition = `${-col * cellSize}px ${-row * cellSize}px`;
 						imgBox.appendChild(dot);
 					}
 				}
@@ -624,13 +612,9 @@
 
 
 			immgBox.forEach(imgBox => {
-
 				const dots = imgBox.querySelectorAll('i');
-
 				imgBox.addEventListener('mouseover', event => {
-
 					if (event.target.tagName === 'I') {
-
 						animate(dots, {
 							translateX: () => utils.random(-250, 250),
 							translateY: () => utils.random(-250, 250),
@@ -639,15 +623,12 @@
 							duration: 500,
 							ease: 'inSine'
 						});
-
 					}
 				});
 
 
 				imgBox.addEventListener('mouseout', event => {
-
 					if (event.target.tagName === 'I') {
-
 						animate(dots, {
 							translateX: 0,
 							translateY: 0,
@@ -656,15 +637,9 @@
 							duration: 500,
 							ease: 'inSine'
 						});
-
 					}
 				});
-
 			});
-
-
-			
-
 		});
 	</script>
 	
