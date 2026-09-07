@@ -5,6 +5,44 @@ body {
 	overflow-x: hidden;
 }
 
+.hoverBody{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #222;
+	background: url(/Portfolio-Site/images/superman.jpg);
+	background-size:cover;
+
+	
+}
+
+.hoverBody ul{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hoverBody ul li{
+	position: relative;
+	list-style: none;
+}
+
+.hoverBody ul li a{
+	position: relative;
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.hoverBody ul li a:hover{
+	color: #69ff41;
+}
+
 .packageBody{
 	
 	display: flex;
