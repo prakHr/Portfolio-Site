@@ -24,48 +24,31 @@ body {
     position: relative;
     width: 200px;
     height: 240px;
-
-    /* Simpler background */
     background: rgba(244, 67, 54, 0.18);
-
-    /* Keep only a light border */
     border: 1px solid rgba(255, 255, 255, 0.1);
-
-    /* Smaller/cheaper shadow */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.18);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 10px;
-
     margin: 0 -45px;
-
     transform: rotate(calc(var(--r) * 1deg));
-
-    /* Don't force a separate compositing layer */
-    /* will-change: transform; */
 }
 
 .earningBody .container .glass::before {
     content: attr(data-text);
-
     position: absolute;
     bottom: 0;
     left: 0;
-
     width: 100%;
     height: 40px;
-
     background: rgba(255, 255, 255, 0.05);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #fff;
 }
+
 .hoverBody{
 	display: flex;
 	justify-content: center;
