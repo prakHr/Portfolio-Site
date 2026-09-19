@@ -4,6 +4,41 @@ body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 }
+
+.clay-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 22px;
+    border-radius: 20px;
+
+    background: #e8ecf3;
+    color: #252525;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+
+    box-shadow:
+        8px 8px 16px rgba(163, 177, 198, 0.6),
+        -8px -8px 16px rgba(255, 255, 255, 0.95);
+
+    transition: 0.2s ease;
+}
+
+.clay-button:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+.clay-button:active {
+    transform: translateY(2px);
+
+    box-shadow:
+        inset 6px 6px 12px rgba(163, 177, 198, 0.5),
+        inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
 .earningBody {
     display: flex;
     justify-content: center;
