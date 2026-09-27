@@ -24,6 +24,24 @@ body {
     border-radius: 16px;
 }
 
+.skillsoft-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 50px;
+
+    background-image: url("/Portfolio-Site/images/skillsoft.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
 .clay-button {
     display: inline-flex;
     align-items: center;
