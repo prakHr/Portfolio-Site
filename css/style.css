@@ -5,6 +5,73 @@ body {
 	overflow-x: hidden;
 }
 
+.scrollBody{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #262626;
+	background-image: linear-gradient(to right,#333 1px, transparent 1px), linear-gradient(to bottom,#333 1px,transparent 1px);
+	background-size: 4vh 4vh;
+}
+
+
+.scrollBody h2{
+	display: inline-block;
+	color:#fff;
+	font-size:4em;
+	font-weight: 600;
+	padding: 0 100px;
+}
+
+.scrollBody h2 span{
+	position: relative;
+	color: transparent;
+	-webkit-text-stroke: 1px #01fe87;
+	line-height:  1.2em;
+	padding: 5px 10px;
+	animation: displaytext111 12s infinite;
+	animation-delay: calc(-3s * var(--i));
+}
+
+@keyframes displayText111 {
+	0%
+	{
+		display: inline-block;
+	}
+
+	25%,100%
+	{
+		display: none;
+	}
+}
+
+.scrollBody h2 span::before{
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	height: 100%;
+	color:#01fe87;
+	overflow:hidden;
+	white-space:nowrap;
+	border-right:2px solid #01fe87;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 5px 10px;
+	animation: animate11111111111 3s linear infinite;
+}
+
+@keyframes animate11111111111 {
+	0%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width:100%;
+	}
+}
+
 
 .imageHoverEffects .imgBx{
 	position:relative;
