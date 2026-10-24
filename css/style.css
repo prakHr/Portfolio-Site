@@ -5,7 +5,7 @@ body {
 	overflow-x: hidden;
 }
 
-.scrollBody{
+.scrollBodyscrollBody{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,7 +16,7 @@ body {
 }
 
 
-.scrollBody h2{
+.scrollBodyscrollBody h2{
 	display: inline-block;
 	color:#fff;
 	font-size:4em;
@@ -24,7 +24,7 @@ body {
 	padding: 0 100px;
 }
 
-.scrollBody h2 span{
+.scrollBodyscrollBody h2 span{
 	position: relative;
 	color: transparent;
 	-webkit-text-stroke: 1px #01fe87;
@@ -46,7 +46,7 @@ body {
 	}
 }
 
-.scrollBody h2 span::before{
+.scrollBodyscrollBody h2 span::before{
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
