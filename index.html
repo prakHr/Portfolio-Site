@@ -414,6 +414,92 @@
 
 	</div>
 
+	<div class="onepiece">
+		<section></section>
+		<script>
+			const colorsssssssssssssssss = [
+				'#2196f3',
+				'#e91e63',
+				'#ffeb3b',
+				'#74ff1d',
+				'#FF1744',
+				'#F50057',
+				'#D500F9',
+				'#651FFF',
+				'#3D5AFE',
+				'#2979FF',
+				'#00B0FF',
+				'#00E5FF',
+				'#1DE9B6',
+				'#00E676',
+				'#76FF03',
+				'#C6FF00',
+				'#FFEA00',
+				'#FFC400',
+				'#FF9100',
+				'#FF3D00',
+				'#FF5252',
+				'#FF4081',
+				'#E040FB',
+				'#7C4DFF',
+				'#536DFE',
+				'#448AFF',
+				'#40C4FF',
+				'#18FFFF',
+				'#64FFDA',
+				'#69F0AE',
+				'#B2FF59',
+				'#EEFF41',
+				'#FFFF00',
+				'#FFD740',
+				'#FFAB40',
+				'#FF6E40',
+				'#F44336',
+				'#E91E63',
+				'#9C27B0',
+				'#673AB7',
+				'#3F51B5',
+				'#2196F3',
+				'#03A9F4',
+				'#00BCD4',
+				'#009688',
+				'#4CAF50',
+				'#8BC34A',
+				'#CDDC39',
+				'#FFEB3B',
+				'#FFC107',
+				'#FF9800',
+				'#FF5722',
+				'#795548',
+				'#607D8B'
+			];
+			function createSquareeeeeeeeeeeeeee(){
+				const section = document.querySelector('section');
+				const square  = document.createElement('span');
+
+				var size = Math.random() * 50;
+
+				square.style.width = 20 + size + 'px';
+				square.style.height = 30 + size + 'px';
+				
+				square.style.top = Math.random() * innerHeight + 'px';
+				square.style.left = Math.random() * innerWidth + 'px';
+
+				const bg = colorsssssssssssssssss[Math.floor(Math.random() * colorsssssssssssssssss.length)];
+
+				square.style.background = bg;
+
+				section.appendChild(square);
+
+				setTimeout(() => {
+					square.remove()
+				},5000)
+			}
+
+			setInterval(createSquareeeeeeeeeeeeeee,150);
+		</script>
+	</div>
+
 
 	
 	<div class="agenticBody" id="agenticBody">

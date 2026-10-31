@@ -5,6 +5,44 @@ body {
 	overflow-x: hidden;
 }
 
+.onepiece{
+	overflow: hidden;
+	height: 100vh;
+	background: #000;
+}
+
+.onepiece section{
+	height: 100vh;
+}
+
+.onepiece section span{
+	position: absolute;
+	pointer-events: none;
+	background: #fff;
+	animation: annimateee 5s linear infinite;
+}
+
+@keyframes annimateee {
+	0%
+	{
+		transform: scale(0) translateY(0) rotate(0deg);
+		opacity: 0;
+	}
+	10%
+	{
+		opacity: 1;
+	}
+	90%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		transform: scale(1) translateY(-500%) rotate(360deg);
+		opacity: 0;
+	}
+}
+
 .scrollBodyscrollBody{
 	display: flex;
 	justify-content: center;
