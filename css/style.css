@@ -4,6 +4,79 @@ body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 }
+ 
+.infinitegallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #111;
+}
+
+.infinitegallery .scroll{
+	position: relative;
+	display: flex;
+	width: 700px;
+	overflow: hidden;
+	--webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
+}
+
+.infinitegallery .scroll div{
+	white-space: nowrap;
+	animation: animmmmate var(--t) linear infinite;
+	animation-delay: calc(var(--t) * -1);
+}
+
+.infinitegallery .scroll div:nth-child(2){
+	animation: animmmmate2 var(--t) linear infinite;
+	animation-delay: calc(var(--t) / -2);
+}
+
+.infinitegallery .imgbx img{
+	max-width: 100px;
+	scale: 0.8;
+}
+
+@keyframes animmmmate {
+	0%
+	{
+		transform: translateX(100%);
+	}	
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes animmmmate2 {
+	0%
+	{
+		transform: translateX(0);
+	}	
+	100%
+	{
+		transform: translateX(-200%);
+	}
+	
+}
+
+.infinitegallery .scroll div span{
+	display: inline-flex;
+	margin: 10px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	background: #333;
+	color:#fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.infinitegallery .scroll div span:hover{
+	background: red;
+	cursor: pointer;
+}
 
 .onepiece{
 	overflow: hidden;
