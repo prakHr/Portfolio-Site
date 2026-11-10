@@ -4,7 +4,28 @@ body {
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
 }
+
+.ThreeDTextBody{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
  
+.ThreeDTextBody h2{
+	font-size: 8em;
+
+}
+ 
+.ThreeDTextBody h2 .z-layer:first-child{
+	color: #f44336;
+}
+
+.ThreeDTextBody h2 .z-layer{
+	color: #b73229;
+}
+
 .infinitegallery{
 	display: flex;
 	justify-content: center;
