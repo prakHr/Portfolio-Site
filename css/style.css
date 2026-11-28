@@ -5,6 +5,40 @@ body {
 	overflow-x: hidden;
 }
 
+.particlesBody{
+	min-height: 100vh;
+	background: #111;
+	overflow: hidden;
+}
+
+.particlesBody span{
+	position: absolute;
+	background: #f00;
+	width:10px;
+	height: 10px;
+	pointer-events: none;
+	border-radius: 50%;
+}
+
+.particlesBody span::before{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: blueviolet;
+	border-radius: 50%;
+	animation: hmmmmmmmmmmmm 2s linear infinite;
+}
+
+@keyframes hmmmmmmmmmmmm{
+	0%{
+		transform: translate(0);
+	}
+	100%{
+		transform: translate(300px);
+	}
+}
+
 .ringerBody{
 	display: flex;
 	justify-content: center;
